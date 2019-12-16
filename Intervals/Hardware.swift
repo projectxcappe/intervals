@@ -8,7 +8,9 @@
 
 
 import Foundation
+import AVFoundation
 
+//Loading JSON Interval File
 func loadIntervalFile() {
     let filename = "Intervals"
     let bundle = Bundle.main
@@ -34,20 +36,16 @@ func loadIntervalFile(filename fileName: String) -> [Intervals]? {
     return nil
 }
 
-//func readJSONFromFile(fileName: String) -> Any?
-//{
-//    var json: Any?
-//    if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
-//        do {
-//            let fileUrl = URL(fileURLWithPath: path)
-//            // Getting data from JSON file using the file URL
-//            let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-//            json = try? JSONSerialization.jsonObject(with: data)
-//        } catch {
-//            // Handle error here
-//        }
-//    }
-//    return json
-//}
+//Play Sound
+extension ViewController {
+    func playIntervalSound(root:String) {
 
-
+        let pathToSound = Bundle.main.path(forResource: "A3", ofType: "aifc")!
+        let url = URL(fileURLWithPath: pathToSound)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {}
+    }
+}

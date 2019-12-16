@@ -12,28 +12,25 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var rootNoteLabel: UILabel!
+    @IBOutlet weak var intervalNoteLabel: UILabel!
+    
+    
     var audioPlayer: AVAudioPlayer?
     var intervalData:[Intervals]!
-
+    var root:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
         intervalData = loadIntervalFile(filename:"Intervals")
-        print(intervalData)
-        
-        //Play sound
-        let pathToSound = Bundle.main.path(forResource: "A3", ofType: "aifc")!
-        let url = URL(fileURLWithPath: pathToSound)
-        
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {}
-        
+        let interval = intervalData.randomElement()
+        root = interval?.root
+
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
+        playIntervalSound(root: "A3")
     }
     
     @IBAction func major2Pressed(_ sender: Any) {
@@ -48,3 +45,5 @@ class ViewController: UIViewController {
     
 
 }
+
+
