@@ -64,6 +64,18 @@
 		50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6C23A7312300ACEF26 /* Hardware.swift */; };
 		50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6E23A73A4000ACEF26 /* Models.swift */; };
 		50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F46A6723A7FAB7003F8972 /* GSAudio.swift */; };
+		50F46A7323A801E4003F8972 /* D6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6923A801E3003F8972 /* D6.aifc */; };
+		50F46A7423A801E4003F8972 /* Db6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6A23A801E3003F8972 /* Db6.aifc */; };
+		50F46A7523A801E4003F8972 /* Bb6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6B23A801E3003F8972 /* Bb6.aifc */; };
+		50F46A7623A801E4003F8972 /* E6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6C23A801E3003F8972 /* E6.aifc */; };
+		50F46A7723A801E4003F8972 /* F6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6D23A801E4003F8972 /* F6.aifc */; };
+		50F46A7823A801E4003F8972 /* C6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6E23A801E4003F8972 /* C6.aifc */; };
+		50F46A7923A801E4003F8972 /* B6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A6F23A801E4003F8972 /* B6.aifc */; };
+		50F46A7A23A801E4003F8972 /* Eb6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A7023A801E4003F8972 /* Eb6.aifc */; };
+		50F46A7B23A801E4003F8972 /* G6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A7123A801E4003F8972 /* G6.aifc */; };
+		50F46A7C23A801E4003F8972 /* Gb6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A7223A801E4003F8972 /* Gb6.aifc */; };
+		50F46A7E23A80215003F8972 /* A6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A7D23A80215003F8972 /* A6.aifc */; };
+		50F46A8023A80252003F8972 /* Ab6.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50F46A7F23A80252003F8972 /* Ab6.aifc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +138,18 @@
 		50E25C6C23A7312300ACEF26 /* Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 		50E25C6E23A73A4000ACEF26 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		50F46A6723A7FAB7003F8972 /* GSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAudio.swift; sourceTree = "<group>"; };
+		50F46A6923A801E3003F8972 /* D6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D6.aifc; sourceTree = "<group>"; };
+		50F46A6A23A801E3003F8972 /* Db6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db6.aifc; sourceTree = "<group>"; };
+		50F46A6B23A801E3003F8972 /* Bb6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb6.aifc; sourceTree = "<group>"; };
+		50F46A6C23A801E3003F8972 /* E6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E6.aifc; sourceTree = "<group>"; };
+		50F46A6D23A801E4003F8972 /* F6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F6.aifc; sourceTree = "<group>"; };
+		50F46A6E23A801E4003F8972 /* C6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C6.aifc; sourceTree = "<group>"; };
+		50F46A6F23A801E4003F8972 /* B6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B6.aifc; sourceTree = "<group>"; };
+		50F46A7023A801E4003F8972 /* Eb6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eb6.aifc; sourceTree = "<group>"; };
+		50F46A7123A801E4003F8972 /* G6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G6.aifc; sourceTree = "<group>"; };
+		50F46A7223A801E4003F8972 /* Gb6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb6.aifc; sourceTree = "<group>"; };
+		50F46A7D23A80215003F8972 /* A6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A6.aifc; sourceTree = "<group>"; };
+		50F46A7F23A80252003F8972 /* Ab6.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab6.aifc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,14 +200,26 @@
 		50E25C0523A5EC8500ACEF26 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				50F46A6F23A801E4003F8972 /* B6.aifc */,
+				50F46A6B23A801E3003F8972 /* Bb6.aifc */,
+				50F46A6E23A801E4003F8972 /* C6.aifc */,
+				50F46A6923A801E3003F8972 /* D6.aifc */,
+				50F46A6A23A801E3003F8972 /* Db6.aifc */,
+				50F46A6C23A801E3003F8972 /* E6.aifc */,
+				50F46A7023A801E4003F8972 /* Eb6.aifc */,
+				50F46A6D23A801E4003F8972 /* F6.aifc */,
+				50F46A7123A801E4003F8972 /* G6.aifc */,
+				50F46A7223A801E4003F8972 /* Gb6.aifc */,
 				50E25C6023A5F14100ACEF26 /* A2.aifc */,
 				50E25C1023A5F0DB00ACEF26 /* A3.aifc */,
 				50E25C0B23A5F0DB00ACEF26 /* A4.aifc */,
 				50E25C2323A5F0DD00ACEF26 /* A5.aifc */,
+				50F46A7D23A80215003F8972 /* A6.aifc */,
 				50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */,
 				50E25C0F23A5F0DB00ACEF26 /* Ab3.aifc */,
 				50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */,
 				50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */,
+				50F46A7F23A80252003F8972 /* Ab6.aifc */,
 				50E25C6223A5F2D100ACEF26 /* B2.aifc */,
 				50E25C2123A5F0DD00ACEF26 /* B3.aifc */,
 				50E25C1B23A5F0DC00ACEF26 /* B4.aifc */,
@@ -301,7 +337,9 @@
 				50E25C5523A5F0DE00ACEF26 /* G4.aifc in Resources */,
 				50E25C5E23A5F0DE00ACEF26 /* Eb5.aifc in Resources */,
 				50E25C5D23A5F0DE00ACEF26 /* F3.aifc in Resources */,
+				50F46A7E23A80215003F8972 /* A6.aifc in Resources */,
 				50E25C4123A5F0DE00ACEF26 /* F2.aifc in Resources */,
+				50F46A7C23A801E4003F8972 /* Gb6.aifc in Resources */,
 				50E25C6123A5F14100ACEF26 /* A2.aifc in Resources */,
 				50E25C5B23A5F0DE00ACEF26 /* G5.aifc in Resources */,
 				50E25C4D23A5F0DE00ACEF26 /* E2.aifc in Resources */,
@@ -313,9 +351,12 @@
 				50E25C3823A5F0DE00ACEF26 /* A4.aifc in Resources */,
 				50E25C4823A5F0DE00ACEF26 /* B4.aifc in Resources */,
 				50E25C4C23A5F0DE00ACEF26 /* Db4.aifc in Resources */,
+				50F46A7623A801E4003F8972 /* E6.aifc in Resources */,
+				50F46A7423A801E4003F8972 /* Db6.aifc in Resources */,
 				50E25C3C23A5F0DE00ACEF26 /* Ab3.aifc in Resources */,
 				50E25C5123A5F0DE00ACEF26 /* Db5.aifc in Resources */,
 				50E25C5023A5F0DE00ACEF26 /* A5.aifc in Resources */,
+				50F46A8023A80252003F8972 /* Ab6.aifc in Resources */,
 				50E25C4323A5F0DE00ACEF26 /* Gb2.aifc in Resources */,
 				50E25C5723A5F0DE00ACEF26 /* C4.aifc in Resources */,
 				50E25C3623A5F0DE00ACEF26 /* D2.aifc in Resources */,
@@ -323,19 +364,26 @@
 				50E25C4623A5F0DE00ACEF26 /* Bb2.aifc in Resources */,
 				50E25C3323A5F0DE00ACEF26 /* Ab5.aifc in Resources */,
 				50E25C4423A5F0DE00ACEF26 /* D5.aifc in Resources */,
+				50F46A7B23A801E4003F8972 /* G6.aifc in Resources */,
+				50F46A7823A801E4003F8972 /* C6.aifc in Resources */,
 				50E25C4723A5F0DE00ACEF26 /* Eb2.aifc in Resources */,
 				50E25C4A23A5F0DE00ACEF26 /* B5.aifc in Resources */,
+				50F46A7A23A801E4003F8972 /* Eb6.aifc in Resources */,
 				50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */,
 				505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */,
+				50F46A7923A801E4003F8972 /* B6.aifc in Resources */,
 				50E25C3E23A5F0DE00ACEF26 /* Eb3.aifc in Resources */,
 				50E25C4B23A5F0DE00ACEF26 /* Db2.aifc in Resources */,
 				50E25C6523A5F2E900ACEF26 /* E3.aifc in Resources */,
 				505ABEAF23A5E47900D55377 /* Main.storyboard in Resources */,
+				50F46A7323A801E4003F8972 /* D6.aifc in Resources */,
+				50F46A7723A801E4003F8972 /* F6.aifc in Resources */,
 				50E25C4F23A5F0DE00ACEF26 /* C3.aifc in Resources */,
 				50E25C5C23A5F0DE00ACEF26 /* D4.aifc in Resources */,
 				50E25C3A23A5F0DE00ACEF26 /* G2.aifc in Resources */,
 				50E25C5423A5F0DE00ACEF26 /* Bb4.aifc in Resources */,
 				50E25C5923A5F0DE00ACEF26 /* D3.aifc in Resources */,
+				50F46A7523A801E4003F8972 /* Bb6.aifc in Resources */,
 				50E25C5823A5F0DE00ACEF26 /* Ab2.aifc in Resources */,
 				50E25C5223A5F0DE00ACEF26 /* G3.aifc in Resources */,
 			);
