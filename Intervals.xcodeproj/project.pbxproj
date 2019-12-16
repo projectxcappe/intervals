@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505ABEA923A5E47900D55377 /* AppDelegate.swift */; };
+		505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505ABEAB23A5E47900D55377 /* ViewController.swift */; };
+		505ABEAF23A5E47900D55377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEAD23A5E47900D55377 /* Main.storyboard */; };
+		505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB023A5E47A00D55377 /* Assets.xcassets */; };
+		505ABEB423A5E47A00D55377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */; };
+		50E25C3323A5F0DE00ACEF26 /* Ab5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */; };
+		50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */; };
+		50E25C3523A5F0DE00ACEF26 /* Db3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0823A5F0DB00ACEF26 /* Db3.aifc */; };
+		50E25C3623A5F0DE00ACEF26 /* D2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0923A5F0DB00ACEF26 /* D2.aifc */; };
+		50E25C3723A5F0DE00ACEF26 /* E5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0A23A5F0DB00ACEF26 /* E5.aifc */; };
+		50E25C3823A5F0DE00ACEF26 /* A4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0B23A5F0DB00ACEF26 /* A4.aifc */; };
+		50E25C3923A5F0DE00ACEF26 /* Eb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0C23A5F0DB00ACEF26 /* Eb4.aifc */; };
+		50E25C3A23A5F0DE00ACEF26 /* G2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0D23A5F0DB00ACEF26 /* G2.aifc */; };
+		50E25C3B23A5F0DE00ACEF26 /* F5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0E23A5F0DB00ACEF26 /* F5.aifc */; };
+		50E25C3C23A5F0DE00ACEF26 /* Ab3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0F23A5F0DB00ACEF26 /* Ab3.aifc */; };
+		50E25C3D23A5F0DE00ACEF26 /* A3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1023A5F0DB00ACEF26 /* A3.aifc */; };
+		50E25C3E23A5F0DE00ACEF26 /* Eb3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1123A5F0DB00ACEF26 /* Eb3.aifc */; };
+		50E25C3F23A5F0DE00ACEF26 /* Bb3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1223A5F0DB00ACEF26 /* Bb3.aifc */; };
+		50E25C4023A5F0DE00ACEF26 /* Gb3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1323A5F0DC00ACEF26 /* Gb3.aifc */; };
+		50E25C4123A5F0DE00ACEF26 /* F2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1423A5F0DC00ACEF26 /* F2.aifc */; };
+		50E25C4223A5F0DE00ACEF26 /* E4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1523A5F0DC00ACEF26 /* E4.aifc */; };
+		50E25C4323A5F0DE00ACEF26 /* Gb2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1623A5F0DC00ACEF26 /* Gb2.aifc */; };
+		50E25C4423A5F0DE00ACEF26 /* D5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1723A5F0DC00ACEF26 /* D5.aifc */; };
+		50E25C4523A5F0DE00ACEF26 /* C2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1823A5F0DC00ACEF26 /* C2.aifc */; };
+		50E25C4623A5F0DE00ACEF26 /* Bb2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1923A5F0DC00ACEF26 /* Bb2.aifc */; };
+		50E25C4723A5F0DE00ACEF26 /* Eb2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1A23A5F0DC00ACEF26 /* Eb2.aifc */; };
+		50E25C4823A5F0DE00ACEF26 /* B4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1B23A5F0DC00ACEF26 /* B4.aifc */; };
+		50E25C4923A5F0DE00ACEF26 /* Bb5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1C23A5F0DC00ACEF26 /* Bb5.aifc */; };
+		50E25C4A23A5F0DE00ACEF26 /* B5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1D23A5F0DC00ACEF26 /* B5.aifc */; };
+		50E25C4B23A5F0DE00ACEF26 /* Db2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1E23A5F0DC00ACEF26 /* Db2.aifc */; };
+		50E25C4C23A5F0DE00ACEF26 /* Db4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C1F23A5F0DD00ACEF26 /* Db4.aifc */; };
+		50E25C4D23A5F0DE00ACEF26 /* E2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2023A5F0DD00ACEF26 /* E2.aifc */; };
+		50E25C4E23A5F0DE00ACEF26 /* B3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2123A5F0DD00ACEF26 /* B3.aifc */; };
+		50E25C4F23A5F0DE00ACEF26 /* C3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2223A5F0DD00ACEF26 /* C3.aifc */; };
+		50E25C5023A5F0DE00ACEF26 /* A5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2323A5F0DD00ACEF26 /* A5.aifc */; };
+		50E25C5123A5F0DE00ACEF26 /* Db5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2423A5F0DD00ACEF26 /* Db5.aifc */; };
+		50E25C5223A5F0DE00ACEF26 /* G3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2523A5F0DD00ACEF26 /* G3.aifc */; };
+		50E25C5323A5F0DE00ACEF26 /* Ab4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */; };
+		50E25C5423A5F0DE00ACEF26 /* Bb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2723A5F0DD00ACEF26 /* Bb4.aifc */; };
+		50E25C5523A5F0DE00ACEF26 /* G4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2823A5F0DD00ACEF26 /* G4.aifc */; };
+		50E25C5623A5F0DE00ACEF26 /* Gb5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2923A5F0DD00ACEF26 /* Gb5.aifc */; };
+		50E25C5723A5F0DE00ACEF26 /* C4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2A23A5F0DD00ACEF26 /* C4.aifc */; };
+		50E25C5823A5F0DE00ACEF26 /* Ab2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */; };
+		50E25C5923A5F0DE00ACEF26 /* D3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2C23A5F0DE00ACEF26 /* D3.aifc */; };
+		50E25C5A23A5F0DE00ACEF26 /* C5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2D23A5F0DE00ACEF26 /* C5.aifc */; };
+		50E25C5B23A5F0DE00ACEF26 /* G5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2E23A5F0DE00ACEF26 /* G5.aifc */; };
+		50E25C5C23A5F0DE00ACEF26 /* D4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2F23A5F0DE00ACEF26 /* D4.aifc */; };
+		50E25C5D23A5F0DE00ACEF26 /* F3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C3023A5F0DE00ACEF26 /* F3.aifc */; };
+		50E25C5E23A5F0DE00ACEF26 /* Eb5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C3123A5F0DE00ACEF26 /* Eb5.aifc */; };
+		50E25C5F23A5F0DE00ACEF26 /* F4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C3223A5F0DE00ACEF26 /* F4.aifc */; };
+		50E25C6123A5F14100ACEF26 /* A2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C6023A5F14100ACEF26 /* A2.aifc */; };
+		50E25C6323A5F2D100ACEF26 /* B2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C6223A5F2D100ACEF26 /* B2.aifc */; };
+		50E25C6523A5F2E900ACEF26 /* E3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C6423A5F2E900ACEF26 /* E3.aifc */; };
+		50E25C6B23A5F79A00ACEF26 /* Intervals.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C6A23A5F79A00ACEF26 /* Intervals.json */; };
+		50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6C23A7312300ACEF26 /* Hardware.swift */; };
+		50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6E23A73A4000ACEF26 /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		505ABEA623A5E47900D55377 /* Intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505ABEA923A5E47900D55377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		505ABEAB23A5E47900D55377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		505ABEAE23A5E47900D55377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		505ABEB023A5E47A00D55377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505ABEB323A5E47A00D55377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		505ABEB523A5E47A00D55377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab5.aifc; sourceTree = "<group>"; };
+		50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb4.aifc; sourceTree = "<group>"; };
+		50E25C0823A5F0DB00ACEF26 /* Db3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db3.aifc; sourceTree = "<group>"; };
+		50E25C0923A5F0DB00ACEF26 /* D2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D2.aifc; sourceTree = "<group>"; };
+		50E25C0A23A5F0DB00ACEF26 /* E5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E5.aifc; sourceTree = "<group>"; };
+		50E25C0B23A5F0DB00ACEF26 /* A4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A4.aifc; sourceTree = "<group>"; };
+		50E25C0C23A5F0DB00ACEF26 /* Eb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eb4.aifc; sourceTree = "<group>"; };
+		50E25C0D23A5F0DB00ACEF26 /* G2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G2.aifc; sourceTree = "<group>"; };
+		50E25C0E23A5F0DB00ACEF26 /* F5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F5.aifc; sourceTree = "<group>"; };
+		50E25C0F23A5F0DB00ACEF26 /* Ab3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab3.aifc; sourceTree = "<group>"; };
+		50E25C1023A5F0DB00ACEF26 /* A3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A3.aifc; sourceTree = "<group>"; };
+		50E25C1123A5F0DB00ACEF26 /* Eb3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eb3.aifc; sourceTree = "<group>"; };
+		50E25C1223A5F0DB00ACEF26 /* Bb3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb3.aifc; sourceTree = "<group>"; };
+		50E25C1323A5F0DC00ACEF26 /* Gb3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb3.aifc; sourceTree = "<group>"; };
+		50E25C1423A5F0DC00ACEF26 /* F2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F2.aifc; sourceTree = "<group>"; };
+		50E25C1523A5F0DC00ACEF26 /* E4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E4.aifc; sourceTree = "<group>"; };
+		50E25C1623A5F0DC00ACEF26 /* Gb2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb2.aifc; sourceTree = "<group>"; };
+		50E25C1723A5F0DC00ACEF26 /* D5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D5.aifc; sourceTree = "<group>"; };
+		50E25C1823A5F0DC00ACEF26 /* C2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C2.aifc; sourceTree = "<group>"; };
+		50E25C1923A5F0DC00ACEF26 /* Bb2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb2.aifc; sourceTree = "<group>"; };
+		50E25C1A23A5F0DC00ACEF26 /* Eb2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eb2.aifc; sourceTree = "<group>"; };
+		50E25C1B23A5F0DC00ACEF26 /* B4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B4.aifc; sourceTree = "<group>"; };
+		50E25C1C23A5F0DC00ACEF26 /* Bb5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb5.aifc; sourceTree = "<group>"; };
+		50E25C1D23A5F0DC00ACEF26 /* B5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B5.aifc; sourceTree = "<group>"; };
+		50E25C1E23A5F0DC00ACEF26 /* Db2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db2.aifc; sourceTree = "<group>"; };
+		50E25C1F23A5F0DD00ACEF26 /* Db4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db4.aifc; sourceTree = "<group>"; };
+		50E25C2023A5F0DD00ACEF26 /* E2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E2.aifc; sourceTree = "<group>"; };
+		50E25C2123A5F0DD00ACEF26 /* B3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B3.aifc; sourceTree = "<group>"; };
+		50E25C2223A5F0DD00ACEF26 /* C3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C3.aifc; sourceTree = "<group>"; };
+		50E25C2323A5F0DD00ACEF26 /* A5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A5.aifc; sourceTree = "<group>"; };
+		50E25C2423A5F0DD00ACEF26 /* Db5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db5.aifc; sourceTree = "<group>"; };
+		50E25C2523A5F0DD00ACEF26 /* G3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G3.aifc; sourceTree = "<group>"; };
+		50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab4.aifc; sourceTree = "<group>"; };
+		50E25C2723A5F0DD00ACEF26 /* Bb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb4.aifc; sourceTree = "<group>"; };
+		50E25C2823A5F0DD00ACEF26 /* G4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G4.aifc; sourceTree = "<group>"; };
+		50E25C2923A5F0DD00ACEF26 /* Gb5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb5.aifc; sourceTree = "<group>"; };
+		50E25C2A23A5F0DD00ACEF26 /* C4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C4.aifc; sourceTree = "<group>"; };
+		50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab2.aifc; sourceTree = "<group>"; };
+		50E25C2C23A5F0DE00ACEF26 /* D3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D3.aifc; sourceTree = "<group>"; };
+		50E25C2D23A5F0DE00ACEF26 /* C5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C5.aifc; sourceTree = "<group>"; };
+		50E25C2E23A5F0DE00ACEF26 /* G5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G5.aifc; sourceTree = "<group>"; };
+		50E25C2F23A5F0DE00ACEF26 /* D4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D4.aifc; sourceTree = "<group>"; };
+		50E25C3023A5F0DE00ACEF26 /* F3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F3.aifc; sourceTree = "<group>"; };
+		50E25C3123A5F0DE00ACEF26 /* Eb5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Eb5.aifc; sourceTree = "<group>"; };
+		50E25C3223A5F0DE00ACEF26 /* F4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = F4.aifc; sourceTree = "<group>"; };
+		50E25C6023A5F14100ACEF26 /* A2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A2.aifc; sourceTree = "<group>"; };
+		50E25C6223A5F2D100ACEF26 /* B2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B2.aifc; sourceTree = "<group>"; };
+		50E25C6423A5F2E900ACEF26 /* E3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = E3.aifc; sourceTree = "<group>"; };
+		50E25C6A23A5F79A00ACEF26 /* Intervals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Intervals.json; sourceTree = "<group>"; };
+		50E25C6C23A7312300ACEF26 /* Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
+		50E25C6E23A73A4000ACEF26 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		505ABEA323A5E47900D55377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		505ABE9D23A5E47900D55377 = {
+			isa = PBXGroup;
+			children = (
+				505ABEA823A5E47900D55377 /* Intervals */,
+				505ABEA723A5E47900D55377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		505ABEA723A5E47900D55377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				505ABEA623A5E47900D55377 /* Intervals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505ABEA823A5E47900D55377 /* Intervals */ = {
+			isa = PBXGroup;
+			children = (
+				50E25C0523A5EC8500ACEF26 /* Sounds */,
+				505ABEA923A5E47900D55377 /* AppDelegate.swift */,
+				505ABEAB23A5E47900D55377 /* ViewController.swift */,
+				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
+				50E25C6E23A73A4000ACEF26 /* Models.swift */,
+				50E25C6A23A5F79A00ACEF26 /* Intervals.json */,
+				505ABEAD23A5E47900D55377 /* Main.storyboard */,
+				505ABEB023A5E47A00D55377 /* Assets.xcassets */,
+				505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */,
+				505ABEB523A5E47A00D55377 /* Info.plist */,
+			);
+			path = Intervals;
+			sourceTree = "<group>";
+		};
+		50E25C0523A5EC8500ACEF26 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				50E25C6023A5F14100ACEF26 /* A2.aifc */,
+				50E25C1023A5F0DB00ACEF26 /* A3.aifc */,
+				50E25C0B23A5F0DB00ACEF26 /* A4.aifc */,
+				50E25C2323A5F0DD00ACEF26 /* A5.aifc */,
+				50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */,
+				50E25C0F23A5F0DB00ACEF26 /* Ab3.aifc */,
+				50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */,
+				50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */,
+				50E25C6223A5F2D100ACEF26 /* B2.aifc */,
+				50E25C2123A5F0DD00ACEF26 /* B3.aifc */,
+				50E25C1B23A5F0DC00ACEF26 /* B4.aifc */,
+				50E25C1D23A5F0DC00ACEF26 /* B5.aifc */,
+				50E25C1923A5F0DC00ACEF26 /* Bb2.aifc */,
+				50E25C1223A5F0DB00ACEF26 /* Bb3.aifc */,
+				50E25C2723A5F0DD00ACEF26 /* Bb4.aifc */,
+				50E25C1C23A5F0DC00ACEF26 /* Bb5.aifc */,
+				50E25C1823A5F0DC00ACEF26 /* C2.aifc */,
+				50E25C2223A5F0DD00ACEF26 /* C3.aifc */,
+				50E25C2A23A5F0DD00ACEF26 /* C4.aifc */,
+				50E25C2D23A5F0DE00ACEF26 /* C5.aifc */,
+				50E25C0923A5F0DB00ACEF26 /* D2.aifc */,
+				50E25C2C23A5F0DE00ACEF26 /* D3.aifc */,
+				50E25C2F23A5F0DE00ACEF26 /* D4.aifc */,
+				50E25C1723A5F0DC00ACEF26 /* D5.aifc */,
+				50E25C1E23A5F0DC00ACEF26 /* Db2.aifc */,
+				50E25C0823A5F0DB00ACEF26 /* Db3.aifc */,
+				50E25C1F23A5F0DD00ACEF26 /* Db4.aifc */,
+				50E25C2423A5F0DD00ACEF26 /* Db5.aifc */,
+				50E25C2023A5F0DD00ACEF26 /* E2.aifc */,
+				50E25C6423A5F2E900ACEF26 /* E3.aifc */,
+				50E25C1523A5F0DC00ACEF26 /* E4.aifc */,
+				50E25C0A23A5F0DB00ACEF26 /* E5.aifc */,
+				50E25C1A23A5F0DC00ACEF26 /* Eb2.aifc */,
+				50E25C1123A5F0DB00ACEF26 /* Eb3.aifc */,
+				50E25C0C23A5F0DB00ACEF26 /* Eb4.aifc */,
+				50E25C3123A5F0DE00ACEF26 /* Eb5.aifc */,
+				50E25C1423A5F0DC00ACEF26 /* F2.aifc */,
+				50E25C3023A5F0DE00ACEF26 /* F3.aifc */,
+				50E25C3223A5F0DE00ACEF26 /* F4.aifc */,
+				50E25C0E23A5F0DB00ACEF26 /* F5.aifc */,
+				50E25C0D23A5F0DB00ACEF26 /* G2.aifc */,
+				50E25C2523A5F0DD00ACEF26 /* G3.aifc */,
+				50E25C2823A5F0DD00ACEF26 /* G4.aifc */,
+				50E25C2E23A5F0DE00ACEF26 /* G5.aifc */,
+				50E25C1623A5F0DC00ACEF26 /* Gb2.aifc */,
+				50E25C1323A5F0DC00ACEF26 /* Gb3.aifc */,
+				50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */,
+				50E25C2923A5F0DD00ACEF26 /* Gb5.aifc */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		505ABEA523A5E47900D55377 /* Intervals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505ABEB823A5E47A00D55377 /* Build configuration list for PBXNativeTarget "Intervals" */;
+			buildPhases = (
+				505ABEA223A5E47900D55377 /* Sources */,
+				505ABEA323A5E47900D55377 /* Frameworks */,
+				505ABEA423A5E47900D55377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intervals;
+			productName = Intervals;
+			productReference = 505ABEA623A5E47900D55377 /* Intervals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505ABE9E23A5E47900D55377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Cass Pangell";
+				TargetAttributes = {
+					505ABEA523A5E47900D55377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 505ABEA123A5E47900D55377 /* Build configuration list for PBXProject "Intervals" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 505ABE9D23A5E47900D55377;
+			productRefGroup = 505ABEA723A5E47900D55377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				505ABEA523A5E47900D55377 /* Intervals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505ABEA423A5E47900D55377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E25C5A23A5F0DE00ACEF26 /* C5.aifc in Resources */,
+				50E25C6B23A5F79A00ACEF26 /* Intervals.json in Resources */,
+				50E25C5323A5F0DE00ACEF26 /* Ab4.aifc in Resources */,
+				50E25C3F23A5F0DE00ACEF26 /* Bb3.aifc in Resources */,
+				50E25C3523A5F0DE00ACEF26 /* Db3.aifc in Resources */,
+				50E25C4223A5F0DE00ACEF26 /* E4.aifc in Resources */,
+				50E25C4523A5F0DE00ACEF26 /* C2.aifc in Resources */,
+				50E25C6323A5F2D100ACEF26 /* B2.aifc in Resources */,
+				505ABEB423A5E47A00D55377 /* LaunchScreen.storyboard in Resources */,
+				50E25C3D23A5F0DE00ACEF26 /* A3.aifc in Resources */,
+				50E25C3923A5F0DE00ACEF26 /* Eb4.aifc in Resources */,
+				50E25C3B23A5F0DE00ACEF26 /* F5.aifc in Resources */,
+				50E25C5523A5F0DE00ACEF26 /* G4.aifc in Resources */,
+				50E25C5E23A5F0DE00ACEF26 /* Eb5.aifc in Resources */,
+				50E25C5D23A5F0DE00ACEF26 /* F3.aifc in Resources */,
+				50E25C4123A5F0DE00ACEF26 /* F2.aifc in Resources */,
+				50E25C6123A5F14100ACEF26 /* A2.aifc in Resources */,
+				50E25C5B23A5F0DE00ACEF26 /* G5.aifc in Resources */,
+				50E25C4D23A5F0DE00ACEF26 /* E2.aifc in Resources */,
+				50E25C4023A5F0DE00ACEF26 /* Gb3.aifc in Resources */,
+				50E25C4E23A5F0DE00ACEF26 /* B3.aifc in Resources */,
+				50E25C5F23A5F0DE00ACEF26 /* F4.aifc in Resources */,
+				50E25C4923A5F0DE00ACEF26 /* Bb5.aifc in Resources */,
+				50E25C3723A5F0DE00ACEF26 /* E5.aifc in Resources */,
+				50E25C3823A5F0DE00ACEF26 /* A4.aifc in Resources */,
+				50E25C4823A5F0DE00ACEF26 /* B4.aifc in Resources */,
+				50E25C4C23A5F0DE00ACEF26 /* Db4.aifc in Resources */,
+				50E25C3C23A5F0DE00ACEF26 /* Ab3.aifc in Resources */,
+				50E25C5123A5F0DE00ACEF26 /* Db5.aifc in Resources */,
+				50E25C5023A5F0DE00ACEF26 /* A5.aifc in Resources */,
+				50E25C4323A5F0DE00ACEF26 /* Gb2.aifc in Resources */,
+				50E25C5723A5F0DE00ACEF26 /* C4.aifc in Resources */,
+				50E25C3623A5F0DE00ACEF26 /* D2.aifc in Resources */,
+				50E25C5623A5F0DE00ACEF26 /* Gb5.aifc in Resources */,
+				50E25C4623A5F0DE00ACEF26 /* Bb2.aifc in Resources */,
+				50E25C3323A5F0DE00ACEF26 /* Ab5.aifc in Resources */,
+				50E25C4423A5F0DE00ACEF26 /* D5.aifc in Resources */,
+				50E25C4723A5F0DE00ACEF26 /* Eb2.aifc in Resources */,
+				50E25C4A23A5F0DE00ACEF26 /* B5.aifc in Resources */,
+				50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */,
+				505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */,
+				50E25C3E23A5F0DE00ACEF26 /* Eb3.aifc in Resources */,
+				50E25C4B23A5F0DE00ACEF26 /* Db2.aifc in Resources */,
+				50E25C6523A5F2E900ACEF26 /* E3.aifc in Resources */,
+				505ABEAF23A5E47900D55377 /* Main.storyboard in Resources */,
+				50E25C4F23A5F0DE00ACEF26 /* C3.aifc in Resources */,
+				50E25C5C23A5F0DE00ACEF26 /* D4.aifc in Resources */,
+				50E25C3A23A5F0DE00ACEF26 /* G2.aifc in Resources */,
+				50E25C5423A5F0DE00ACEF26 /* Bb4.aifc in Resources */,
+				50E25C5923A5F0DE00ACEF26 /* D3.aifc in Resources */,
+				50E25C5823A5F0DE00ACEF26 /* Ab2.aifc in Resources */,
+				50E25C5223A5F0DE00ACEF26 /* G3.aifc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		505ABEA223A5E47900D55377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */,
+				505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */,
+				505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */,
+				50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		505ABEAD23A5E47900D55377 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505ABEAE23A5E47900D55377 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				505ABEB323A5E47A00D55377 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		505ABEB623A5E47A00D55377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		505ABEB723A5E47A00D55377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		505ABEB923A5E47A00D55377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Intervals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cass.intervals.Intervals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		505ABEBA23A5E47A00D55377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Intervals/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cass.intervals.Intervals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		505ABEA123A5E47900D55377 /* Build configuration list for PBXProject "Intervals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505ABEB623A5E47A00D55377 /* Debug */,
+				505ABEB723A5E47A00D55377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505ABEB823A5E47A00D55377 /* Build configuration list for PBXNativeTarget "Intervals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505ABEB923A5E47A00D55377 /* Debug */,
+				505ABEBA23A5E47A00D55377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 505ABE9E23A5E47900D55377 /* Project object */;
+}
