@@ -6,6 +6,28 @@
 //  Copyright © 2019 Cass Pangell. All rights reserved.
 //
 
+/*
+ Adapted from Oliver Wilkinson
+ The class is a singleton, so to access the class use:
+ 
+ GSAudio.sharedInstance
+ for example, to play a sound you would call:
+ 
+ GSAudio.sharedInstance.playSound("AudioFileName")
+ and to play a number of sounds at once:
+ 
+ GSAudio.sharedInstance.playSounds("AudioFileName1", "AudioFileName2")
+ or you could load up the sounds in an array somewhere and call the playSounds function that accepts an array:
+ 
+ let sounds = ["AudioFileName1", "AudioFileName2"]
+ GSAudio.sharedInstance.playSounds(sounds)
+ I also added a playSounds function that allows you to delay each sound being played in a cascade kind of format. So:
+ 
+ let soundFileNames = ["SoundFileName1", "SoundFileName2", "SoundFileName3"]
+ GSAudio.sharedInstance.playSounds(soundFileNames, withDelay: 1.0)
+ would play sound2 a second after sound1, then sound3 would play a second after sound2 etc.
+ */
+
 import AVFoundation
 
 //This class allows multiple occurances of audio to play co-currently

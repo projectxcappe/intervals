@@ -38,8 +38,11 @@ func loadIntervalFile(filename fileName: String) -> [Intervals]? {
 
 //Play Sound
 extension ViewController {
-    func playIntervalSound(note:String) {
-        GSAudio.sharedInstance.playSound(soundFileName: note)
+    func playIntervalSound(root:String, interval:String) {
+        GSAudio.sharedInstance.playSound(soundFileName: root)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            GSAudio.sharedInstance.playSound(soundFileName: interval)
+        }
     }
 }
 
