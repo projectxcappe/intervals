@@ -15,22 +15,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var rootNoteLabel: UILabel!
     @IBOutlet weak var intervalNoteLabel: UILabel!
     
-    
     var audioPlayer: AVAudioPlayer?
+    var audioPlayer2: AVAudioPlayer?
+    
     var intervalData:[Intervals]!
+    var interval:Intervals!
     var root:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         intervalData = loadIntervalFile(filename:"Intervals")
-        let interval = intervalData.randomElement()
+        interval = intervalData.randomElement()
         root = interval?.root
 
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
-        playIntervalSound(root: "A3")
+        
+        playIntervalSound(note: root)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.playIntervalSound(note: self.interval.m2)
+        }
+        
     }
     
     @IBAction func major2Pressed(_ sender: Any) {

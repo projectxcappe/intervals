@@ -38,14 +38,9 @@ func loadIntervalFile(filename fileName: String) -> [Intervals]? {
 
 //Play Sound
 extension ViewController {
-    func playIntervalSound(root:String) {
-
-        let pathToSound = Bundle.main.path(forResource: "A3", ofType: "aifc")!
-        let url = URL(fileURLWithPath: pathToSound)
-        
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {}
+    func playIntervalSound(note:String) {
+        GSAudio.sharedInstance.playSound(soundFileName: note)
     }
 }
+
+

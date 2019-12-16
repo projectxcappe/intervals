@@ -63,6 +63,7 @@
 		50E25C6B23A5F79A00ACEF26 /* Intervals.json in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C6A23A5F79A00ACEF26 /* Intervals.json */; };
 		50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6C23A7312300ACEF26 /* Hardware.swift */; };
 		50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E25C6E23A73A4000ACEF26 /* Models.swift */; };
+		50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F46A6723A7FAB7003F8972 /* GSAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,7 @@
 		50E25C6A23A5F79A00ACEF26 /* Intervals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Intervals.json; sourceTree = "<group>"; };
 		50E25C6C23A7312300ACEF26 /* Hardware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hardware.swift; sourceTree = "<group>"; };
 		50E25C6E23A73A4000ACEF26 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		50F46A6723A7FAB7003F8972 /* GSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				505ABEA923A5E47900D55377 /* AppDelegate.swift */,
 				505ABEAB23A5E47900D55377 /* ViewController.swift */,
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
+				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,
 				50E25C6E23A73A4000ACEF26 /* Models.swift */,
 				50E25C6A23A5F79A00ACEF26 /* Intervals.json */,
 				505ABEAD23A5E47900D55377 /* Main.storyboard */,
@@ -347,6 +350,7 @@
 			files = (
 				50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */,
 				505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */,
+				50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */,
 				505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */,
 				50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */,
 			);
