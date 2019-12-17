@@ -63,7 +63,34 @@
     "P8": "A6"
     }
 
+],
+"song": [
+    {
+    "m2_asc": "minor2_asc_song",
+    "M2_asc": "major2_asc_song",
+    "m3_asc": "minor3_asc_song",
+    "M3_asc": "major3_asc_song",
+    "P4_asc": "perfect4_asc_song",
+    "TT_asc": "tritone_asc_song",
+    "P5_asc": "perfect5_asc_song",
+    "m6_asc": "minor6_asc_song",
+    "M6_asc": "major6_asc_song",
+    "m7_asc": "minor7_asc_song",
+    "M7_asc": "major7_asc_song",
+    "P8_asc": "perfect8_asc_song",
+    "m2_dec": "minor2_dec_song",
+    "M2_dec": "major2_dec_song",
+    "m3_dec": "minor3_dec_song",
+    "M3_dec": "major3_dec_song",
+    "P4_dec": "perfect4_dec_song",
+    "TT_dec": "tritone_dec_song",
+    "P5_dec": "perfect5_dec_song",
+    "m6_dec": "minor6_dec_song",
+    "M6_dec": "major6_dec_song",
+    "m7_dec": "minor7_dec_song",
+    "M7_dec": "major7_dec_song",
+    "P8_dec": "perfect8_dec_song"
+    }
 ]
+
 }
-
-
