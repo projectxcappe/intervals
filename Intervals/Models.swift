@@ -9,7 +9,8 @@
 import Foundation
 
 struct ResponseData: Decodable {
-    var interval: [Intervals]
+    var interval_asc: [Intervals]
+    var interval_dec: [Intervals]
     var song: [Song]
 }
 

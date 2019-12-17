@@ -28,7 +28,7 @@ func loadIntervalFile(filename fileName: String) -> [Intervals]? {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let jsonData = try decoder.decode(ResponseData.self, from: data)
-            return jsonData.interval
+            return jsonData.interval_dec
         } catch {
             print("error:\(error)")
         }
