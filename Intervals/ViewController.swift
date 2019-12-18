@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         let interval = self.interval.m2
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
         
     }
     
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         let interval = self.interval.M2
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
         
 
     }
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         let interval = self.interval.m3
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
 
     }
     
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         let interval = self.interval.M3
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
 
     }
     
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         let interval = self.interval.P4
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
         
     }
     
@@ -79,49 +79,49 @@ class ViewController: UIViewController {
         let interval = self.interval.TT
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func perfect5Pressed(_ sender: Any) {
         let interval = self.interval.P5
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func minor6Pressed(_ sender: Any) {
         let interval = self.interval.m6
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func major6Pressed(_ sender: Any) {
         let interval = self.interval.M6
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func minor7Pressed(_ sender: Any) {
         let interval = self.interval.m7
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func major7Pressed(_ sender: Any) {
         let interval = self.interval.M7
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     @IBAction func perfect8Pressed(_ sender: Any) {
         let interval = self.interval.P8
         
         intervalNoteLabel.text = interval
-        playIntervalSound(root: root, interval: interval)
+        playHarmonicIntervalSound(root: root, interval: interval)
     }
     
     

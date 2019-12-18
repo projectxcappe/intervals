@@ -44,6 +44,11 @@ extension ViewController {
             GSAudio.sharedInstance.playSound(soundFileName: interval)
         }
     }
+    
+    func playHarmonicIntervalSound(root:String, interval:String) {
+        GSAudio.sharedInstance.playSound(soundFileName: root)
+        GSAudio.sharedInstance.playSound(soundFileName: interval)
+    }
 }
 
 
