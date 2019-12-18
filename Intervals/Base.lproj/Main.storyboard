@@ -18,98 +18,233 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-Gt-g3C">
-                                <rect key="frame" x="329" y="74" width="35" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-Gt-g3C" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="199" width="75" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="93h-YY-7c9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="m2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="minor2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvo-38-ElN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-8E-7Eh">
-                                <rect key="frame" x="329" y="124" width="36" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKz-8E-7Eh" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="249" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="M2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="major2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="In1-XG-KC8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-Px-Hai">
-                                <rect key="frame" x="329" y="174" width="36" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewl-Px-Hai" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="299" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="m3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="minor3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhc-Qr-SEU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-dw-poa">
-                                <rect key="frame" x="329" y="224" width="37" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm3-dw-poa" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="349" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="M3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="major3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Nb-GO-JcG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-4M-8Oc">
-                                <rect key="frame" x="329" y="274" width="31" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdu-4M-8Oc" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="399" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="P4"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="perfect4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oHK-HT-MKe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-Os-pzN">
-                                <rect key="frame" x="329" y="374" width="30" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-Os-pzN" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="499" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="P5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="perfect5Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ol-TT-Wcw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSa-XI-hk9">
-                                <rect key="frame" x="329" y="424" width="36" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSa-XI-hk9" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="549" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="m6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="minor6Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4u-1O-fZc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-LL-XRh">
-                                <rect key="frame" x="329" y="474" width="37" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-LL-XRh" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="599" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="M6"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="major6Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6l-JJ-xU2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-yZ-8Ts">
-                                <rect key="frame" x="329" y="524" width="35" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-yZ-8Ts" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="649" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="m7"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="minor7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Lr-9D-F7M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-gV-cvu">
-                                <rect key="frame" x="329" y="574" width="36" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-gV-cvu" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="699" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="M7"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="major7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAw-8N-mc3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-B5-Nmx">
-                                <rect key="frame" x="329" y="624" width="31" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-B5-Nmx" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="749" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="P8"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="perfect8Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXx-4e-Ybz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68J-xy-xxH">
-                                <rect key="frame" x="329" y="324" width="30" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68J-xy-xxH" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="289" y="449" width="75" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="TT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tritonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vge-IR-6G7"/>
                                 </connections>
@@ -138,53 +273,170 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKN-CW-mql">
+                                <rect key="frame" x="20" y="124" width="374" height="25"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="xVb-tc-ph4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2P-4o-RpQ" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="134" y="699" width="150" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Decending"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="decPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AW-db-qFM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAd-gj-771" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="134" y="749" width="150" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Harmonic"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="harmPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6L-6p-T36"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77L-aW-hy5" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                <rect key="frame" x="134" y="649" width="150" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="iHp-DW-YT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Ascending"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ascPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIn-dQ-xdz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ewl-Px-Hai" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="4EZ-vG-slj"/>
+                            <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="wKN-CW-mql" secondAttribute="bottom" constant="50" id="6jW-4V-2HW"/>
+                            <constraint firstItem="CnS-B5-Nmx" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="78x-QF-us1"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="7dZ-WN-zN0"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="top" secondItem="ewl-Px-Hai" secondAttribute="bottom" constant="8" id="9lA-6Z-RGg"/>
+                            <constraint firstItem="zSa-XI-hk9" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="9oH-U6-hEU"/>
                             <constraint firstItem="xBE-PE-dG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="AA1-8W-if0"/>
+                            <constraint firstItem="zSa-XI-hk9" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="DoV-j7-hK8"/>
+                            <constraint firstItem="LR2-yZ-8Ts" firstAttribute="leading" secondItem="77L-aW-hy5" secondAttribute="trailing" constant="5" id="E4A-ch-asL"/>
+                            <constraint firstItem="ewl-Px-Hai" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="ELF-RS-tJI"/>
                             <constraint firstItem="xBE-PE-dG3" firstAttribute="top" secondItem="Szx-tN-nhp" secondAttribute="bottom" constant="8" id="ENN-az-KEv"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="F4g-3H-hP7"/>
+                            <constraint firstItem="cKz-8E-7Eh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="Fzi-1M-dQz"/>
+                            <constraint firstItem="sn1-Os-pzN" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="ICW-06-E6k"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="Ihz-p5-LJh"/>
                             <constraint firstItem="Z0V-0f-RBN" firstAttribute="centerY" secondItem="xBE-PE-dG3" secondAttribute="centerY" id="JT2-aQ-Jdf"/>
+                            <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="NGq-gJ-vZ6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="NtR-Ly-GLW"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="top" secondItem="Qdu-4M-8Oc" secondAttribute="bottom" constant="8" id="O3V-l5-MMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKN-CW-mql" secondAttribute="trailing" constant="20" id="Oef-OR-dsf"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="Omq-Cz-y1D"/>
+                            <constraint firstItem="Qdu-4M-8Oc" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="PqA-aS-oTh"/>
+                            <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="QMv-tH-FMu"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="QTs-4q-ecS"/>
+                            <constraint firstItem="68J-xy-xxH" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="RxH-R3-dE1"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="SGT-lk-ML4"/>
+                            <constraint firstItem="gm3-dw-poa" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="T6N-sd-Chj"/>
                             <constraint firstItem="Z0V-0f-RBN" firstAttribute="leading" secondItem="xBE-PE-dG3" secondAttribute="trailing" constant="46" id="THj-xw-1Iw"/>
+                            <constraint firstItem="1U7-LL-XRh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="TmJ-CF-DkW"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="UNH-wh-2uu"/>
+                            <constraint firstItem="LR2-yZ-8Ts" firstAttribute="top" secondItem="77L-aW-hy5" secondAttribute="top" id="WL5-z2-EVX"/>
+                            <constraint firstItem="LR2-yZ-8Ts" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="ZYs-1W-QeE"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="Zcc-Ct-b5M"/>
                             <constraint firstItem="Szx-tN-nhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="aLw-Rz-zul"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="top" secondItem="sn1-Os-pzN" secondAttribute="bottom" constant="8" id="bPd-Fd-bOd"/>
+                            <constraint firstItem="wKN-CW-mql" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="brq-hT-9Xq"/>
                             <constraint firstItem="3A5-BL-Xz6" firstAttribute="centerY" secondItem="Szx-tN-nhp" secondAttribute="centerY" id="cVQ-Lv-nCR"/>
+                            <constraint firstItem="LR2-yZ-8Ts" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="clt-Ti-5M9"/>
                             <constraint firstItem="xBE-PE-dG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="d0Q-oc-LYR"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="top" secondItem="QLo-Gt-g3C" secondAttribute="bottom" constant="8" id="dL0-83-Tu6"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="top" secondItem="yKe-gV-cvu" secondAttribute="bottom" constant="8" id="djA-7B-dqT"/>
                             <constraint firstItem="Szx-tN-nhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="51" id="fH2-ce-mtT"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="top" secondItem="1U7-LL-XRh" secondAttribute="bottom" constant="8" id="fPS-II-IUz"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="top" secondItem="gm3-dw-poa" secondAttribute="bottom" constant="8" id="ffi-qH-H3a"/>
+                            <constraint firstItem="CnS-B5-Nmx" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="g0w-uR-lyP"/>
+                            <constraint firstItem="1U7-LL-XRh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="g3n-e5-L19"/>
                             <constraint firstItem="3A5-BL-Xz6" firstAttribute="leading" secondItem="Szx-tN-nhp" secondAttribute="trailing" constant="67" id="gPS-Wd-Vgp"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="top" secondItem="cKz-8E-7Eh" secondAttribute="bottom" constant="8" id="gf0-dD-De5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xBE-PE-dG3" secondAttribute="bottom" constant="5" id="iGJ-Ho-Hb5"/>
+                            <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="iU8-x9-MGZ"/>
+                            <constraint firstItem="wKN-CW-mql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iaU-rR-Qcy"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="top" secondItem="68J-xy-xxH" secondAttribute="bottom" constant="8" id="jee-Nz-jkB"/>
+                            <constraint firstItem="Qdu-4M-8Oc" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="jxe-iV-1VR"/>
+                            <constraint firstItem="xAd-gj-771" firstAttribute="top" secondItem="H2P-4o-RpQ" secondAttribute="bottom" constant="8" symbolic="YES" id="kWA-vd-30M"/>
+                            <constraint firstItem="gm3-dw-poa" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="lXe-3F-MJZ"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="nIv-Rw-9o4"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="top" secondItem="LR2-yZ-8Ts" secondAttribute="bottom" constant="8" id="oyz-f8-WoI"/>
-                            <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="r0Z-rF-hBu"/>
+                            <constraint firstItem="H2P-4o-RpQ" firstAttribute="centerX" secondItem="77L-aW-hy5" secondAttribute="centerX" id="pFq-Bn-MKK"/>
+                            <constraint firstItem="H2P-4o-RpQ" firstAttribute="baseline" secondItem="yKe-gV-cvu" secondAttribute="baseline" id="qLJ-kb-P7n"/>
+                            <constraint firstItem="xAd-gj-771" firstAttribute="leading" secondItem="77L-aW-hy5" secondAttribute="leading" id="qYi-o8-XCE"/>
+                            <constraint firstItem="H2P-4o-RpQ" firstAttribute="leading" secondItem="77L-aW-hy5" secondAttribute="leading" id="rM7-MF-l5C"/>
+                            <constraint firstItem="xAd-gj-771" firstAttribute="centerX" secondItem="77L-aW-hy5" secondAttribute="centerX" id="seN-Mj-MdC"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="top" secondItem="zSa-XI-hk9" secondAttribute="bottom" constant="8" id="t55-KY-YhC"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="umw-60-E5J"/>
+                            <constraint firstItem="yKe-gV-cvu" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="vbT-Nd-EJp"/>
+                            <constraint firstItem="yKe-gV-cvu" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="weh-QX-P2Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CnS-B5-Nmx" secondAttribute="bottom" constant="71" id="xou-aQ-9ph"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="yzL-Pr-xeR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="ascButton" destination="77L-aW-hy5" id="KfS-XQ-n30"/>
+                        <outlet property="decButton" destination="H2P-4o-RpQ" id="VSf-FQ-YyD"/>
+                        <outlet property="harmButton" destination="xAd-gj-771" id="hyo-c3-nbn"/>
                         <outlet property="intervalNoteLabel" destination="Z0V-0f-RBN" id="wPh-C0-7gt"/>
+                        <outlet property="major2Button" destination="cKz-8E-7Eh" id="hko-6g-ba1"/>
+                        <outlet property="major3Button" destination="gm3-dw-poa" id="c5f-DE-by7"/>
+                        <outlet property="major6Button" destination="1U7-LL-XRh" id="nhB-6l-gaU"/>
+                        <outlet property="major7Button" destination="yKe-gV-cvu" id="glu-gD-ujT"/>
+                        <outlet property="minor2Button" destination="QLo-Gt-g3C" id="ZVB-yd-pce"/>
+                        <outlet property="minor3Button" destination="ewl-Px-Hai" id="Zs4-a6-rzb"/>
+                        <outlet property="minor6Button" destination="zSa-XI-hk9" id="hY5-aR-rUU"/>
+                        <outlet property="minor7Button" destination="LR2-yZ-8Ts" id="n9n-v8-bEn"/>
+                        <outlet property="perfect4Button" destination="Qdu-4M-8Oc" id="gjj-t4-Jxq"/>
+                        <outlet property="perfect5Button" destination="sn1-Os-pzN" id="r1H-Ke-zIa"/>
+                        <outlet property="perfect8Button" destination="CnS-B5-Nmx" id="1Pj-ai-zwx"/>
                         <outlet property="rootNoteLabel" destination="3A5-BL-Xz6" id="GHo-U9-XDS"/>
+                        <outlet property="tritoneButton" destination="68J-xy-xxH" id="TaY-1v-9ew"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
         </scene>
     </scenes>
 </document>

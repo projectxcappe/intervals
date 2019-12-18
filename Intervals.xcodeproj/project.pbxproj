@@ -12,6 +12,7 @@
 		505ABEAF23A5E47900D55377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEAD23A5E47900D55377 /* Main.storyboard */; };
 		505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB023A5E47A00D55377 /* Assets.xcassets */; };
 		505ABEB423A5E47A00D55377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */; };
+		5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099776223A9EAC400CE0B9A /* Toggle.swift */; };
 		50E25C3323A5F0DE00ACEF26 /* Ab5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */; };
 		50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */; };
 		50E25C3523A5F0DE00ACEF26 /* Db3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0823A5F0DB00ACEF26 /* Db3.aifc */; };
@@ -110,6 +111,7 @@
 		505ABEB023A5E47A00D55377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		505ABEB323A5E47A00D55377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505ABEB523A5E47A00D55377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5099776223A9EAC400CE0B9A /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
 		50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab5.aifc; sourceTree = "<group>"; };
 		50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb4.aifc; sourceTree = "<group>"; };
 		50E25C0823A5F0DB00ACEF26 /* Db3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db3.aifc; sourceTree = "<group>"; };
@@ -234,10 +236,11 @@
 				505ABEA923A5E47900D55377 /* AppDelegate.swift */,
 				505ABEAB23A5E47900D55377 /* ViewController.swift */,
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
-				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,
 				50E25C6E23A73A4000ACEF26 /* Models.swift */,
+				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,
 				50E25C6A23A5F79A00ACEF26 /* Intervals.json */,
 				505ABEAD23A5E47900D55377 /* Main.storyboard */,
+				5099776223A9EAC400CE0B9A /* Toggle.swift */,
 				505ABEB023A5E47A00D55377 /* Assets.xcassets */,
 				505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */,
 				505ABEB523A5E47A00D55377 /* Info.plist */,
@@ -511,6 +514,7 @@
 				50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */,
 				505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */,
 				50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */,
+				5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */,
 				505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */,
 				50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */,
 			);
