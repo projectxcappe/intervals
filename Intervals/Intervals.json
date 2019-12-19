@@ -1,113 +1,114 @@
 
 
 {
-"interval_asc": [
-    {
-    "root":"A2",
-    "m2": "Bb2",
-    "M2": "B2",
-    "m3": "C3",
-    "M3": "Db3",
-    "P4": "D3",
-    "TT": "Eb3",
-    "P5": "E3",
-    "m6": "F3",
-    "M6": "Gb3",
-    "m7": "G3",
-    "M7": "Ab3",
-    "P8": "A3"
-    },
-    {
-    "root":"A3",
-    "m2": "Bb3",
-    "M2": "B3",
-    "m3": "C4",
-    "M3": "Db4",
-    "P4": "D4",
-    "TT": "Eb4",
-    "P5": "E4",
-    "m6": "F4",
-    "M6": "Gb4",
-    "m7": "G4",
-    "M7": "Ab4",
-    "P8": "A4"
-    },
-    {
-    "root":"A4",
-    "m2": "Bb4",
-    "M2": "B4",
-    "m3": "C5",
-    "M3": "Db5",
-    "P4": "D5",
-    "TT": "Eb5",
-    "P5": "E5",
-    "m6": "F5",
-    "M6": "Gb5",
-    "m7": "G5",
-    "M7": "Ab5",
-    "P8": "A5"
-    },
-    {
-    "root":"A5",
-    "m2": "Bb5",
-    "M2": "B5",
-    "m3": "C6",
-    "M3": "Db6",
-    "P4": "D6",
-    "TT": "Eb6",
-    "P5": "E6",
-    "m6": "F6",
-    "M6": "Gb6",
-    "m7": "G6",
-    "M7": "Ab6",
-    "P8": "A6"
-    }
+    "interval_data": {
+        "interval_asc": [
+            {
+            "root":"A2",
+            "m2": "Bb2",
+            "M2": "B2",
+            "m3": "C3",
+            "M3": "Db3",
+            "P4": "D3",
+            "TT": "Eb3",
+            "P5": "E3",
+            "m6": "F3",
+            "M6": "Gb3",
+            "m7": "G3",
+            "M7": "Ab3",
+            "P8": "A3"
+            },
+            {
+            "root":"A3",
+            "m2": "Bb3",
+            "M2": "B3",
+            "m3": "C4",
+            "M3": "Db4",
+            "P4": "D4",
+            "TT": "Eb4",
+            "P5": "E4",
+            "m6": "F4",
+            "M6": "Gb4",
+            "m7": "G4",
+            "M7": "Ab4",
+            "P8": "A4"
+            },
+            {
+            "root":"A4",
+            "m2": "Bb4",
+            "M2": "B4",
+            "m3": "C5",
+            "M3": "Db5",
+            "P4": "D5",
+            "TT": "Eb5",
+            "P5": "E5",
+            "m6": "F5",
+            "M6": "Gb5",
+            "m7": "G5",
+            "M7": "Ab5",
+            "P8": "A5"
+            },
+            {
+            "root":"A5",
+            "m2": "Bb5",
+            "M2": "B5",
+            "m3": "C6",
+            "M3": "Db6",
+            "P4": "D6",
+            "TT": "Eb6",
+            "P5": "E6",
+            "m6": "F6",
+            "M6": "Gb6",
+            "m7": "G6",
+            "M7": "Ab6",
+            "P8": "A6"
+            }
 
-],
-"interval_dec": [
-    {
-        "root":"A5",
-        "m2": "Ab5",
-        "M2": "G5",
-        "m3": "Gb5",
-        "M3": "F5",
-        "P4": "E5",
-        "TT": "Eb5",
-        "P5": "D5",
-        "m6": "Db5",
-        "M6": "C5",
-        "m7": "B4",
-        "M7": "Bb4",
-        "P8": "A4"
+        ],
+        "interval_dec": [
+            {
+                "root":"A5",
+                "m2": "Ab5",
+                "M2": "G5",
+                "m3": "Gb5",
+                "M3": "F5",
+                "P4": "E5",
+                "TT": "Eb5",
+                "P5": "D5",
+                "m6": "Db5",
+                "M6": "C5",
+                "m7": "B4",
+                "M7": "Bb4",
+                "P8": "A4"
+            }
+        ],
+        "song": [
+            {
+            "m2_asc": "minor2_asc_song",
+            "M2_asc": "major2_asc_song",
+            "m3_asc": "minor3_asc_song",
+            "M3_asc": "major3_asc_song",
+            "P4_asc": "perfect4_asc_song",
+            "TT_asc": "tritone_asc_song",
+            "P5_asc": "perfect5_asc_song",
+            "m6_asc": "minor6_asc_song",
+            "M6_asc": "major6_asc_song",
+            "m7_asc": "minor7_asc_song",
+            "M7_asc": "major7_asc_song",
+            "P8_asc": "perfect8_asc_song",
+            "m2_dec": "minor2_dec_song",
+            "M2_dec": "major2_dec_song",
+            "m3_dec": "minor3_dec_song",
+            "M3_dec": "major3_dec_song",
+            "P4_dec": "perfect4_dec_song",
+            "TT_dec": "tritone_dec_song",
+            "P5_dec": "perfect5_dec_song",
+            "m6_dec": "minor6_dec_song",
+            "M6_dec": "major6_dec_song",
+            "m7_dec": "minor7_dec_song",
+            "M7_dec": "major7_dec_song",
+            "P8_dec": "perfect8_dec_song"
+            }
+        ]
     }
-],
-"song": [
-    {
-    "m2_asc": "minor2_asc_song",
-    "M2_asc": "major2_asc_song",
-    "m3_asc": "minor3_asc_song",
-    "M3_asc": "major3_asc_song",
-    "P4_asc": "perfect4_asc_song",
-    "TT_asc": "tritone_asc_song",
-    "P5_asc": "perfect5_asc_song",
-    "m6_asc": "minor6_asc_song",
-    "M6_asc": "major6_asc_song",
-    "m7_asc": "minor7_asc_song",
-    "M7_asc": "major7_asc_song",
-    "P8_asc": "perfect8_asc_song",
-    "m2_dec": "minor2_dec_song",
-    "M2_dec": "major2_dec_song",
-    "m3_dec": "minor3_dec_song",
-    "M3_dec": "major3_dec_song",
-    "P4_dec": "perfect4_dec_song",
-    "TT_dec": "tritone_dec_song",
-    "P5_dec": "perfect5_dec_song",
-    "m6_dec": "minor6_dec_song",
-    "M6_dec": "major6_dec_song",
-    "m7_dec": "minor7_dec_song",
-    "M7_dec": "major7_dec_song",
-    "P8_dec": "perfect8_dec_song"
-    }
-]
-
 }

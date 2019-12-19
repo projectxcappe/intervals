@@ -30,13 +30,13 @@ func loadIntervalFile() {
     }
 }
 
-func loadIntervalFile(filename fileName: String) -> [Intervals]? {
+func loadIntervalFile(filename fileName: String) -> IntervalData? {
     if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
         do {
             let data = try Data(contentsOf: url)
             let decoder = JSONDecoder()
             let jsonData = try decoder.decode(ResponseData.self, from: data)
-            return jsonData.interval_dec
+            return jsonData.interval_data
         } catch {
             print("error:\(error)")
         }
