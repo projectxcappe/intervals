@@ -251,7 +251,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZl-v9-DG1">
-                                <rect key="frame" x="20" y="54" width="57" height="30"/>
+                                <rect key="frame" x="20" y="54" width="56" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <segue destination="1s8-Cl-q0z" kind="presentation" identifier="SettingsSegue" modalPresentationStyle="currentContext" modalTransitionStyle="crossDissolve" id="3Ak-hJ-z8O"/>
@@ -278,7 +279,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ascending " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-4K-Kgj">
                                 <rect key="frame" x="20" y="811.5" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <color key="textColor" red="0.9140734076" green="0.91713750360000001" blue="0.94511008259999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -766,6 +767,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVg-JL-1ge">
                                 <rect key="frame" x="20" y="54" width="34" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="15"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="close:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="9Tc-io-wIJ"/>
