@@ -85,8 +85,6 @@ class ViewController: UIViewController, SettingsDelegate {
         //Select ascending, decending, or harmonic depending on settings
         let methods = IntervalsSelected.shared.methods
         let method = methods?.randomElement()
-        
-        //Grab random interval from the method category
         var selectedMethod:[Intervals]
 
         if method == "Ascending" {
@@ -97,20 +95,20 @@ class ViewController: UIViewController, SettingsDelegate {
             selectedMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
         }
 
+        //Grab random interval from the method category
         interval = selectedMethod.randomElement()
-        root = interval?.root //randomly pick a root from the list
+        root = interval?.root //randomly pick a root note from the list
         
-        //Stick all the intervals in a dict and then select one of them at random
+        //Stick all the intervals in a dict
         let currentStructure:[String:String] = ["root":interval.root, "m2":interval.m2, "M2":interval.M2, "m3":interval.m3, "M3":interval.M3, "P4":interval.P4, "TT":interval.TT, "P5":interval.P5, "m6":interval.m6, "M6":interval.M6, "m7":interval.m7, "M7":interval.M7, "P8":interval.P8]
-        
-        //Pick an interval from the settings
-        
-        let randomIntervalSelection = currentStructure.randomElement()
-        let intervalNoteFromRoot = (randomIntervalSelection?.value)!
-        
 
+//        let intervalNoteFromRoot = (randomIntervalSelection?.value)!
         
-        playIntervalSound(root: root!, interval: intervalNoteFromRoot)
+        //Grab intervals from settings and get the real note value
+        let randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
+        let intervalNoteFromRoot = currentStructure[randomIntervalSelection!]
+        
+        playIntervalSound(root: root!, interval: intervalNoteFromRoot!)
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
