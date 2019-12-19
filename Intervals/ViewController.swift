@@ -17,6 +17,9 @@ class ViewController: UIViewController, SettingsDelegate {
         selectedMethods = updatedMethods
         selectedIntervals = updatedIntervals
         
+        IntervalsSelected.shared.intervals! = selectedIntervals
+        IntervalsSelected.shared.methods! = selectedMethods
+        
         update()
     }
     
@@ -42,6 +45,7 @@ class ViewController: UIViewController, SettingsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Set Up
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
 
@@ -57,7 +61,7 @@ class ViewController: UIViewController, SettingsDelegate {
     
     //Updates the intervals and methods we are using, enabling and disabling buttons
     func update() {
-        //Set Up
+        
         for toggle in toggleButtonCollection {
             if selectedIntervals.contains(toggle.titleLabel!.text!) {
                 toggle.isEnabled = true
@@ -85,18 +89,19 @@ class ViewController: UIViewController, SettingsDelegate {
         //Select ascending, decending, or harmonic depending on settings
         let methods = IntervalsSelected.shared.methods
         let method = methods?.randomElement()
-        var selectedMethod:[Intervals]
+        var intervalDataFromMethod:[Intervals]
 
+        //Get all interval data from appropriate method (Asc, Dec, Harm etc)
         if method == "Ascending" {
-            selectedMethod = intervalData.interval_asc
+            intervalDataFromMethod = intervalData.interval_asc
         } else if method == "Decending" {
-            selectedMethod = intervalData.interval_dec
+            intervalDataFromMethod = intervalData.interval_dec
         } else { //Harmonic
-            selectedMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
+            intervalDataFromMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
         }
 
         //Grab random interval from the method category
-        interval = selectedMethod.randomElement()
+        interval = intervalDataFromMethod.randomElement()
         root = interval?.root //randomly pick a root note from the list
         
         //Stick all the intervals in a dict
