@@ -12,11 +12,31 @@ import AVFoundation
 
 class ViewController: UIViewController, SettingsDelegate {
     
-    func updateSettings(settings: [String]) {
-        selectedIntervals = settings
-        print(selectedIntervals)
+    func updateSettings(updatedIntervals: [String], updatedMethods: [String]) {
+ 
+        selectedMethods = updatedMethods
+        selectedIntervals = updatedIntervals
+        
+        //Set Up
+        for toggle in toggleButtonCollection {
+            if selectedIntervals.contains(toggle.titleLabel!.text!) {
+                toggle.isEnabled = true
+            } else {
+                toggle.isEnabled = false
+            }
+        }
+        
+        var methodsString = ""
+        for i in selectedMethods {
+            methodsString = methodsString+" "+i
+        }
+        selectedMethodsLabel.text = methodsString
+        print(selectedIntervals, selectedMethods)
     }
-
+    
+    @IBOutlet weak var selectedMethodsLabel: UILabel!
+    @IBOutlet var toggleButtonCollection:[Toggle]!
+    
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
     
@@ -24,14 +44,18 @@ class ViewController: UIViewController, SettingsDelegate {
     var interval:Intervals!
     var root:String!
     var selectedIntervals:[String]!
+    var selectedMethods:[String]!
     var settingsDelegate:SettingsDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print(IntervalsSelected.shared.intervals!)
+        let intervals = IntervalsSelected.shared.intervals!
+        let methods = IntervalsSelected.shared.methods!
         
-        selectedIntervals = []
+        //Set up initial intervals
+        settingsDelegate?.updateSettings(updatedIntervals: intervals, updatedMethods: methods)
+        
         intervalData = loadIntervalFile(filename:"Intervals")
         interval = intervalData.randomElement()
         root = interval?.root //randomly pick a root from the list

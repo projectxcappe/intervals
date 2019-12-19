@@ -276,6 +276,12 @@
                                     <action selector="perfect8Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tmn-58-GdB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ascending " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9w-4K-Kgj">
+                                <rect key="frame" x="20" y="811.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.9140734076" green="0.91713750360000001" blue="0.94511008259999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -289,8 +295,10 @@
                             <constraint firstItem="gm3-dw-poa" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="8xs-uN-lvJ"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="9qD-fI-uau"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="BIm-Tp-5lO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F9w-4K-Kgj" secondAttribute="bottom" constant="30" id="BWS-Eu-Bfn"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="Bok-hR-g2R"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="DAl-8S-Wcs"/>
+                            <constraint firstItem="F9w-4K-Kgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DyH-aU-1QT"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="FyL-Am-8fI"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="Glm-JZ-V1m"/>
                             <constraint firstItem="lZl-v9-DG1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="HBk-bd-W5k"/>
@@ -313,6 +321,7 @@
                             <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="VL0-wt-IiX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="Ww4-Xn-VMw"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="ae2-fI-2ku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9w-4K-Kgj" secondAttribute="trailing" constant="20" id="bAM-tO-dsN"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="bsP-Vu-WSp"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="cTE-Hr-Go8"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="dgT-jI-etT"/>
@@ -335,6 +344,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="selectedMethodsLabel" destination="F9w-4K-Kgj" id="soh-f3-q1m"/>
+                        <outletCollection property="toggleButtonCollection" destination="QLo-Gt-g3C" collectionClass="NSMutableArray" id="Y5J-Th-Jvm"/>
+                        <outletCollection property="toggleButtonCollection" destination="cKz-8E-7Eh" collectionClass="NSMutableArray" id="3iU-os-8Pe"/>
+                        <outletCollection property="toggleButtonCollection" destination="ewl-Px-Hai" collectionClass="NSMutableArray" id="Srd-ob-cpk"/>
+                        <outletCollection property="toggleButtonCollection" destination="gm3-dw-poa" collectionClass="NSMutableArray" id="zno-oh-v0r"/>
+                        <outletCollection property="toggleButtonCollection" destination="Qdu-4M-8Oc" collectionClass="NSMutableArray" id="gpu-8w-52G"/>
+                        <outletCollection property="toggleButtonCollection" destination="68J-xy-xxH" collectionClass="NSMutableArray" id="9sU-bx-ntQ"/>
+                        <outletCollection property="toggleButtonCollection" destination="sn1-Os-pzN" collectionClass="NSMutableArray" id="hcC-Ed-Wf6"/>
+                        <outletCollection property="toggleButtonCollection" destination="zSa-XI-hk9" collectionClass="NSMutableArray" id="TdY-1n-YpZ"/>
+                        <outletCollection property="toggleButtonCollection" destination="1U7-LL-XRh" collectionClass="NSMutableArray" id="RdR-Ch-UIu"/>
+                        <outletCollection property="toggleButtonCollection" destination="LR2-yZ-8Ts" collectionClass="NSMutableArray" id="lNt-WD-joa"/>
+                        <outletCollection property="toggleButtonCollection" destination="yKe-gV-cvu" collectionClass="NSMutableArray" id="y2I-ry-abt"/>
+                        <outletCollection property="toggleButtonCollection" destination="CnS-B5-Nmx" collectionClass="NSMutableArray" id="H8e-LD-cbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

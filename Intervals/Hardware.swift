@@ -11,7 +11,8 @@ import Foundation
 import AVFoundation
 
 public class IntervalsSelected {
-    public var intervals: [String]? = ["m2", "M2", "Ascending"]
+    public var intervals: [String]? = ["m2", "M2"]
+    public var methods: [String]? = ["Ascending"]
     public static let shared = IntervalsSelected()
 }
 

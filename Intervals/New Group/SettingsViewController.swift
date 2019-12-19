@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SettingsDelegate: class {
-    func updateSettings(settings:[String])
+    func updateSettings(updatedIntervals: [String], updatedMethods: [String])
 }
 
 class SettingsViewController: UIViewController {
@@ -33,6 +33,7 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet var toggleButtonCollection: [Toggle]!
     
+    var selectedMethods:[String]!
     var selectedIntervals:[String]!
     weak var SettingsDelegate: SettingsDelegate!
     
@@ -41,7 +42,9 @@ class SettingsViewController: UIViewController {
         
         //Grab initial intervals
         selectedIntervals = IntervalsSelected.shared.intervals
-
+        selectedMethods  = IntervalsSelected.shared.methods
+        
+        //Grab Intervals
         for i in selectedIntervals {
             for j in toggleButtonCollection {
                 if i == j.titleLabel?.text {
@@ -49,12 +52,22 @@ class SettingsViewController: UIViewController {
                 }
             }
         }
+        
+        //Grab Methods
+        for i in selectedMethods {
+            for j in toggleButtonCollection {
+                if i == j.titleLabel?.text {
+                    j.isSelected = true
+                }
+            }
+        }
+        
 
     }
     
     @IBAction func close(_ sender: Any) {
         print(selectedIntervals)
-        self.SettingsDelegate.updateSettings(settings: selectedIntervals)
+        self.SettingsDelegate.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
         dismiss(animated: true, completion: nil)
     }
     
@@ -198,10 +211,10 @@ class SettingsViewController: UIViewController {
     @IBAction func ascPressed(_ sender: Any) {
         ascButton.toggleTapped()
         
-        if selectedIntervals.contains("Ascending") {
-            selectedIntervals.remove(object: "Ascending")
+        if selectedMethods.contains("Ascending") {
+            selectedMethods.remove(object: "Ascending")
         } else {
-            selectedIntervals.append("Ascending")
+            selectedMethods.append("Ascending")
         }
     }
     
@@ -209,20 +222,20 @@ class SettingsViewController: UIViewController {
     @IBAction func decPressed(_ sender: Any) {
         decButton.toggleTapped()
         
-        if selectedIntervals.contains("Decending") {
-            selectedIntervals.remove(object: "Decending")
+        if selectedMethods.contains("Decending") {
+            selectedMethods.remove(object: "Decending")
         } else {
-            selectedIntervals.append("Decending")
+            selectedMethods.append("Decending")
         }
     }
     
     @IBAction func harmPressed(_ sender: Any) {
         harmButton.toggleTapped()
         
-        if selectedIntervals.contains("Harmonic") {
-            selectedIntervals.remove(object: "Harmonic")
+        if selectedMethods.contains("Harmonic") {
+            selectedMethods.remove(object: "Harmonic")
         } else {
-            selectedIntervals.append("Harmonic")
+            selectedMethods.append("Harmonic")
         }
     }
     
