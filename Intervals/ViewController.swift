@@ -17,21 +17,7 @@ class ViewController: UIViewController, SettingsDelegate {
         selectedMethods = updatedMethods
         selectedIntervals = updatedIntervals
         
-        //Set Up
-        for toggle in toggleButtonCollection {
-            if selectedIntervals.contains(toggle.titleLabel!.text!) {
-                toggle.isEnabled = true
-            } else {
-                toggle.isEnabled = false
-            }
-        }
-        
-        var methodsString = ""
-        for i in selectedMethods {
-            methodsString = methodsString+" "+i
-        }
-        selectedMethodsLabel.text = methodsString
-        print(selectedIntervals, selectedMethods)
+        update()
     }
     
     @IBOutlet weak var selectedMethodsLabel: UILabel!
@@ -49,18 +35,37 @@ class ViewController: UIViewController, SettingsDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(IntervalsSelected.shared.intervals!)
-        let intervals = IntervalsSelected.shared.intervals!
-        let methods = IntervalsSelected.shared.methods!
         
+        selectedIntervals = IntervalsSelected.shared.intervals!
+        selectedMethods = IntervalsSelected.shared.methods!
+        print(IntervalsSelected.shared.intervals!, IntervalsSelected.shared.methods!)
         //Set up initial intervals
-        settingsDelegate?.updateSettings(updatedIntervals: intervals, updatedMethods: methods)
+        settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
+        update()
         
         intervalData = loadIntervalFile(filename:"Intervals")
         interval = intervalData.randomElement()
         root = interval?.root //randomly pick a root from the list
         print(root!)
 
+    }
+    
+    func update() {
+        //Set Up
+        for toggle in toggleButtonCollection {
+            if selectedIntervals.contains(toggle.titleLabel!.text!) {
+                toggle.isEnabled = true
+            } else {
+                toggle.isEnabled = false
+            }
+        }
+        
+        var methodsString = ""
+        for i in selectedMethods {
+            methodsString = methodsString+" "+i
+        }
+        selectedMethodsLabel.text = methodsString
+        print(selectedIntervals, selectedMethods)
     }
 
     @IBAction func minor2Pressed(_ sender: Any) {
@@ -105,6 +110,8 @@ class ViewController: UIViewController, SettingsDelegate {
         if segue.identifier == "SettingsSegue" {
             if let vc = segue.destination as? SettingsViewController {
                 vc.SettingsDelegate = self
+                IntervalsSelected.shared.intervals = selectedIntervals
+                IntervalsSelected.shared.methods = selectedMethods
             }
         }
     }
