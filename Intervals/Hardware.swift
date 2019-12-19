@@ -10,6 +10,11 @@
 import Foundation
 import AVFoundation
 
+public class IntervalsSelected {
+    public var intervals: [String]? = ["m2", "M2", "Ascending"]
+    public static let shared = IntervalsSelected()
+}
+
 //Loading JSON Interval File
 func loadIntervalFile() {
     let filename = "Intervals"
