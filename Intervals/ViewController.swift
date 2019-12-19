@@ -29,6 +29,20 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var beginButton: Toggle!
     @IBOutlet weak var correctLabel: UILabel!
     
+    @IBOutlet weak var minor2Button: Toggle!
+    @IBOutlet weak var major2Button: Toggle!
+    @IBOutlet weak var minor3Button: Toggle!
+    @IBOutlet weak var major3Button: Toggle!
+    @IBOutlet weak var perfect4Button: Toggle!
+    @IBOutlet weak var tritoneButton: Toggle!
+    @IBOutlet weak var perfect5Button: Toggle!
+    @IBOutlet weak var minor6Button: Toggle!
+    @IBOutlet weak var major6Button: Toggle!
+    @IBOutlet weak var minor7Button: Toggle!
+    @IBOutlet weak var major7Button: Toggle!
+    @IBOutlet weak var perfect8Button: Toggle!
+    
+    
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
     
@@ -141,51 +155,51 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
-        checkAnswer(guess: "m2", answer: randomIntervalSelection)
+        checkAnswer(guess: "m2", answer: randomIntervalSelection, buttonPressed:minor2Button)
     }
     
     @IBAction func major2Pressed(_ sender: Any) {
-        checkAnswer(guess: "M2", answer: randomIntervalSelection)
+        checkAnswer(guess: "M2", answer: randomIntervalSelection, buttonPressed: major2Button)
     }
     
     @IBAction func minor3Pressed(_ sender: Any) {
-        checkAnswer(guess: "m3", answer: randomIntervalSelection)
+        checkAnswer(guess: "m3", answer: randomIntervalSelection, buttonPressed: minor3Button)
     }
     
     @IBAction func major3Pressed(_ sender: Any) {
-        checkAnswer(guess: "M3", answer: randomIntervalSelection)
+        checkAnswer(guess: "M3", answer: randomIntervalSelection, buttonPressed: major3Button)
     }
     
     @IBAction func perfect4Pressed(_ sender: Any) {
-        checkAnswer(guess: "P4", answer: randomIntervalSelection)
+        checkAnswer(guess: "P4", answer: randomIntervalSelection, buttonPressed: perfect4Button)
     }
     
     @IBAction func tritonePressed(_ sender: Any) {
-        checkAnswer(guess: "TT", answer: randomIntervalSelection)
+        checkAnswer(guess: "TT", answer: randomIntervalSelection, buttonPressed: tritoneButton)
     }
     
     @IBAction func perfect5Pressed(_ sender: Any) {
-        checkAnswer(guess: "P5", answer: randomIntervalSelection)
+        checkAnswer(guess: "P5", answer: randomIntervalSelection, buttonPressed: perfect5Button)
     }
     
     @IBAction func minor6Pressed(_ sender: Any) {
-        checkAnswer(guess: "m6", answer: randomIntervalSelection)
+        checkAnswer(guess: "m6", answer: randomIntervalSelection, buttonPressed: minor6Button)
     }
     
     @IBAction func major6Pressed(_ sender: Any) {
-        checkAnswer(guess: "M6", answer: randomIntervalSelection)
+        checkAnswer(guess: "M6", answer: randomIntervalSelection, buttonPressed: major6Button)
     }
     
     @IBAction func minor7Pressed(_ sender: Any) {
-        checkAnswer(guess: "m7", answer: randomIntervalSelection)
+        checkAnswer(guess: "m7", answer: randomIntervalSelection, buttonPressed: minor7Button)
     }
     
     @IBAction func major7Pressed(_ sender: Any) {
-        checkAnswer(guess: "M7", answer: randomIntervalSelection)
+        checkAnswer(guess: "M7", answer: randomIntervalSelection, buttonPressed: major7Button)
     }
     
     @IBAction func perfect8Pressed(_ sender: Any) {
-        checkAnswer(guess: "P8", answer: randomIntervalSelection)
+        checkAnswer(guess: "P8", answer: randomIntervalSelection, buttonPressed: perfect8Button)
     }
 
     

@@ -73,26 +73,37 @@ extension Array where Element: Equatable {
 }
 
 extension ViewController {
-    func checkAnswer(guess:String, answer:String) {
+    func checkAnswer(guess:String, answer:String, buttonPressed:Toggle) {
+
         if guess == answer {
             //Reset currentIntervalBeingPlayed, display Correct! label
             //Disable play button temporarily
             replayCurrentInterval = false
             beginButton.isEnabled = false
+            self.correctLabel.text = "Correct!"
             self.correctLabel.alpha = 1.0
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                self.correctLabel.alpha = 0.0
-            }
           
             //play new interval, re-enable play button
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.beginButton.isEnabled = true
                 self.playInterval()
+                self.update()
             }
         } else {
+            //Disable guess
+            buttonPressed.isEnabled = false
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.correctLabel.text = "Incorrect."
+                self.correctLabel.alpha = 1.0
+            }
+            
             replayCurrentInterval = true
             //play song
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.correctLabel.alpha = 0.0
         }
     }
 }

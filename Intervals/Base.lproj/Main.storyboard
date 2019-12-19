@@ -396,8 +396,20 @@
                     <connections>
                         <outlet property="beginButton" destination="eKV-Qg-6Ew" id="1al-0l-4pZ"/>
                         <outlet property="correctLabel" destination="5Yq-GS-Sc1" id="akG-Xx-UER"/>
+                        <outlet property="major2Button" destination="cKz-8E-7Eh" id="w9C-Jx-fy4"/>
+                        <outlet property="major3Button" destination="gm3-dw-poa" id="nLv-Ve-DMe"/>
+                        <outlet property="major6Button" destination="1U7-LL-XRh" id="nc8-TO-FTE"/>
+                        <outlet property="major7Button" destination="yKe-gV-cvu" id="K0V-2w-hD9"/>
+                        <outlet property="minor2Button" destination="QLo-Gt-g3C" id="Cun-ql-Vgw"/>
+                        <outlet property="minor3Button" destination="ewl-Px-Hai" id="k3T-1m-J4E"/>
+                        <outlet property="minor6Button" destination="zSa-XI-hk9" id="Wpj-ui-cKz"/>
+                        <outlet property="minor7Button" destination="LR2-yZ-8Ts" id="GTZ-OC-g9J"/>
+                        <outlet property="perfect4Button" destination="Qdu-4M-8Oc" id="lgg-Ls-Hjn"/>
+                        <outlet property="perfect5Button" destination="sn1-Os-pzN" id="PGC-CQ-POa"/>
+                        <outlet property="perfect8Button" destination="CnS-B5-Nmx" id="lAg-kk-90Z"/>
                         <outlet property="progressView" destination="zN9-Op-Wqd" id="Iow-vi-C55"/>
                         <outlet property="selectedMethodsLabel" destination="F9w-4K-Kgj" id="soh-f3-q1m"/>
+                        <outlet property="tritoneButton" destination="68J-xy-xxH" id="QOm-jz-Ibq"/>
                         <outletCollection property="toggleButtonCollection" destination="QLo-Gt-g3C" collectionClass="NSMutableArray" id="Y5J-Th-Jvm"/>
                         <outletCollection property="toggleButtonCollection" destination="cKz-8E-7Eh" collectionClass="NSMutableArray" id="3iU-os-8Pe"/>
                         <outletCollection property="toggleButtonCollection" destination="ewl-Px-Hai" collectionClass="NSMutableArray" id="Srd-ob-cpk"/>
