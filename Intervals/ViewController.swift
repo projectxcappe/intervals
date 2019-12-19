@@ -70,6 +70,12 @@ class ViewController: UIViewController, SettingsDelegate {
     //Updates the intervals and methods we are using, enabling and disabling buttons
     func update() {
         
+        //Temp disable play button, honestly just for effect, shows we did something
+        beginButton.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.beginButton.isEnabled = true
+        }
+        
         for toggle in toggleButtonCollection {
             if selectedIntervals.contains(toggle.titleLabel!.text!) {
                 toggle.isEnabled = true
