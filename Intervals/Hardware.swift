@@ -72,3 +72,16 @@ extension Array where Element: Equatable {
     
 }
 
+extension ViewController {
+    func checkAnswer(guess:String, answer:String) {
+        if guess == answer {
+            //play new interval
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.playInterval()
+            }
+        } else {
+            //play song
+        }
+    }
+}
+

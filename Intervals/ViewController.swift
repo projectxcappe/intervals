@@ -28,7 +28,6 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var beginButton: Toggle!
     
-    
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
     
@@ -38,6 +37,8 @@ class ViewController: UIViewController, SettingsDelegate {
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
     var settingsDelegate:SettingsDelegate?
+    
+    var randomIntervalSelection:String!
 
     let MAX_ANSWER:Float = 10.0
     var CURR_ANSWER:Float = 0.0
@@ -80,12 +81,8 @@ class ViewController: UIViewController, SettingsDelegate {
     func updateProgress() {
         progressView.setProgress(CURR_ANSWER, animated: true)
     }
-    
-    @IBAction func beginPressed(_ sender: Any) {
-        start()
-    }
-    
-    func start() {
+
+    func playInterval() {
         //Select ascending, decending, or harmonic depending on settings
         let methods = IntervalsSelected.shared.methods
         let method = methods?.randomElement()
@@ -100,17 +97,15 @@ class ViewController: UIViewController, SettingsDelegate {
             intervalDataFromMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
         }
 
-        //Grab random interval from the method category
+        //Grab random interval data structure from the method category
         interval = intervalDataFromMethod.randomElement()
         root = interval?.root //randomly pick a root note from the list
         
         //Stick all the intervals in a dict
         let currentStructure:[String:String] = ["root":interval.root, "m2":interval.m2, "M2":interval.M2, "m3":interval.m3, "M3":interval.M3, "P4":interval.P4, "TT":interval.TT, "P5":interval.P5, "m6":interval.m6, "M6":interval.M6, "m7":interval.m7, "M7":interval.M7, "P8":interval.P8]
 
-//        let intervalNoteFromRoot = (randomIntervalSelection?.value)!
-        
         //Grab intervals from settings and get the real note value
-        let randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
+        randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
         let intervalNoteFromRoot = currentStructure[randomIntervalSelection!]
         
         if method != "Harmonic" {
@@ -120,40 +115,56 @@ class ViewController: UIViewController, SettingsDelegate {
         }
     }
     
+    @IBAction func beginPressed(_ sender: Any) {
+        playInterval()
+    }
+    
     @IBAction func minor2Pressed(_ sender: Any) {
+        checkAnswer(guess: "m2", answer: randomIntervalSelection)
     }
     
     @IBAction func major2Pressed(_ sender: Any) {
+        checkAnswer(guess: "M2", answer: randomIntervalSelection)
     }
     
     @IBAction func minor3Pressed(_ sender: Any) {
+        checkAnswer(guess: "m3", answer: randomIntervalSelection)
     }
     
     @IBAction func major3Pressed(_ sender: Any) {
+        checkAnswer(guess: "M3", answer: randomIntervalSelection)
     }
     
     @IBAction func perfect4Pressed(_ sender: Any) {
+        checkAnswer(guess: "P4", answer: randomIntervalSelection)
     }
     
     @IBAction func tritonePressed(_ sender: Any) {
+        checkAnswer(guess: "TT", answer: randomIntervalSelection)
     }
     
     @IBAction func perfect5Pressed(_ sender: Any) {
+        checkAnswer(guess: "P5", answer: randomIntervalSelection)
     }
     
     @IBAction func minor6Pressed(_ sender: Any) {
+        checkAnswer(guess: "m6", answer: randomIntervalSelection)
     }
     
     @IBAction func major6Pressed(_ sender: Any) {
+        checkAnswer(guess: "M6", answer: randomIntervalSelection)
     }
     
     @IBAction func minor7Pressed(_ sender: Any) {
+        checkAnswer(guess: "m7", answer: randomIntervalSelection)
     }
     
     @IBAction func major7Pressed(_ sender: Any) {
+        checkAnswer(guess: "M7", answer: randomIntervalSelection)
     }
     
     @IBAction func perfect8Pressed(_ sender: Any) {
+        checkAnswer(guess: "P8", answer: randomIntervalSelection)
     }
 
     
