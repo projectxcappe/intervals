@@ -27,6 +27,7 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet var toggleButtonCollection:[Toggle]!
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var beginButton: Toggle!
+    @IBOutlet weak var correctLabel: UILabel!
     
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
@@ -54,7 +55,8 @@ class ViewController: UIViewController, SettingsDelegate {
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
         replayCurrentInterval = false
-
+        correctLabel.alpha = 0.0
+        
         //Set up initial intervals
         settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
         update()
@@ -88,7 +90,7 @@ class ViewController: UIViewController, SettingsDelegate {
     }
 
     func playInterval() {
-
+        
         //If current interval needs to be played, play it, otherwise select a new interval
         if !replayCurrentInterval {
             //Select ascending, decending, or harmonic depending on settings
@@ -128,6 +130,7 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
     @IBAction func beginPressed(_ sender: Any) {
+        beginButton.setTitle("Replay Interval", for: .normal)
         playInterval()
     }
     

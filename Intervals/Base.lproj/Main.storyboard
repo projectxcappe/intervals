@@ -296,10 +296,7 @@
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-Qg-6Ew" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
-                                <rect key="frame" x="75.5" y="159" width="150" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Cov-kM-fry"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="159" width="261" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play Interval"/>
                                 <userDefinedRuntimeAttributes>
@@ -317,6 +314,12 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nc1-KN-Rrx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
+                                <rect key="frame" x="111.5" y="209" width="78.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
+                                <color key="textColor" red="0.93087491190000005" green="0.93087491190000005" blue="0.93087491190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -345,6 +348,7 @@
                             <constraint firstItem="68J-xy-xxH" firstAttribute="top" secondItem="Qdu-4M-8Oc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ibz-Tz-6DN"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="JzK-cG-ywJ"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="KLF-6R-LOQ"/>
+                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="centerX" secondItem="eKV-Qg-6Ew" secondAttribute="centerX" id="NL9-3q-X5h"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="OwT-Ng-5Au"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="PeY-SV-85a"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="top" secondItem="cKz-8E-7Eh" secondAttribute="bottom" constant="8" symbolic="YES" id="Pik-Qg-hS2"/>
@@ -367,8 +371,10 @@
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="top" secondItem="68J-xy-xxH" secondAttribute="bottom" constant="8" symbolic="YES" id="edn-9C-imD"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="ff1-0c-SNX"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="gqR-qz-GKh"/>
+                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="leading" secondItem="zN9-Op-Wqd" secondAttribute="leading" id="hE0-zk-RhF"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="hv2-i0-ozn"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="iuW-tA-3Sl"/>
+                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="top" secondItem="eKV-Qg-6Ew" secondAttribute="bottom" constant="8" id="iy9-ka-MUp"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="zN9-Op-Wqd" secondAttribute="trailing" constant="8" id="jVp-8x-7jY"/>
                             <constraint firstItem="eKV-Qg-6Ew" firstAttribute="centerX" secondItem="zN9-Op-Wqd" secondAttribute="centerX" id="jwU-ct-ohG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="k9Y-Gc-W5e"/>
@@ -381,6 +387,7 @@
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="top" secondItem="sn1-Os-pzN" secondAttribute="bottom" constant="8" symbolic="YES" id="uvf-al-NvU"/>
                             <constraint firstItem="lZl-v9-DG1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vYJ-MX-Tdl"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="top" secondItem="ewl-Px-Hai" secondAttribute="bottom" constant="8" symbolic="YES" id="wCA-t2-S34"/>
+                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="trailing" secondItem="zN9-Op-Wqd" secondAttribute="trailing" id="wiE-HD-n5W"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="xPU-u0-z4v"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="zMw-1Q-82b"/>
                         </constraints>
@@ -388,6 +395,7 @@
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="eKV-Qg-6Ew" id="1al-0l-4pZ"/>
+                        <outlet property="correctLabel" destination="5Yq-GS-Sc1" id="akG-Xx-UER"/>
                         <outlet property="progressView" destination="zN9-Op-Wqd" id="Iow-vi-C55"/>
                         <outlet property="selectedMethodsLabel" destination="F9w-4K-Kgj" id="soh-f3-q1m"/>
                         <outletCollection property="toggleButtonCollection" destination="QLo-Gt-g3C" collectionClass="NSMutableArray" id="Y5J-Th-Jvm"/>
