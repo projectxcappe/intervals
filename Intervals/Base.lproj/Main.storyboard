@@ -351,7 +351,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ww-AG-6ua">
                                 <rect key="frame" x="20" y="271" width="374" height="354"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-Zr-O8c" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-Zr-O8c" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="190" y="234" width="130" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Decending"/>
@@ -370,7 +370,7 @@
                                             <action selector="decPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="JNX-Ev-hQN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wys-Ou-eM5" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wys-Ou-eM5" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="275" y="50" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="M3"/>
@@ -389,10 +389,10 @@
                                             <action selector="major3Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="5F3-1b-23F"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-kG-CVC" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-kG-CVC" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="193" y="50" width="75" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="YEk-t9-8HK"/>
+                                            <constraint firstAttribute="width" constant="75" id="ylC-i5-nCp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="m3"/>
@@ -411,10 +411,10 @@
                                             <action selector="minor3Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="G1Z-70-tn9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-qw-Hkl" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gva-qw-Hkl" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="110" y="50" width="75" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="pPf-tM-U4y"/>
+                                            <constraint firstAttribute="width" constant="75" id="dYZ-jL-fCa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="M2"/>
@@ -433,7 +433,7 @@
                                             <action selector="major2Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="ZJo-H8-s5J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-o6-H9M" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-o6-H9M" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="24" y="168" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="M6"/>
@@ -452,10 +452,10 @@
                                             <action selector="major6Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="ViE-Gi-WJO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qma-4Z-HMe" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qma-4Z-HMe" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="52" y="234" width="130" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="Fv7-57-VTW"/>
+                                            <constraint firstAttribute="width" constant="130" id="J56-5q-rgw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Ascending"/>
@@ -474,7 +474,7 @@
                                             <action selector="ascPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="oMd-P5-WC5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hw-2I-636" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hw-2I-636" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="275" y="109" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="m6"/>
@@ -493,7 +493,7 @@
                                             <action selector="minor6Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="Srm-P0-It5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax9-Ny-NF9" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax9-Ny-NF9" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="193" y="109" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="P5"/>
@@ -512,7 +512,7 @@
                                             <action selector="perfect5Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="YoT-AK-kVo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-lK-wqL" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-lK-wqL" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="110" y="109" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="TT"/>
@@ -531,7 +531,7 @@
                                             <action selector="tritonePressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="rJd-dg-4Su"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-1m-hQv" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-1m-hQv" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="275" y="168" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="P8"/>
@@ -550,7 +550,7 @@
                                             <action selector="perfect8Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="J6h-cf-7KG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-is-SLv" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-is-SLv" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="193" y="168" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="M7"/>
@@ -569,7 +569,7 @@
                                             <action selector="major7Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="9aa-Ez-69l"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-jY-qwV" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-jY-qwV" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="24" y="109" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="P4"/>
@@ -588,10 +588,10 @@
                                             <action selector="perfect4Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="Hnj-1u-acm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDZ-Z0-9Cq" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDZ-Z0-9Cq" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="122" y="284" width="130" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="vny-zw-Pfw"/>
+                                            <constraint firstAttribute="width" constant="130" id="l7t-Fl-KVo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Harmonic"/>
@@ -606,8 +606,11 @@
                                                 <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="harmPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="Afk-8h-BTO"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-1F-D7m" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyF-1F-D7m" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="110" y="168" width="75" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="m7"/>
@@ -626,10 +629,10 @@
                                             <action selector="minor7Pressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="hnX-YK-6az"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-dr-m1p" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-dr-m1p" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="24" y="50" width="75" height="42"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="ZO7-Wt-wiQ"/>
+                                            <constraint firstAttribute="width" constant="75" id="Eph-hh-UkD"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="m2"/>
@@ -651,48 +654,47 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YCw-is-SLv" firstAttribute="baseline" secondItem="pGU-1m-hQv" secondAttribute="baseline" id="2f2-Dg-3qO"/>
-                                    <constraint firstItem="pGU-1m-hQv" firstAttribute="top" secondItem="4hw-2I-636" secondAttribute="bottom" constant="8" symbolic="YES" id="4UJ-zA-eSb"/>
-                                    <constraint firstAttribute="trailing" secondItem="TcA-Zr-O8c" secondAttribute="trailing" constant="54" id="4yP-UD-j70"/>
-                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="leading" secondItem="ax9-Ny-NF9" secondAttribute="leading" id="5tn-7b-p6U"/>
-                                    <constraint firstItem="qd8-lK-wqL" firstAttribute="leading" secondItem="KyF-1F-D7m" secondAttribute="leading" id="7rx-Kp-K88"/>
-                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="top" secondItem="iUn-dr-m1p" secondAttribute="bottom" constant="17" id="DCX-sZ-Xz4"/>
-                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="leading" secondItem="qd8-lK-wqL" secondAttribute="trailing" constant="8" symbolic="YES" id="ErD-C3-5Tm"/>
-                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="leading" secondItem="Gva-qw-Hkl" secondAttribute="trailing" constant="8" symbolic="YES" id="F3F-NN-ZZB"/>
-                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="leading" secondItem="qlZ-jY-qwV" secondAttribute="leading" id="Fkh-bR-Zif"/>
-                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="leading" secondItem="qd8-lK-wqL" secondAttribute="leading" id="GIB-EN-F0m"/>
-                                    <constraint firstItem="qd8-lK-wqL" firstAttribute="baseline" secondItem="ax9-Ny-NF9" secondAttribute="baseline" id="I19-Aw-TfE"/>
-                                    <constraint firstItem="TcA-Zr-O8c" firstAttribute="leading" secondItem="qma-4Z-HMe" secondAttribute="trailing" constant="8" symbolic="YES" id="Ioq-XE-2GX"/>
-                                    <constraint firstItem="Ff9-o6-H9M" firstAttribute="top" secondItem="qlZ-jY-qwV" secondAttribute="bottom" constant="17" id="J0j-EN-e3o"/>
-                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="leading" secondItem="iUn-dr-m1p" secondAttribute="trailing" constant="11" id="JH5-Xe-4Um"/>
-                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="baseline" secondItem="qd8-lK-wqL" secondAttribute="baseline" id="JXo-oX-YhK"/>
-                                    <constraint firstAttribute="trailing" secondItem="wys-Ou-eM5" secondAttribute="trailing" constant="24" id="MfV-jO-2Nd"/>
-                                    <constraint firstItem="4hw-2I-636" firstAttribute="height" secondItem="ax9-Ny-NF9" secondAttribute="height" id="Mx9-ii-ZdE"/>
-                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="leading" secondItem="4hw-2I-636" secondAttribute="leading" id="QAY-D2-PWE"/>
-                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="trailing" secondItem="Ff9-o6-H9M" secondAttribute="trailing" id="SIL-U9-2Va"/>
-                                    <constraint firstItem="HDZ-Z0-9Cq" firstAttribute="top" secondItem="TcA-Zr-O8c" secondAttribute="bottom" constant="8" symbolic="YES" id="U6y-Kj-NDs"/>
-                                    <constraint firstItem="HDZ-Z0-9Cq" firstAttribute="centerX" secondItem="9Ww-AG-6ua" secondAttribute="centerX" id="WBI-gf-CDl"/>
-                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="baseline" secondItem="Gva-qw-Hkl" secondAttribute="baseline" id="atE-yd-19d"/>
-                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="leading" secondItem="vjL-kG-CVC" secondAttribute="trailing" constant="7" id="cSH-je-eGZ"/>
-                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="baseline" secondItem="TcA-Zr-O8c" secondAttribute="baseline" id="cUE-PB-2ce"/>
-                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="baseline" secondItem="wys-Ou-eM5" secondAttribute="baseline" id="dOc-YN-lNU"/>
-                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="baseline" secondItem="vjL-kG-CVC" secondAttribute="baseline" id="fE4-K1-H7X"/>
-                                    <constraint firstItem="KyF-1F-D7m" firstAttribute="baseline" secondItem="YCw-is-SLv" secondAttribute="baseline" id="fz2-09-jp9"/>
-                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="trailing" secondItem="qlZ-jY-qwV" secondAttribute="trailing" id="gcD-5s-7zb"/>
-                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="top" secondItem="Ff9-o6-H9M" secondAttribute="bottom" constant="24" id="hKh-6T-Ck5"/>
-                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="trailing" secondItem="YCw-is-SLv" secondAttribute="trailing" id="iBa-2L-vBH"/>
-                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="top" secondItem="4hw-2I-636" secondAttribute="top" id="iBy-i2-r2i"/>
-                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="leading" secondItem="YCw-is-SLv" secondAttribute="leading" id="ia3-hM-vKU"/>
-                                    <constraint firstItem="4hw-2I-636" firstAttribute="leading" secondItem="pGU-1m-hQv" secondAttribute="leading" id="j0t-Z5-ooN"/>
-                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="trailing" secondItem="4hw-2I-636" secondAttribute="trailing" id="lr0-Mw-kSS"/>
-                                    <constraint firstItem="4hw-2I-636" firstAttribute="trailing" secondItem="pGU-1m-hQv" secondAttribute="trailing" id="ok9-tu-TI0"/>
-                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="leading" secondItem="Ff9-o6-H9M" secondAttribute="leading" id="pLq-XA-JXT"/>
-                                    <constraint firstItem="Ff9-o6-H9M" firstAttribute="baseline" secondItem="KyF-1F-D7m" secondAttribute="baseline" id="rJP-zu-1ei"/>
-                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="leading" secondItem="9Ww-AG-6ua" secondAttribute="leading" constant="24" id="tZH-xM-BwP"/>
-                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="leading" secondItem="9Ww-AG-6ua" secondAttribute="leading" constant="52" id="tza-ql-3lr"/>
-                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="trailing" secondItem="ax9-Ny-NF9" secondAttribute="trailing" id="wJf-rD-UUx"/>
-                                    <constraint firstItem="YCw-is-SLv" firstAttribute="leading" secondItem="KyF-1F-D7m" secondAttribute="trailing" constant="8" symbolic="YES" id="wXv-3n-bLK"/>
-                                    <constraint firstAttribute="height" constant="354" id="yqZ-xa-kGh"/>
+                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="top" secondItem="Ff9-o6-H9M" secondAttribute="bottom" constant="24" id="0ut-LS-op9"/>
+                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="baseline" secondItem="Gva-qw-Hkl" secondAttribute="baseline" id="1Y9-Ae-45Q"/>
+                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="leading" secondItem="9Ww-AG-6ua" secondAttribute="leading" constant="52" id="2ez-AJ-NYd"/>
+                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="leading" secondItem="9Ww-AG-6ua" secondAttribute="leading" constant="24" id="8PU-2a-Fqq"/>
+                                    <constraint firstItem="KyF-1F-D7m" firstAttribute="baseline" secondItem="YCw-is-SLv" secondAttribute="baseline" id="8ba-2A-eXk"/>
+                                    <constraint firstItem="qma-4Z-HMe" firstAttribute="baseline" secondItem="TcA-Zr-O8c" secondAttribute="baseline" id="9gn-ks-82s"/>
+                                    <constraint firstItem="qd8-lK-wqL" firstAttribute="baseline" secondItem="ax9-Ny-NF9" secondAttribute="baseline" id="9lN-Pq-EOh"/>
+                                    <constraint firstItem="Ff9-o6-H9M" firstAttribute="top" secondItem="qlZ-jY-qwV" secondAttribute="bottom" constant="17" id="DIi-1J-XcC"/>
+                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="top" secondItem="iUn-dr-m1p" secondAttribute="bottom" constant="17" id="Eqb-8P-n6Z"/>
+                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="trailing" secondItem="4hw-2I-636" secondAttribute="trailing" id="GFZ-xP-sBa"/>
+                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="trailing" secondItem="ax9-Ny-NF9" secondAttribute="trailing" id="L1O-NI-cKW"/>
+                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="trailing" secondItem="YCw-is-SLv" secondAttribute="trailing" id="LAt-zk-oAc"/>
+                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="trailing" secondItem="qlZ-jY-qwV" secondAttribute="trailing" id="LwK-tn-giY"/>
+                                    <constraint firstItem="qd8-lK-wqL" firstAttribute="leading" secondItem="KyF-1F-D7m" secondAttribute="leading" id="Myg-fI-1EZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="TcA-Zr-O8c" secondAttribute="trailing" constant="54" id="NRa-Sb-bj5"/>
+                                    <constraint firstItem="HDZ-Z0-9Cq" firstAttribute="centerX" secondItem="9Ww-AG-6ua" secondAttribute="centerX" id="OVf-fg-S8Q"/>
+                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="top" secondItem="9Ww-AG-6ua" secondAttribute="top" constant="50" id="Q1C-rv-msj"/>
+                                    <constraint firstItem="4hw-2I-636" firstAttribute="leading" secondItem="pGU-1m-hQv" secondAttribute="leading" id="Q1y-O3-Gus"/>
+                                    <constraint firstItem="YCw-is-SLv" firstAttribute="leading" secondItem="KyF-1F-D7m" secondAttribute="trailing" constant="8" symbolic="YES" id="U91-Kz-qde"/>
+                                    <constraint firstAttribute="height" constant="354" id="UQk-6s-rmC"/>
+                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="baseline" secondItem="qd8-lK-wqL" secondAttribute="baseline" id="X7F-SA-qid"/>
+                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="baseline" secondItem="vjL-kG-CVC" secondAttribute="baseline" id="bkm-rI-acF"/>
+                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="baseline" secondItem="4hw-2I-636" secondAttribute="baseline" id="bpR-5b-JnY"/>
+                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="leading" secondItem="4hw-2I-636" secondAttribute="leading" id="c0x-iu-2D2"/>
+                                    <constraint firstItem="iUn-dr-m1p" firstAttribute="leading" secondItem="qlZ-jY-qwV" secondAttribute="leading" id="e6L-5o-xMa"/>
+                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="baseline" secondItem="wys-Ou-eM5" secondAttribute="baseline" id="eay-Gw-lir"/>
+                                    <constraint firstItem="HDZ-Z0-9Cq" firstAttribute="top" secondItem="TcA-Zr-O8c" secondAttribute="bottom" constant="8" symbolic="YES" id="hqK-iC-Ysd"/>
+                                    <constraint firstAttribute="trailing" secondItem="wys-Ou-eM5" secondAttribute="trailing" constant="24" id="iqh-ht-Bdv"/>
+                                    <constraint firstItem="YCw-is-SLv" firstAttribute="baseline" secondItem="pGU-1m-hQv" secondAttribute="baseline" id="j15-nd-hUi"/>
+                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="leading" secondItem="ax9-Ny-NF9" secondAttribute="leading" id="jga-ay-VuV"/>
+                                    <constraint firstItem="vjL-kG-CVC" firstAttribute="leading" secondItem="Gva-qw-Hkl" secondAttribute="trailing" constant="8" symbolic="YES" id="k5T-0Y-uJI"/>
+                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="leading" secondItem="qd8-lK-wqL" secondAttribute="trailing" constant="8" symbolic="YES" id="lDA-Rl-B3P"/>
+                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="trailing" secondItem="Ff9-o6-H9M" secondAttribute="trailing" id="lwn-iS-dn3"/>
+                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="leading" secondItem="qd8-lK-wqL" secondAttribute="leading" id="mRE-b0-y7h"/>
+                                    <constraint firstItem="qlZ-jY-qwV" firstAttribute="leading" secondItem="Ff9-o6-H9M" secondAttribute="leading" id="nwH-l7-YdF"/>
+                                    <constraint firstItem="4hw-2I-636" firstAttribute="trailing" secondItem="pGU-1m-hQv" secondAttribute="trailing" id="oJI-Fn-SmE"/>
+                                    <constraint firstItem="Ff9-o6-H9M" firstAttribute="baseline" secondItem="KyF-1F-D7m" secondAttribute="baseline" id="oRw-CP-V4V"/>
+                                    <constraint firstItem="TcA-Zr-O8c" firstAttribute="leading" secondItem="qma-4Z-HMe" secondAttribute="trailing" constant="8" symbolic="YES" id="r6G-nf-HPC"/>
+                                    <constraint firstItem="ax9-Ny-NF9" firstAttribute="leading" secondItem="YCw-is-SLv" secondAttribute="leading" id="t76-iP-GQL"/>
+                                    <constraint firstItem="wys-Ou-eM5" firstAttribute="leading" secondItem="vjL-kG-CVC" secondAttribute="trailing" constant="7" id="tUI-UX-0SL"/>
+                                    <constraint firstItem="Gva-qw-Hkl" firstAttribute="leading" secondItem="iUn-dr-m1p" secondAttribute="trailing" constant="11" id="xyi-7i-9JN"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVg-JL-1ge">
@@ -705,11 +707,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="centerY" secondItem="Ybi-DZ-nzx" secondAttribute="centerY" id="0Dk-Wb-JaO"/>
-                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="leading" secondItem="vpw-W3-IS3" secondAttribute="leading" constant="20" id="1MB-QG-BQW"/>
                             <constraint firstItem="vVg-JL-1ge" firstAttribute="leading" secondItem="vpw-W3-IS3" secondAttribute="leading" constant="20" id="3tV-cw-mU2"/>
-                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="centerX" secondItem="Ybi-DZ-nzx" secondAttribute="centerX" id="MGo-PR-V78"/>
-                            <constraint firstItem="vpw-W3-IS3" firstAttribute="trailing" secondItem="9Ww-AG-6ua" secondAttribute="trailing" constant="20" id="rFq-2r-iQc"/>
+                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="leading" secondItem="vpw-W3-IS3" secondAttribute="leading" constant="20" id="6z3-q2-tmi"/>
+                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="centerX" secondItem="Ybi-DZ-nzx" secondAttribute="centerX" id="Srm-nM-pIO"/>
+                            <constraint firstItem="9Ww-AG-6ua" firstAttribute="centerY" secondItem="Ybi-DZ-nzx" secondAttribute="centerY" id="guK-QF-aoE"/>
+                            <constraint firstItem="vpw-W3-IS3" firstAttribute="trailing" secondItem="9Ww-AG-6ua" secondAttribute="trailing" constant="20" id="pjI-G8-tfO"/>
                             <constraint firstItem="vVg-JL-1ge" firstAttribute="top" secondItem="vpw-W3-IS3" secondAttribute="top" constant="10" id="rk1-Mz-ZIO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vpw-W3-IS3"/>
