@@ -23,6 +23,8 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var selectedMethodsLabel: UILabel!
     @IBOutlet var toggleButtonCollection:[Toggle]!
     @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var beginButton: Toggle!
+    
     
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
@@ -33,6 +35,8 @@ class ViewController: UIViewController, SettingsDelegate {
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
     var settingsDelegate:SettingsDelegate?
+    
+//    let intervalSet:[String]! = ["root", "m2", "M2", "m3", "M3", "P4", "TT", "P5", "m6", "M6", "m7", "M7", "P8"]
     
     let MAX_ANSWER:Float = 10.0
     var CURR_ANSWER:Float = 0.0
@@ -48,11 +52,8 @@ class ViewController: UIViewController, SettingsDelegate {
         update()
         
         intervalData = loadIntervalFile(filename:"Intervals")
-        interval = intervalData.randomElement()
-        root = interval?.root //randomly pick a root from the list
-        print(root!)
         
-        updateProgress() 
+        updateProgress()
 
     }
     
@@ -77,7 +78,24 @@ class ViewController: UIViewController, SettingsDelegate {
     func updateProgress() {
         progressView.setProgress(CURR_ANSWER, animated: true)
     }
-
+    
+    @IBAction func beginPressed(_ sender: Any) {
+        start()
+    }
+    
+    func start() {
+        interval = intervalData.randomElement()
+        root = interval?.root //randomly pick a root from the list
+        
+        //Stick all the intervals in a dict and then select one of them at random
+        let currentStructure:[String:String] = ["root":interval.root, "m2":interval.m2, "M2":interval.M2, "m3":interval.m3, "M3":interval.M3, "P4":interval.P4, "TT":interval.TT, "P5":interval.P5, "m6":interval.m6, "M6":interval.M6, "m7":interval.m7, "M7":interval.M7, "P8":interval.P8]
+        
+        let randomIntervalSelection = currentStructure.randomElement()
+        let intervalNoteFromRoot = (randomIntervalSelection?.value)!
+        
+        playIntervalSound(root: root!, interval: intervalNoteFromRoot)
+    }
+    
     @IBAction func minor2Pressed(_ sender: Any) {
     }
     
@@ -113,6 +131,8 @@ class ViewController: UIViewController, SettingsDelegate {
     
     @IBAction func perfect8Pressed(_ sender: Any) {
     }
+
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

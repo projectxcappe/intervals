@@ -15,6 +15,7 @@ struct ResponseData: Decodable {
 }
 
 struct Intervals : Decodable {
+    
     var root: String
     var m2: String
     var M2: String
@@ -28,6 +29,15 @@ struct Intervals : Decodable {
     var m7: String
     var M7: String
     var P8: String
+}
+
+enum IntervalList: String, CaseIterable {
+    
+    case root, m2, M2, m3, M3, P4, TT, P5, m6, M6, m7, M7, P8
+    
+    static var getRandomInterval: String {
+        return allCases.randomElement()!.rawValue
+    }
 }
 
 struct Song : Decodable {
