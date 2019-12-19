@@ -113,7 +113,11 @@ class ViewController: UIViewController, SettingsDelegate {
         let randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
         let intervalNoteFromRoot = currentStructure[randomIntervalSelection!]
         
-        playIntervalSound(root: root!, interval: intervalNoteFromRoot!)
+        if method != "Harmonic" {
+            playIntervalSound(root: root!, interval: intervalNoteFromRoot!)
+        } else {
+            playHarmonicIntervalSound(root: root!, interval: intervalNoteFromRoot!)
+        }
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
