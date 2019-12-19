@@ -22,6 +22,7 @@ class ViewController: UIViewController, SettingsDelegate {
     
     @IBOutlet weak var selectedMethodsLabel: UILabel!
     @IBOutlet var toggleButtonCollection:[Toggle]!
+    @IBOutlet weak var progressView: UIProgressView!
     
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
@@ -33,12 +34,15 @@ class ViewController: UIViewController, SettingsDelegate {
     var selectedMethods:[String]!
     var settingsDelegate:SettingsDelegate?
     
+    let MAX_ANSWER:Float = 10.0
+    var CURR_ANSWER:Float = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
-        print(IntervalsSelected.shared.intervals!, IntervalsSelected.shared.methods!)
+
         //Set up initial intervals
         settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
         update()
@@ -47,9 +51,12 @@ class ViewController: UIViewController, SettingsDelegate {
         interval = intervalData.randomElement()
         root = interval?.root //randomly pick a root from the list
         print(root!)
+        
+        updateProgress() 
 
     }
     
+    //Updates the intervals and methods we are using, enabling and disabling buttons
     func update() {
         //Set Up
         for toggle in toggleButtonCollection {
@@ -65,7 +72,10 @@ class ViewController: UIViewController, SettingsDelegate {
             methodsString = methodsString+" "+i
         }
         selectedMethodsLabel.text = methodsString
-        print(selectedIntervals, selectedMethods)
+    }
+    
+    func updateProgress() {
+        progressView.setProgress(CURR_ANSWER, animated: true)
     }
 
     @IBAction func minor2Pressed(_ sender: Any) {

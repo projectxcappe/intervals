@@ -10,6 +10,8 @@
 import Foundation
 import AVFoundation
 
+//Allows the settings to be saved from Settings to Main View
+//Defaults listed below
 public class IntervalsSelected {
     public var intervals: [String]? = ["m2", "M2"]
     public var methods: [String]? = ["Ascending"]

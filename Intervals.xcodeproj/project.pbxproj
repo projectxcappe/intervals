@@ -234,9 +234,9 @@
 		505ABEA823A5E47900D55377 /* Intervals */ = {
 			isa = PBXGroup;
 			children = (
-				50E25C0523A5EC8500ACEF26 /* Sounds */,
 				505ABEA923A5E47900D55377 /* AppDelegate.swift */,
 				50CE941723AAEF9100A7AB3C /* New Group */,
+				50E25C0523A5EC8500ACEF26 /* Sounds */,
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
 				50E25C6E23A73A4000ACEF26 /* Models.swift */,
 				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,

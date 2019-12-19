@@ -66,7 +66,6 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func close(_ sender: Any) {
-        print(selectedIntervals)
         self.SettingsDelegate.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
         dismiss(animated: true, completion: nil)
     }
