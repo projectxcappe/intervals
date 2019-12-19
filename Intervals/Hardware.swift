@@ -75,11 +75,14 @@ extension Array where Element: Equatable {
 extension ViewController {
     func checkAnswer(guess:String, answer:String) {
         if guess == answer {
+            //Reset currentIntervalBeingPlayed
+            replayCurrentInterval = false
             //play new interval
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.playInterval()
             }
         } else {
+            replayCurrentInterval = true
             //play song
         }
     }

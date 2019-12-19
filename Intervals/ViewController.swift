@@ -39,9 +39,13 @@ class ViewController: UIViewController, SettingsDelegate {
     var settingsDelegate:SettingsDelegate?
     
     var randomIntervalSelection:String!
+    var replayCurrentInterval:Bool!
 
     let MAX_ANSWER:Float = 10.0
     var CURR_ANSWER:Float = 0.0
+    
+    var intervalNoteFromRoot:String!
+    var method:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +53,7 @@ class ViewController: UIViewController, SettingsDelegate {
         //Set Up
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
+        replayCurrentInterval = false
 
         //Set up initial intervals
         settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
@@ -83,36 +88,43 @@ class ViewController: UIViewController, SettingsDelegate {
     }
 
     func playInterval() {
-        //Select ascending, decending, or harmonic depending on settings
-        let methods = IntervalsSelected.shared.methods
-        let method = methods?.randomElement()
-        var intervalDataFromMethod:[Intervals]
 
-        //Get all interval data from appropriate method (Asc, Dec, Harm etc)
-        if method == "Ascending" {
-            intervalDataFromMethod = intervalData.interval_asc
-        } else if method == "Decending" {
-            intervalDataFromMethod = intervalData.interval_dec
-        } else { //Harmonic
-            intervalDataFromMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
+        //If current interval needs to be played, play it, otherwise select a new interval
+        if !replayCurrentInterval {
+            //Select ascending, decending, or harmonic depending on settings
+            let methods = IntervalsSelected.shared.methods
+            method = methods?.randomElement()
+            var intervalDataFromMethod:[Intervals]
+
+            //Get all interval data from appropriate method (Asc, Dec, Harm etc)
+            if method == "Ascending" {
+                intervalDataFromMethod = intervalData.interval_asc
+            } else if method == "Decending" {
+                intervalDataFromMethod = intervalData.interval_dec
+            } else { //Harmonic
+                intervalDataFromMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
+            }
+
+            //Grab random interval data structure from the method category
+            interval = intervalDataFromMethod.randomElement()
+            root = interval?.root //randomly pick a root note from the list
+            
+            //Stick all the intervals in a dict
+            let currentStructure:[String:String] = ["root":interval.root, "m2":interval.m2, "M2":interval.M2, "m3":interval.m3, "M3":interval.M3, "P4":interval.P4, "TT":interval.TT, "P5":interval.P5, "m6":interval.m6, "M6":interval.M6, "m7":interval.m7, "M7":interval.M7, "P8":interval.P8]
+
+            //Grab intervals from settings and get the real note value
+            randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
+            intervalNoteFromRoot = currentStructure[randomIntervalSelection!]
+            
+            replayCurrentInterval = true //allow user to replay this interval if needed to
         }
-
-        //Grab random interval data structure from the method category
-        interval = intervalDataFromMethod.randomElement()
-        root = interval?.root //randomly pick a root note from the list
-        
-        //Stick all the intervals in a dict
-        let currentStructure:[String:String] = ["root":interval.root, "m2":interval.m2, "M2":interval.M2, "m3":interval.m3, "M3":interval.M3, "P4":interval.P4, "TT":interval.TT, "P5":interval.P5, "m6":interval.m6, "M6":interval.M6, "m7":interval.m7, "M7":interval.M7, "P8":interval.P8]
-
-        //Grab intervals from settings and get the real note value
-        randomIntervalSelection = IntervalsSelected.shared.intervals?.randomElement()
-        let intervalNoteFromRoot = currentStructure[randomIntervalSelection!]
         
         if method != "Harmonic" {
             playIntervalSound(root: root!, interval: intervalNoteFromRoot!)
         } else {
             playHarmonicIntervalSound(root: root!, interval: intervalNoteFromRoot!)
         }
+
     }
     
     @IBAction func beginPressed(_ sender: Any) {
