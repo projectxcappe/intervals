@@ -59,6 +59,12 @@ extension ViewController {
         GSAudio.sharedInstance.playSound(soundFileName: root)
         GSAudio.sharedInstance.playSound(soundFileName: interval)
     }
+    
+    func playIntervalSong(interval:String) {
+        //Stick all the intervals in a dict
+
+        print("Interval"+interval)
+    }
 }
 
 //Extensions
@@ -87,7 +93,7 @@ extension ViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.beginButton.isEnabled = true
                 self.playInterval()
-                self.update()
+                self.updateSettings()
             }
         } else {
             //Disable guess
@@ -99,7 +105,7 @@ extension ViewController {
             }
             
             replayCurrentInterval = true
-            //play song
+            playIntervalSong(interval: answer)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

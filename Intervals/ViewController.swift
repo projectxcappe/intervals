@@ -20,7 +20,7 @@ class ViewController: UIViewController, SettingsDelegate {
         IntervalsSelected.shared.intervals! = selectedIntervals
         IntervalsSelected.shared.methods! = selectedMethods
         
-        update()
+        updateSettings()
     }
     
     @IBOutlet weak var selectedMethodsLabel: UILabel!
@@ -48,6 +48,8 @@ class ViewController: UIViewController, SettingsDelegate {
     
     var intervalData:IntervalData!
     var interval:Intervals!
+    var intervalSongs:Song!
+
     var root:String!
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
@@ -73,16 +75,17 @@ class ViewController: UIViewController, SettingsDelegate {
         
         //Set up initial intervals
         settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
-        update()
+        updateSettings()
         
         intervalData = loadIntervalFile(filename:"Intervals")
+        intervalSongs = intervalData.Song
         
         updateProgress()
 
     }
     
     //Updates the intervals and methods we are using, enabling and disabling buttons
-    func update() {
+    func  updateSettings() {
         
         //Temp disable play button, honestly just for effect, shows we did something
         beginButton.isEnabled = false
@@ -120,11 +123,11 @@ class ViewController: UIViewController, SettingsDelegate {
 
             //Get all interval data from appropriate method (Asc, Dec, Harm etc)
             if method == "Ascending" {
-                intervalDataFromMethod = intervalData.interval_asc
+                intervalDataFromMethod = intervalData.Ascending
             } else if method == "Decending" {
-                intervalDataFromMethod = intervalData.interval_dec
+                intervalDataFromMethod = intervalData.Decending
             } else { //Harmonic
-                intervalDataFromMethod = intervalData.interval_asc //we just need two intervals doesn't matter the order
+                intervalDataFromMethod = intervalData.Ascending //we just need two intervals doesn't matter the order
             }
 
             //Grab random interval data structure from the method category
@@ -158,7 +161,7 @@ class ViewController: UIViewController, SettingsDelegate {
         checkAnswer(guess: "m2", answer: randomIntervalSelection, buttonPressed:minor2Button)
     }
     
-    @IBAction func major2Pressed(_ sender: Any) {
+    @IBAction func major2Pressed(_ sender: Any) { 
         checkAnswer(guess: "M2", answer: randomIntervalSelection, buttonPressed: major2Button)
     }
     
