@@ -117,6 +117,7 @@ class ViewController: UIViewController, SettingsDelegate {
         selectedMethodsLabel.text = methodsString
     }
     
+    //Gamify and Progress Bar
     func updateProgress(status:Answer) {
         
         switch status {
@@ -141,9 +142,18 @@ class ViewController: UIViewController, SettingsDelegate {
         if CURR_ANSWER >= MAX_ANSWER {
             correctLabel.text = "BOOM!"
             CURR_ANSWER = 0.0
+            
+            let currentIntervals = IntervalsSelected.shared.allIntervals!
+            selectedIntervals.append(currentIntervals[selectedIntervals.count])
+            
+            settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
+            updateSettings()
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.progressView.setProgress(self.CURR_ANSWER, animated: true)
             }
+            
+            
         }
     }
 
