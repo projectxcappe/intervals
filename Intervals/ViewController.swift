@@ -10,6 +10,13 @@ import UIKit
 import Foundation
 import AVFoundation
 
+//For progress bar
+enum Answer {
+    case Correct
+    case Incorrect
+    case Setup
+}
+
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String]) {
@@ -82,7 +89,7 @@ class ViewController: UIViewController, SettingsDelegate {
         intervalData = loadIntervalFile(filename:"Intervals")
         intervalSongs = intervalData.Song
         
-        updateProgress()
+        updateProgress(status: .Setup)
 
     }
     
@@ -110,8 +117,32 @@ class ViewController: UIViewController, SettingsDelegate {
         selectedMethodsLabel.text = methodsString
     }
     
-    func updateProgress() {
-        progressView.setProgress(CURR_ANSWER, animated: true)
+    func updateProgress(status:Answer) {
+        
+        switch status {
+        case .Correct:
+                CURR_ANSWER += 0.1
+        case .Incorrect:
+            if CURR_ANSWER >= 0.3 {
+                CURR_ANSWER -= 0.3
+            } else {
+                CURR_ANSWER = 0
+            }
+        case .Setup:
+            CURR_ANSWER = 1.0
+            progressView.setProgress(CURR_ANSWER, animated: false)
+            CURR_ANSWER = 0.0
+
+        }
+        
+        //Check to see if Max points and reset score and add next interval
+        if CURR_ANSWER >= MAX_ANSWER {
+            CURR_ANSWER = 0.0
+        }
+        
+        self.progressView.setProgress(self.CURR_ANSWER, animated: true)
+
+        
     }
 
     func playInterval() {
@@ -153,11 +184,7 @@ class ViewController: UIViewController, SettingsDelegate {
         }
 
     }
-    
-    func updateColorView(note:String) {
-        
-    }
-    
+
     @IBAction func beginPressed(_ sender: Any) {
         beginButton.setTitle("Replay Interval", for: .normal)
         playInterval()
@@ -211,9 +238,7 @@ class ViewController: UIViewController, SettingsDelegate {
         checkAnswer(guess: "P8", answer: randomIntervalSelection, method: method, buttonPressed: perfect8Button)
     }
 
-    
-    
-    
+    //Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "SettingsSegue" {

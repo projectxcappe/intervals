@@ -49,7 +49,10 @@ func loadIntervalFile(filename fileName: String) -> IntervalData? {
 extension ViewController {
     func playIntervalSound(root:String, secondNote:String, interval:String) {
         print("Root: "+root+" secondNote: "+secondNote)
-        GSAudio.sharedInstance.playSounds(soundFileNames: [root, secondNote], withDelay: 1.0)
+        GSAudio.sharedInstance.playSound(soundFileName: root)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            GSAudio.sharedInstance.playSound(soundFileName: secondNote)
+        }
         displayIntervalColor(interval: interval)
     }
     
@@ -108,7 +111,10 @@ extension ViewController {
             beginButton.isEnabled = false
             self.correctLabel.text = "Correct!"
             self.correctLabel.alpha = 1.0
-          
+            
+            //Update progress bar
+            self.updateProgress(status: .Correct)
+            
             //play new interval, re-enable play button
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.beginButton.isEnabled = true
@@ -116,8 +122,9 @@ extension ViewController {
                 self.updateSettings()
             }
         } else {
-            //Disable guess
+            //Disable guess, demote progress
             buttonPressed.isEnabled = false
+            self.updateProgress(status: .Incorrect)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.correctLabel.text = "Incorrect."

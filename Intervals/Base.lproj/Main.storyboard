@@ -293,7 +293,7 @@
                                 <color key="textColor" red="0.93087491190000005" green="0.93087491190000005" blue="0.93087491190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Op-Wqd">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Op-Wqd">
                                 <rect key="frame" x="34" y="141" width="247" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="dI5-0U-DsK"/>
@@ -321,7 +321,7 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nc1-KN-Rrx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
                                 <rect key="frame" x="81" y="209" width="200" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="NaD-5d-VDV"/>
@@ -350,6 +350,7 @@
                             <constraint firstItem="68J-xy-xxH" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="Bok-hR-g2R"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="top" secondItem="zN9-Op-Wqd" secondAttribute="top" id="D7b-en-z71"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="DAl-8S-Wcs"/>
+                            <constraint firstItem="zN9-Op-Wqd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="Do6-jH-Qyb"/>
                             <constraint firstItem="F9w-4K-Kgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DyH-aU-1QT"/>
                             <constraint firstItem="TdC-4c-ZcU" firstAttribute="top" secondItem="QLo-Gt-g3C" secondAttribute="top" id="Dzq-Pp-Zji"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="FyL-Am-8fI"/>
