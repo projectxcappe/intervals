@@ -67,7 +67,7 @@ class ViewController: UIViewController, SettingsDelegate {
     var randomIntervalSelection:String!
     var replayCurrentInterval:Bool!
 
-    let MAX_ANSWER:Float = 10.0
+    let MAX_ANSWER:Float = 1.0
     var CURR_ANSWER:Float = 0.0
     
     var intervalNoteFromRoot:String!
@@ -135,14 +135,16 @@ class ViewController: UIViewController, SettingsDelegate {
 
         }
         
+        self.progressView.setProgress(self.CURR_ANSWER, animated: true)
+        
         //Check to see if Max points and reset score and add next interval
         if CURR_ANSWER >= MAX_ANSWER {
+            correctLabel.text = "BOOM!"
             CURR_ANSWER = 0.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.progressView.setProgress(self.CURR_ANSWER, animated: true)
+            }
         }
-        
-        self.progressView.setProgress(self.CURR_ANSWER, animated: true)
-
-        
     }
 
     func playInterval() {
