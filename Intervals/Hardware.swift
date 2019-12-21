@@ -8,6 +8,7 @@
 
 
 import Foundation
+import UIKit
 import AVFoundation
 
 //Allows the settings to be saved from Settings to Main View
@@ -48,16 +49,16 @@ func loadIntervalFile(filename fileName: String) -> IntervalData? {
 extension ViewController {
     func playIntervalSound(root:String, interval:String) {
         print("Root: "+root+" Interval: "+interval)
-        GSAudio.sharedInstance.playSound(soundFileName: root)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            GSAudio.sharedInstance.playSound(soundFileName: interval)
-        }
+        GSAudio.sharedInstance.playSounds(soundFileNames: [root, interval], withDelay: 1.0)
+        displayIntervalColor(interval: interval)
     }
     
     func playHarmonicIntervalSound(root:String, interval:String) {
         print("Root: "+root+" Interval: "+interval)
+        
         GSAudio.sharedInstance.playSound(soundFileName: root)
         GSAudio.sharedInstance.playSound(soundFileName: interval)
+        
     }
     
     func playIntervalSong(song:String) {
@@ -65,6 +66,20 @@ extension ViewController {
             GSAudio.sharedInstance.playSound(soundFileName: song)
         }
         print("Song "+song)
+    }
+    
+    func displayIntervalColor(interval:String) {
+        colorView.backgroundColor = UIColor.red
+        colorView.alpha = 0.0
+
+        UIView.animate(withDuration: 0.5, animations: {
+            self.colorView.alpha = 1.0
+        }) { (true) in
+            UIView.animate(withDuration: 1.0, animations: {
+                self.colorView.alpha = 0.0
+            })
+        }
+
     }
 }
 

@@ -38,6 +38,7 @@
 		50CE944523AD377900A7AB3C /* tt_asc_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE942D23AD377900A7AB3C /* tt_asc_song.aifc */; };
 		50CE944623AD377900A7AB3C /* minor2_dec_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE942E23AD377900A7AB3C /* minor2_dec_song.aifc */; };
 		50CE944723AD377900A7AB3C /* major6_asc_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE942F23AD377900A7AB3C /* major6_asc_song.aifc */; };
+		50CE944923ADE3CE00A7AB3C /* IntervalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE944823ADE3CE00A7AB3C /* IntervalColor.swift */; };
 		50E25C3323A5F0DE00ACEF26 /* Ab5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */; };
 		50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */; };
 		50E25C3523A5F0DE00ACEF26 /* Db3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C0823A5F0DB00ACEF26 /* Db3.aifc */; };
@@ -138,6 +139,7 @@
 		50CE942D23AD377900A7AB3C /* tt_asc_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt_asc_song.aifc; sourceTree = "<group>"; };
 		50CE942E23AD377900A7AB3C /* minor2_dec_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = minor2_dec_song.aifc; sourceTree = "<group>"; };
 		50CE942F23AD377900A7AB3C /* major6_asc_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = major6_asc_song.aifc; sourceTree = "<group>"; };
+		50CE944823ADE3CE00A7AB3C /* IntervalColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalColor.swift; sourceTree = "<group>"; };
 		50E25C0623A5F0DA00ACEF26 /* Ab5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab5.aifc; sourceTree = "<group>"; };
 		50E25C0723A5F0DB00ACEF26 /* Gb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb4.aifc; sourceTree = "<group>"; };
 		50E25C0823A5F0DB00ACEF26 /* Db3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Db3.aifc; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
 				50E25C6E23A73A4000ACEF26 /* Models.swift */,
 				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,
+				50CE944823ADE3CE00A7AB3C /* IntervalColor.swift */,
 				50E25C6A23A5F79A00ACEF26 /* Intervals.json */,
 				505ABEAD23A5E47900D55377 /* Main.storyboard */,
 				5099776223A9EAC400CE0B9A /* Toggle.swift */,
@@ -524,6 +527,7 @@
 			files = (
 				50E25C6D23A7312300ACEF26 /* Hardware.swift in Sources */,
 				505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */,
+				50CE944923ADE3CE00A7AB3C /* IntervalColor.swift in Sources */,
 				50CE941623AA843D00A7AB3C /* SettingsViewController.swift in Sources */,
 				50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */,
 				5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */,

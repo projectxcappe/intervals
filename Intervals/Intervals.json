@@ -82,6 +82,21 @@
                 "P8": "A4"
             }
         ],
+        "Color":
+        {
+            "m2": "minor2",
+            "M2": "major2",
+            "m3": "minor3",
+            "M3": "major3",
+            "P4": "perfect4",
+            "TT": "tritone",
+            "P5": "perfect5",
+            "m6": "minor6",
+            "M6": "major6",
+            "m7": "minor7",
+            "M7": "major7",
+            "P8": "perfect8"
+        },
         "Song":
             {
                 "SongAscending": {

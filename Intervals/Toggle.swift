@@ -12,6 +12,14 @@ import UIKit
 
 class Toggle: UIButton {
 
+    required public init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+
+        self.backgroundColor = UIColor.black
+        
+    }
+    
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = cornerRadius

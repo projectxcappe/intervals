@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQs-KH-BTS">
+                                <rect key="frame" x="20" y="0.0" width="374" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-Gt-g3C" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="289" y="91" width="75" height="42"/>
                                 <constraints>
@@ -290,13 +294,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Op-Wqd">
-                                <rect key="frame" x="20" y="141" width="261" height="10"/>
+                                <rect key="frame" x="34" y="141" width="247" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="dI5-0U-DsK"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-Qg-6Ew" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
-                                <rect key="frame" x="20" y="159" width="261" height="42"/>
+                                <rect key="frame" x="151" y="159" width="130" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play Interval"/>
                                 <userDefinedRuntimeAttributes>
@@ -315,7 +319,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
-                                <rect key="frame" x="111.5" y="209" width="78.5" height="29"/>
+                                <rect key="frame" x="177" y="209" width="78.5" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
                                 <color key="textColor" red="0.93087491190000005" green="0.93087491190000005" blue="0.93087491190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -327,8 +332,10 @@
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="top" secondItem="yKe-gV-cvu" secondAttribute="bottom" constant="8" symbolic="YES" id="0qe-B1-hzg"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="leading" secondItem="TdC-4c-ZcU" secondAttribute="trailing" constant="27.5" id="2KB-xT-4nv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CnS-B5-Nmx" secondAttribute="bottom" constant="179" id="3c5-ma-Cpz"/>
+                            <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="eKV-Qg-6Ew" secondAttribute="trailing" constant="8" id="4Sh-kU-Hl8"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="53a-zR-pi9"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="640-c8-omh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aQs-KH-BTS" secondAttribute="trailing" id="6NO-HG-0WM"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="top" secondItem="LR2-yZ-8Ts" secondAttribute="bottom" constant="8" symbolic="YES" id="73m-dr-EaG"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="7r5-qf-dYu"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="8xs-uN-lvJ"/>
@@ -338,7 +345,6 @@
                             <constraint firstItem="68J-xy-xxH" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="Bok-hR-g2R"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="top" secondItem="zN9-Op-Wqd" secondAttribute="top" id="D7b-en-z71"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="DAl-8S-Wcs"/>
-                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="top" secondItem="zN9-Op-Wqd" secondAttribute="bottom" constant="8" id="DZs-D3-An3"/>
                             <constraint firstItem="F9w-4K-Kgj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DyH-aU-1QT"/>
                             <constraint firstItem="TdC-4c-ZcU" firstAttribute="top" secondItem="QLo-Gt-g3C" secondAttribute="top" id="Dzq-Pp-Zji"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="FyL-Am-8fI"/>
@@ -348,7 +354,6 @@
                             <constraint firstItem="68J-xy-xxH" firstAttribute="top" secondItem="Qdu-4M-8Oc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ibz-Tz-6DN"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="JzK-cG-ywJ"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="KLF-6R-LOQ"/>
-                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="centerX" secondItem="eKV-Qg-6Ew" secondAttribute="centerX" id="NL9-3q-X5h"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="OwT-Ng-5Au"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="PeY-SV-85a"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="top" secondItem="cKz-8E-7Eh" secondAttribute="bottom" constant="8" symbolic="YES" id="Pik-Qg-hS2"/>
@@ -359,10 +364,12 @@
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="top" secondItem="1U7-LL-XRh" secondAttribute="bottom" constant="8" symbolic="YES" id="RPB-F1-kfU"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="top" secondItem="gm3-dw-poa" secondAttribute="bottom" constant="8" symbolic="YES" id="Rpf-ZA-agN"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="TE2-bh-vQD"/>
+                            <constraint firstItem="aQs-KH-BTS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TZZ-NX-7PW"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="TZi-1K-Kqu"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="VId-Yw-7SI"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="VL0-wt-IiX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="Ww4-Xn-VMw"/>
+                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="top" secondItem="zN9-Op-Wqd" secondAttribute="bottom" constant="8" id="Yiw-8J-Pk5"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="ae2-fI-2ku"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9w-4K-Kgj" secondAttribute="trailing" constant="20" id="bAM-tO-dsN"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="bsP-Vu-WSp"/>
@@ -371,30 +378,28 @@
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="top" secondItem="68J-xy-xxH" secondAttribute="bottom" constant="8" symbolic="YES" id="edn-9C-imD"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="ff1-0c-SNX"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="gqR-qz-GKh"/>
-                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="leading" secondItem="zN9-Op-Wqd" secondAttribute="leading" id="hE0-zk-RhF"/>
+                            <constraint firstItem="aQs-KH-BTS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hXf-0i-vMz"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="hv2-i0-ozn"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="iuW-tA-3Sl"/>
-                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="top" secondItem="eKV-Qg-6Ew" secondAttribute="bottom" constant="8" id="iy9-ka-MUp"/>
                             <constraint firstItem="cKz-8E-7Eh" firstAttribute="leading" secondItem="zN9-Op-Wqd" secondAttribute="trailing" constant="8" id="jVp-8x-7jY"/>
-                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="centerX" secondItem="zN9-Op-Wqd" secondAttribute="centerX" id="jwU-ct-ohG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="k9Y-Gc-W5e"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="qJz-bV-Fmh"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="top" secondItem="zSa-XI-hk9" secondAttribute="bottom" constant="8" symbolic="YES" id="rnO-u5-ceh"/>
-                            <constraint firstItem="zN9-Op-Wqd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s4m-TJ-uTw"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="sRp-0q-Hfl"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="sUe-yv-wyC"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="tmM-Mv-e4K"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="top" secondItem="sn1-Os-pzN" secondAttribute="bottom" constant="8" symbolic="YES" id="uvf-al-NvU"/>
                             <constraint firstItem="lZl-v9-DG1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vYJ-MX-Tdl"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="top" secondItem="ewl-Px-Hai" secondAttribute="bottom" constant="8" symbolic="YES" id="wCA-t2-S34"/>
-                            <constraint firstItem="eKV-Qg-6Ew" firstAttribute="trailing" secondItem="zN9-Op-Wqd" secondAttribute="trailing" id="wiE-HD-n5W"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="xPU-u0-z4v"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="zMw-1Q-82b"/>
+                            <constraint firstAttribute="bottom" secondItem="aQs-KH-BTS" secondAttribute="bottom" id="zcw-Vg-UW4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="beginButton" destination="eKV-Qg-6Ew" id="1al-0l-4pZ"/>
+                        <outlet property="colorView" destination="aQs-KH-BTS" id="umT-cH-jUP"/>
                         <outlet property="correctLabel" destination="5Yq-GS-Sc1" id="akG-Xx-UER"/>
                         <outlet property="major2Button" destination="cKz-8E-7Eh" id="w9C-Jx-fy4"/>
                         <outlet property="major3Button" destination="gm3-dw-poa" id="nLv-Ve-DMe"/>

@@ -23,6 +23,9 @@ class ViewController: UIViewController, SettingsDelegate {
         updateSettings()
     }
     
+    
+    @IBOutlet weak var colorView: UIView!
+    
     @IBOutlet weak var selectedMethodsLabel: UILabel!
     @IBOutlet var toggleButtonCollection:[Toggle]!
     @IBOutlet weak var progressView: UIProgressView!
@@ -41,7 +44,6 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var minor7Button: Toggle!
     @IBOutlet weak var major7Button: Toggle!
     @IBOutlet weak var perfect8Button: Toggle!
-    
     
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
@@ -150,6 +152,10 @@ class ViewController: UIViewController, SettingsDelegate {
             playHarmonicIntervalSound(root: root!, interval: intervalNoteFromRoot!)
         }
 
+    }
+    
+    func updateColorView(note:String) {
+        
     }
     
     @IBAction func beginPressed(_ sender: Any) {
