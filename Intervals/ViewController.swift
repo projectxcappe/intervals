@@ -158,51 +158,51 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
-        checkAnswer(guess: "m2", answer: randomIntervalSelection, buttonPressed:minor2Button)
+        checkAnswer(guess: "m2", answer: randomIntervalSelection, method: method, buttonPressed:minor2Button)
     }
     
-    @IBAction func major2Pressed(_ sender: Any) { 
-        checkAnswer(guess: "M2", answer: randomIntervalSelection, buttonPressed: major2Button)
+    @IBAction func major2Pressed(_ sender: Any) {
+        checkAnswer(guess: "M2", answer: randomIntervalSelection, method: method, buttonPressed: major2Button)
     }
     
     @IBAction func minor3Pressed(_ sender: Any) {
-        checkAnswer(guess: "m3", answer: randomIntervalSelection, buttonPressed: minor3Button)
+        checkAnswer(guess: "m3", answer: randomIntervalSelection, method: method, buttonPressed: minor3Button)
     }
     
     @IBAction func major3Pressed(_ sender: Any) {
-        checkAnswer(guess: "M3", answer: randomIntervalSelection, buttonPressed: major3Button)
+        checkAnswer(guess: "M3", answer: randomIntervalSelection, method: method, buttonPressed: major3Button)
     }
     
     @IBAction func perfect4Pressed(_ sender: Any) {
-        checkAnswer(guess: "P4", answer: randomIntervalSelection, buttonPressed: perfect4Button)
+        checkAnswer(guess: "P4", answer: randomIntervalSelection, method: method, buttonPressed: perfect4Button)
     }
     
     @IBAction func tritonePressed(_ sender: Any) {
-        checkAnswer(guess: "TT", answer: randomIntervalSelection, buttonPressed: tritoneButton)
+        checkAnswer(guess: "TT", answer: randomIntervalSelection, method: method, buttonPressed: tritoneButton)
     }
     
     @IBAction func perfect5Pressed(_ sender: Any) {
-        checkAnswer(guess: "P5", answer: randomIntervalSelection, buttonPressed: perfect5Button)
+        checkAnswer(guess: "P5", answer: randomIntervalSelection, method: method, buttonPressed: perfect5Button)
     }
     
     @IBAction func minor6Pressed(_ sender: Any) {
-        checkAnswer(guess: "m6", answer: randomIntervalSelection, buttonPressed: minor6Button)
+        checkAnswer(guess: "m6", answer: randomIntervalSelection, method: method, buttonPressed: minor6Button)
     }
     
     @IBAction func major6Pressed(_ sender: Any) {
-        checkAnswer(guess: "M6", answer: randomIntervalSelection, buttonPressed: major6Button)
+        checkAnswer(guess: "M6", answer: randomIntervalSelection, method: method, buttonPressed: major6Button)
     }
     
     @IBAction func minor7Pressed(_ sender: Any) {
-        checkAnswer(guess: "m7", answer: randomIntervalSelection, buttonPressed: minor7Button)
+        checkAnswer(guess: "m7", answer: randomIntervalSelection, method: method, buttonPressed: minor7Button)
     }
     
     @IBAction func major7Pressed(_ sender: Any) {
-        checkAnswer(guess: "M7", answer: randomIntervalSelection, buttonPressed: major7Button)
+        checkAnswer(guess: "M7", answer: randomIntervalSelection, method: method, buttonPressed: major7Button)
     }
     
     @IBAction func perfect8Pressed(_ sender: Any) {
-        checkAnswer(guess: "P8", answer: randomIntervalSelection, buttonPressed: perfect8Button)
+        checkAnswer(guess: "P8", answer: randomIntervalSelection, method: method, buttonPressed: perfect8Button)
     }
 
     

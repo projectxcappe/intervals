@@ -60,10 +60,11 @@ extension ViewController {
         GSAudio.sharedInstance.playSound(soundFileName: interval)
     }
     
-    func playIntervalSong(interval:String) {
-        //Stick all the intervals in a dict
-
-        print("Interval"+interval)
+    func playIntervalSong(song:String) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            GSAudio.sharedInstance.playSound(soundFileName: song)
+        }
+        print("Song "+song)
     }
 }
 
@@ -79,7 +80,7 @@ extension Array where Element: Equatable {
 }
 
 extension ViewController {
-    func checkAnswer(guess:String, answer:String, buttonPressed:Toggle) {
+    func checkAnswer(guess:String, answer:String, method: String, buttonPressed:Toggle) {
 
         if guess == answer {
             //Reset currentIntervalBeingPlayed, display Correct! label
@@ -105,7 +106,25 @@ extension ViewController {
             }
             
             replayCurrentInterval = true
-            playIntervalSong(interval: answer)
+            //Get interval song
+            var songToBePlayed:String!
+
+            if method == "Ascending" {
+                let ascendingSongs = intervalSongs.SongAscending
+                //Stick all the songs in a dict
+                let currentStructure:[String:String] = ["m2":ascendingSongs.m2, "M2":ascendingSongs.M2, "m3":ascendingSongs.m3, "M3":ascendingSongs.M3, "P4":ascendingSongs.P4, "TT":ascendingSongs.TT, "P5":ascendingSongs.P5, "m6":ascendingSongs.m6, "M6":ascendingSongs.M6, "m7":ascendingSongs.m7, "M7":ascendingSongs.M7, "P8":ascendingSongs.P8]
+                
+                songToBePlayed = currentStructure[answer]
+                
+            } else { //Decending
+                let decendingSongs = intervalSongs.SongDecending
+                //Stick all the songs in a dict
+                let currentStructure:[String:String] = ["m2":decendingSongs.m2, "M2":decendingSongs.M2, "m3":decendingSongs.m3, "M3":decendingSongs.M3, "P4":decendingSongs.P4, "TT":decendingSongs.TT, "P5":decendingSongs.P5, "m6":decendingSongs.m6, "M6":decendingSongs.M6, "m7":decendingSongs.m7, "M7":decendingSongs.M7, "P8":decendingSongs.P8]
+                
+                songToBePlayed = currentStructure[answer]
+            }
+            
+            playIntervalSong(song: songToBePlayed)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
