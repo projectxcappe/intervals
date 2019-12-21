@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501FB30523AEC8920057BD3A /* Gamify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FB30423AEC8920057BD3A /* Gamify.swift */; };
 		505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505ABEA923A5E47900D55377 /* AppDelegate.swift */; };
 		505ABEAC23A5E47900D55377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505ABEAB23A5E47900D55377 /* ViewController.swift */; };
 		505ABEAF23A5E47900D55377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEAD23A5E47900D55377 /* Main.storyboard */; };
@@ -106,6 +107,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		501FB30423AEC8920057BD3A /* Gamify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gamify.swift; sourceTree = "<group>"; };
 		505ABEA623A5E47900D55377 /* Intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		505ABEA923A5E47900D55377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		505ABEAB23A5E47900D55377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				50CE941723AAEF9100A7AB3C /* New Group */,
 				50E25C0523A5EC8500ACEF26 /* Sounds */,
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
+				501FB30423AEC8920057BD3A /* Gamify.swift */,
 				50E25C6E23A73A4000ACEF26 /* Models.swift */,
 				50F46A6723A7FAB7003F8972 /* GSAudio.swift */,
 				50CE944823ADE3CE00A7AB3C /* IntervalColor.swift */,
@@ -530,6 +533,7 @@
 				50CE944923ADE3CE00A7AB3C /* IntervalColor.swift in Sources */,
 				50CE941623AA843D00A7AB3C /* SettingsViewController.swift in Sources */,
 				50F46A6823A7FAB7003F8972 /* GSAudio.swift in Sources */,
+				501FB30523AEC8920057BD3A /* Gamify.swift in Sources */,
 				5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */,
 				505ABEAA23A5E47900D55377 /* AppDelegate.swift in Sources */,
 				50E25C6F23A73A4000ACEF26 /* Models.swift in Sources */,
