@@ -239,7 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				505ABEA923A5E47900D55377 /* AppDelegate.swift */,
-				50CE941723AAEF9100A7AB3C /* New Group */,
+				50CE941723AAEF9100A7AB3C /* Main */,
 				50E25C0523A5EC8500ACEF26 /* Sounds */,
 				50E25C6C23A7312300ACEF26 /* Hardware.swift */,
 				501FB30423AEC8920057BD3A /* Gamify.swift */,
@@ -256,13 +256,13 @@
 			path = Intervals;
 			sourceTree = "<group>";
 		};
-		50CE941723AAEF9100A7AB3C /* New Group */ = {
+		50CE941723AAEF9100A7AB3C /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				505ABEAB23A5E47900D55377 /* ViewController.swift */,
 				50CE941523AA843D00A7AB3C /* SettingsViewController.swift */,
 			);
-			path = "New Group";
+			path = Main;
 			sourceTree = "<group>";
 		};
 		50E25C0523A5EC8500ACEF26 /* Sounds */ = {
