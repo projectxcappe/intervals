@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQs-KH-BTS">
-                                <rect key="frame" x="20" y="0.0" width="374" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLo-Gt-g3C" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
@@ -293,14 +293,17 @@
                                 <color key="textColor" red="0.93087491190000005" green="0.93087491190000005" blue="0.93087491190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Op-Wqd">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-Op-Wqd">
                                 <rect key="frame" x="34" y="141" width="247" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="dI5-0U-DsK"/>
                                 </constraints>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKV-Qg-6Ew" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
-                                <rect key="frame" x="151" y="159" width="130" height="42"/>
+                                <rect key="frame" x="81" y="159" width="200" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="uys-GS-DoT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Play Interval"/>
                                 <userDefinedRuntimeAttributes>
@@ -318,9 +321,11 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nc1-KN-Rrx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
-                                <rect key="frame" x="177" y="209" width="78.5" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" misplaced="YES" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-GS-Sc1">
+                                <rect key="frame" x="81" y="209" width="200" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NaD-5d-VDV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
                                 <color key="textColor" red="0.93087491190000005" green="0.93087491190000005" blue="0.93087491190000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -374,6 +379,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9w-4K-Kgj" secondAttribute="trailing" constant="20" id="bAM-tO-dsN"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="bsP-Vu-WSp"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="cTE-Hr-Go8"/>
+                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="leading" secondItem="eKV-Qg-6Ew" secondAttribute="leading" id="cXM-gC-NBV"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="dgT-jI-etT"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="top" secondItem="68J-xy-xxH" secondAttribute="bottom" constant="8" symbolic="YES" id="edn-9C-imD"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="ff1-0c-SNX"/>
@@ -388,6 +394,8 @@
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="sRp-0q-Hfl"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="sUe-yv-wyC"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="tmM-Mv-e4K"/>
+                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="top" secondItem="eKV-Qg-6Ew" secondAttribute="bottom" constant="8" id="u3f-n1-Bwx"/>
+                            <constraint firstItem="5Yq-GS-Sc1" firstAttribute="trailing" secondItem="eKV-Qg-6Ew" secondAttribute="trailing" id="uXS-Q6-W6a"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="top" secondItem="sn1-Os-pzN" secondAttribute="bottom" constant="8" symbolic="YES" id="uvf-al-NvU"/>
                             <constraint firstItem="lZl-v9-DG1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vYJ-MX-Tdl"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="top" secondItem="ewl-Px-Hai" secondAttribute="bottom" constant="8" symbolic="YES" id="wCA-t2-S34"/>

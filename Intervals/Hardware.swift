@@ -47,17 +47,18 @@ func loadIntervalFile(filename fileName: String) -> IntervalData? {
 
 //Play Sound
 extension ViewController {
-    func playIntervalSound(root:String, interval:String) {
-        print("Root: "+root+" Interval: "+interval)
-        GSAudio.sharedInstance.playSounds(soundFileNames: [root, interval], withDelay: 1.0)
+    func playIntervalSound(root:String, secondNote:String, interval:String) {
+        print("Root: "+root+" secondNote: "+secondNote)
+        GSAudio.sharedInstance.playSounds(soundFileNames: [root, secondNote], withDelay: 1.0)
         displayIntervalColor(interval: interval)
     }
     
-    func playHarmonicIntervalSound(root:String, interval:String) {
-        print("Root: "+root+" Interval: "+interval)
+    func playHarmonicIntervalSound(root:String, secondNote:String, interval:String) {
+        print("Root: "+root+" secondNote: "+secondNote)
         
         GSAudio.sharedInstance.playSound(soundFileName: root)
-        GSAudio.sharedInstance.playSound(soundFileName: interval)
+        GSAudio.sharedInstance.playSound(soundFileName: secondNote)
+        displayIntervalColor(interval: interval)
         
     }
     
@@ -69,10 +70,13 @@ extension ViewController {
     }
     
     func displayIntervalColor(interval:String) {
-        colorView.backgroundColor = UIColor.red
+        
+        let currentStructure:[String:UIColor] = ["m2":UIColor.minor2, "M2":UIColor.major2, "m3":UIColor.minor3, "M3":UIColor.major3, "P4":UIColor.perfect4, "TT":UIColor.tritone, "P5":UIColor.perfect5, "m6":UIColor.minor6, "M6":UIColor.major6, "m7":UIColor.minor7, "M7":UIColor.major7, "P8":UIColor.perfect8]
+        
+        colorView.backgroundColor = currentStructure[interval]
         colorView.alpha = 0.0
 
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             self.colorView.alpha = 1.0
         }) { (true) in
             UIView.animate(withDuration: 1.0, animations: {

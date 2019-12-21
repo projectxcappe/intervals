@@ -147,9 +147,9 @@ class ViewController: UIViewController, SettingsDelegate {
         }
         
         if method != "Harmonic" {
-            playIntervalSound(root: root!, interval: intervalNoteFromRoot!)
+            playIntervalSound(root: root!, secondNote: intervalNoteFromRoot!, interval:randomIntervalSelection)
         } else {
-            playHarmonicIntervalSound(root: root!, interval: intervalNoteFromRoot!)
+            playHarmonicIntervalSound(root: root!, secondNote: intervalNoteFromRoot!, interval:randomIntervalSelection)
         }
 
     }
