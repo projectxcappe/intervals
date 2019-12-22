@@ -15,8 +15,8 @@ struct ResponseData: Decodable {
 struct IntervalData: Decodable {
     var Ascending: [Intervals]
     var Decending: [Intervals]
-    var Color: Colors
     var Song: Song
+    var Triads: Triads
 }
 
 struct Intervals : Decodable {
@@ -33,10 +33,6 @@ struct Intervals : Decodable {
     var m7: String
     var M7: String
     var P8: String
-}
-
-struct Colors : Decodable {
-    
 }
 
 enum IntervalList: String, CaseIterable {
@@ -83,3 +79,8 @@ struct SongDecending : Decodable {
     var P8: String
 }
 
+struct Triads : Decodable {
+    var Triad_Root: [[String]]
+    var Triad_1st: [[String]]
+    var Triad_2nd: [[String]]
+}

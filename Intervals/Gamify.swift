@@ -100,8 +100,9 @@ extension ViewController {
             playIntervalSong(song: songToBePlayed)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             self.correctLabel.alpha = 0.0
         }
+
     }
 }
