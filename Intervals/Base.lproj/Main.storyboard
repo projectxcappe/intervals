@@ -828,6 +828,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triadRootPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="DEs-oz-F4S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-o6-v1Y" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="127" y="8" width="120" height="42"/>
@@ -847,6 +850,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triadFirstPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="SCG-1x-OaE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP8-Cv-2nh" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="246" y="8" width="120" height="42"/>
@@ -866,6 +872,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="triadSecondPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="OaQ-Jn-dlC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-MD-SrV" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="79" y="78" width="65" height="42"/>
@@ -885,6 +894,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="minor7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="ind-0m-dhD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMH-J8-UbM" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="152" y="78" width="70" height="42"/>
@@ -904,6 +916,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dom7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="dTH-Oa-IzL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B84-pn-QWP" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="230" y="78" width="65" height="42"/>
@@ -923,6 +938,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="aug7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="n06-6C-K33"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQZ-Uu-DRT" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="303" y="78" width="65" height="42"/>
@@ -942,6 +960,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="dim7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="Np3-L9-Xa0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-oH-7DM" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                         <rect key="frame" x="6" y="78" width="65" height="42"/>
@@ -961,6 +982,9 @@
                                                 <color key="value" red="0.91359043121337891" green="0.7699248194694519" blue="0.051334328949451447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="major7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="o54-mY-BI0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1004,19 +1028,27 @@
                     </view>
                     <connections>
                         <outlet property="ascButton" destination="qma-4Z-HMe" id="rCZ-fL-a3t"/>
+                        <outlet property="aug7thButton" destination="B84-pn-QWP" id="xPV-rC-i33"/>
                         <outlet property="decButton" destination="TcA-Zr-O8c" id="Abo-dg-7oW"/>
+                        <outlet property="dim7thButton" destination="NQZ-Uu-DRT" id="oUg-Xu-W1b"/>
+                        <outlet property="dom7thButton" destination="RMH-J8-UbM" id="Zcz-ag-TDf"/>
                         <outlet property="harmButton" destination="HDZ-Z0-9Cq" id="1x9-JD-1y6"/>
                         <outlet property="major2Button" destination="Gva-qw-Hkl" id="Lko-aA-n7E"/>
                         <outlet property="major3Button" destination="wys-Ou-eM5" id="DCI-4e-pGh"/>
                         <outlet property="major6Button" destination="Ff9-o6-H9M" id="ws4-Uo-Ftj"/>
                         <outlet property="major7Button" destination="YCw-is-SLv" id="LwE-eP-z1Q"/>
+                        <outlet property="major7thButton" destination="KwX-oH-7DM" id="3BM-8D-jnA"/>
                         <outlet property="minor2Button" destination="iUn-dr-m1p" id="hSP-5x-BAP"/>
                         <outlet property="minor3Button" destination="vjL-kG-CVC" id="sAD-pp-5kM"/>
                         <outlet property="minor6Button" destination="4hw-2I-636" id="qZq-1Y-LQm"/>
                         <outlet property="minor7Button" destination="KyF-1F-D7m" id="XYu-fI-zCN"/>
+                        <outlet property="minor7thButton" destination="VmP-MD-SrV" id="ffO-e3-gHg"/>
                         <outlet property="perfect4Button" destination="qlZ-jY-qwV" id="8cz-TQ-Vo9"/>
                         <outlet property="perfect5Button" destination="ax9-Ny-NF9" id="iY8-pl-RKm"/>
                         <outlet property="perfect8Button" destination="pGU-1m-hQv" id="H7F-5Q-Vjd"/>
+                        <outlet property="triadFirstButton" destination="Guq-o6-v1Y" id="VnP-qb-wmJ"/>
+                        <outlet property="triadRootButton" destination="N9F-dY-BRl" id="wmb-fF-g2z"/>
+                        <outlet property="triadSecondButton" destination="jP8-Cv-2nh" id="DQP-r5-DQ0"/>
                         <outlet property="tritoneButton" destination="qd8-lK-wqL" id="O6r-o0-5Of"/>
                         <outletCollection property="toggleButtonCollection" destination="iUn-dr-m1p" collectionClass="NSMutableArray" id="mWa-qg-BTx"/>
                         <outletCollection property="toggleButtonCollection" destination="Gva-qw-Hkl" collectionClass="NSMutableArray" id="PSc-OV-aSL"/>

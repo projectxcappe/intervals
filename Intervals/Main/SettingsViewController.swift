@@ -31,6 +31,16 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var decButton: Toggle!
     @IBOutlet weak var harmButton: Toggle!
     
+    @IBOutlet weak var triadRootButton: Toggle!
+    @IBOutlet weak var triadFirstButton: Toggle!
+    @IBOutlet weak var triadSecondButton: Toggle!
+    
+    @IBOutlet weak var major7thButton: Toggle!
+    @IBOutlet weak var minor7thButton: Toggle!
+    @IBOutlet weak var dom7thButton: Toggle!
+    @IBOutlet weak var aug7thButton: Toggle!
+    @IBOutlet weak var dim7thButton: Toggle!
+    
     @IBOutlet var toggleButtonCollection: [Toggle]!
     
     var selectedMethods:[String]!
@@ -236,6 +246,38 @@ class SettingsViewController: UIViewController {
         } else {
             selectedMethods.append("Harmonic")
         }
+    }
+    
+    @IBAction func triadRootPressed(_ sender: Any) {
+        triadRootButton.toggleTapped()
+    }
+    
+    @IBAction func triadFirstPressed(_ sender: Any) {
+        triadFirstButton.toggleTapped()
+    }
+    
+    @IBAction func triadSecondPressed(_ sender: Any) {
+        triadSecondButton.toggleTapped()
+    }
+    
+    @IBAction func major7thPressed(_ sender: Any) {
+        major7thButton.toggleTapped()
+    }
+    
+    @IBAction func minor7thPressed(_ sender: Any) {
+        minor7thButton.toggleTapped()
+    }
+    
+    @IBAction func dom7thPressed(_ sender: Any) {
+        dom7thButton.toggleTapped()
+    }
+    
+    @IBAction func aug7thPressed(_ sender: Any) {
+        aug7thButton.toggleTapped()
+    }
+    
+    @IBAction func dim7thPressed(_ sender: Any) {
+        dim7thButton.toggleTapped()
     }
     
     
