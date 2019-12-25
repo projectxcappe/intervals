@@ -38,7 +38,7 @@ extension ViewController {
             let currentIntervals = IntervalsSelected.shared.allIntervals!
             selectedIntervals.append(currentIntervals[selectedIntervals.count])
             
-            settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
+            settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods, updatedChords: selectedChords)
             updateSettings()
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {

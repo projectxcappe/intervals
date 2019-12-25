@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SettingsDelegate: class {
-    func updateSettings(updatedIntervals: [String], updatedMethods: [String])
+    func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String])
 }
 
 class SettingsViewController: UIViewController {
@@ -27,24 +27,27 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var major7Button: Toggle!
     @IBOutlet weak var perfect8Button: Toggle!
     
-    @IBOutlet weak var ascButton: Toggle!
-    @IBOutlet weak var decButton: Toggle!
-    @IBOutlet weak var harmButton: Toggle!
-    
     @IBOutlet weak var triadRootButton: Toggle!
-    @IBOutlet weak var triadFirstButton: Toggle!
-    @IBOutlet weak var triadSecondButton: Toggle!
-    
+    @IBOutlet weak var triad1stButton: Toggle!
+    @IBOutlet weak var triad2ndButton: Toggle!
     @IBOutlet weak var major7thButton: Toggle!
     @IBOutlet weak var minor7thButton: Toggle!
     @IBOutlet weak var dom7thButton: Toggle!
     @IBOutlet weak var aug7thButton: Toggle!
     @IBOutlet weak var dim7thButton: Toggle!
     
+    @IBOutlet weak var ascButton: Toggle!
+    @IBOutlet weak var decButton: Toggle!
+    @IBOutlet weak var harmButton: Toggle!
+
+    
     @IBOutlet var toggleButtonCollection: [Toggle]!
+    @IBOutlet var chordButtonCollection: [Toggle]!
     
     var selectedMethods:[String]!
     var selectedIntervals:[String]!
+    var selectedChords:[String]!
+    
     weak var SettingsDelegate: SettingsDelegate!
     
     override func viewDidLoad() {
@@ -53,6 +56,7 @@ class SettingsViewController: UIViewController {
         //Grab initial intervals
         selectedIntervals = IntervalsSelected.shared.intervals
         selectedMethods  = IntervalsSelected.shared.methods
+        selectedChords = IntervalsSelected.shared.chords
         
         //Grab Intervals
         for i in selectedIntervals {
@@ -72,11 +76,20 @@ class SettingsViewController: UIViewController {
             }
         }
         
+        //Grab Chords
+        for i in selectedChords {
+            for j in chordButtonCollection {
+                if i == j.titleLabel?.text {
+                    j.isSelected = true
+                }
+            }
+        }
+        
 
     }
     
     @IBAction func close(_ sender: Any) {
-        self.SettingsDelegate.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
+        self.SettingsDelegate.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods, updatedChords: selectedChords)
         dismiss(animated: true, completion: nil)
     }
     
@@ -250,34 +263,90 @@ class SettingsViewController: UIViewController {
     
     @IBAction func triadRootPressed(_ sender: Any) {
         triadRootButton.toggleTapped()
+        
+        if selectedChords.contains("Triad Root") {
+            selectedChords.remove(object: "Triad Root")
+        } else {
+            selectedChords.append("Triad Root")
+        }
     }
     
     @IBAction func triadFirstPressed(_ sender: Any) {
-        triadFirstButton.toggleTapped()
+        triad1stButton.toggleTapped()
+        
+        if selectedChords.contains("Triad 1st") {
+            selectedChords.remove(object: "Triad 1st")
+        } else {
+            selectedChords.append("Triad 1st")
+        }
     }
     
     @IBAction func triadSecondPressed(_ sender: Any) {
-        triadSecondButton.toggleTapped()
+        triad2ndButton.toggleTapped()
+        
+        if selectedChords.contains("Triad 2nd") {
+            selectedChords.remove(object: "Triad 2nd")
+        } else {
+            selectedChords.append("Triad 2nd")
+        }
     }
     
     @IBAction func major7thPressed(_ sender: Any) {
         major7thButton.toggleTapped()
+        
+        if selectedChords.contains("M7") {
+            selectedChords.remove(object: "M7")
+        } else {
+            selectedChords.append("M7")
+        }
     }
     
     @IBAction func minor7thPressed(_ sender: Any) {
         minor7thButton.toggleTapped()
+        
+        major7thButton.toggleTapped()
+        
+        if selectedChords.contains("m7") {
+            selectedChords.remove(object: "m7")
+        } else {
+            selectedChords.append("m7")
+        }
     }
     
     @IBAction func dom7thPressed(_ sender: Any) {
         dom7thButton.toggleTapped()
+        
+        major7thButton.toggleTapped()
+        
+        if selectedChords.contains("dom7") {
+            selectedChords.remove(object: "dom7")
+        } else {
+            selectedChords.append("dom7")
+        }
     }
     
     @IBAction func aug7thPressed(_ sender: Any) {
         aug7thButton.toggleTapped()
+        
+        major7thButton.toggleTapped()
+        
+        if selectedChords.contains("aug7") {
+            selectedChords.remove(object: "aug7")
+        } else {
+            selectedChords.append("aug7")
+        }
     }
     
     @IBAction func dim7thPressed(_ sender: Any) {
         dim7thButton.toggleTapped()
+        
+        major7thButton.toggleTapped()
+        
+        if selectedChords.contains("dim7") {
+            selectedChords.remove(object: "dim7")
+        } else {
+            selectedChords.append("dim7")
+        }
     }
     
     

@@ -19,13 +19,15 @@ enum Answer {
 
 class ViewController: UIViewController, SettingsDelegate {
     
-    func updateSettings(updatedIntervals: [String], updatedMethods: [String]) {
+    func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
  
         selectedMethods = updatedMethods
         selectedIntervals = updatedIntervals
+        selectedChords = updatedChords
         
         IntervalsSelected.shared.intervals! = selectedIntervals
         IntervalsSelected.shared.methods! = selectedMethods
+        IntervalsSelected.shared.chords! = selectedChords
         
         updateSettings()
     }
@@ -52,6 +54,20 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var major7Button: Toggle!
     @IBOutlet weak var perfect8Button: Toggle!
     
+    @IBOutlet weak var triadRootButton: Toggle!
+    @IBOutlet weak var triad1stButton: Toggle!
+    @IBOutlet weak var triad2ndButton: Toggle!
+    
+    @IBOutlet weak var dim7thButton: Toggle!
+    @IBOutlet weak var aug7thButton: Toggle!
+    @IBOutlet weak var dom7thButton: Toggle!
+    @IBOutlet weak var minor7thButton: Toggle!
+    @IBOutlet weak var major7thButton: Toggle!
+    
+    @IBOutlet var chordsButtonCollection: [Toggle]!
+    
+    
+    
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
     
@@ -62,6 +78,7 @@ class ViewController: UIViewController, SettingsDelegate {
     var root:String!
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
+    var selectedChords:[String]!
     var settingsDelegate:SettingsDelegate?
     
     var randomIntervalSelection:String!
@@ -79,11 +96,13 @@ class ViewController: UIViewController, SettingsDelegate {
         //Set Up
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
+        selectedChords = IntervalsSelected.shared.chords!
+        
         replayCurrentInterval = false
         correctLabel.alpha = 0.0
         
         //Set up initial intervals
-        settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods)
+        settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods, updatedChords: selectedChords)
         updateSettings()
         
         intervalData = loadIntervalFile(filename:"Intervals")
@@ -104,6 +123,14 @@ class ViewController: UIViewController, SettingsDelegate {
         
         for toggle in toggleButtonCollection {
             if selectedIntervals.contains(toggle.titleLabel!.text!) {
+                toggle.isEnabled = true
+            } else {
+                toggle.isEnabled = false
+            }
+        }
+        
+        for toggle in chordsButtonCollection {
+            if selectedChords.contains(toggle.titleLabel!.text!) {
                 toggle.isEnabled = true
             } else {
                 toggle.isEnabled = false
