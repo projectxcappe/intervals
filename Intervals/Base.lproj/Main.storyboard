@@ -348,6 +348,9 @@
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="triadRootPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hx-DW-zpX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgz-b9-54o" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="341" width="130" height="42"/>
@@ -367,6 +370,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="triad1stPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kD3-6K-O3Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSK-lP-Atl" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="391" width="130" height="42"/>
@@ -386,6 +392,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="triad2ndPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAB-bj-0u3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7F-Vi-Wl9" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="759.5" width="130" height="42"/>
@@ -405,6 +414,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dim7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9p-CQ-gpV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX5-72-EEc" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="709.5" width="130" height="42"/>
@@ -424,6 +436,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="aug7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qf5-Cb-xzK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-8S-TW5" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="659.5" width="130" height="42"/>
@@ -443,6 +458,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dom7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xL-b0-gJE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNK-8i-MFV" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="609.5" width="130" height="42"/>
@@ -462,6 +480,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="minor7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AsQ-Af-RyW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLD-Hi-lsz" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="20" y="615" width="46" height="30"/>
@@ -481,6 +502,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="major7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THK-WL-Uno"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

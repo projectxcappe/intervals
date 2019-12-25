@@ -109,4 +109,36 @@ extension ViewController {
         }
 
     }
+    
+    func checkChordAnswer(guess:String, answer:String, buttonPressed:Toggle) {
+        if guess == answer {
+            //Reset currentIntervalBeingPlayed, display Correct! label
+            //Disable play button temporarily
+            replayCurrentInterval = false
+            beginButton.isEnabled = false
+            self.correctLabel.text = "Correct!"
+            self.correctLabel.alpha = 1.0
+            
+            //Update progress bar
+            self.updateProgress(status: .Correct)
+            
+            //play new interval, re-enable play button
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.beginButton.isEnabled = true
+                self.playChord()
+                self.updateSettings()
+            }
+        } else {
+            //Disable guess, demote progress
+            buttonPressed.isEnabled = false
+            self.updateProgress(status: .Incorrect)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.correctLabel.text = "Incorrect."
+                self.correctLabel.alpha = 1.0
+            }
+            
+            replayCurrentInterval = true
+        }
+    }
 }

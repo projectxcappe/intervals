@@ -95,8 +95,7 @@ class ViewController: UIViewController, SettingsDelegate {
     var method:String!
     
     var chordNotesToBePlayed:[String]!
-    
-    var chord:String!
+    var chordType:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,13 +159,13 @@ class ViewController: UIViewController, SettingsDelegate {
             
             //Select chord depending on settings, grab a random one from settings
             let chords = IntervalsSelected.shared.chords
-            chord = chords?.randomElement()
+            chordType = chords?.randomElement()
 
             //Stick all the chords notes in an dict
             let currentStructure:[String:[[String]]] = ["Triad Root":intervalChords.Triad_Root, "Triad First":intervalChords.Triad_1st, "Triad Second":intervalChords.Triad_2nd]
 
             //Grab intervals from settings and get the real note value
-            chordNotesToBePlayed = (currentStructure[chord]?.randomElement())!
+            chordNotesToBePlayed = (currentStructure[chordType]?.randomElement())!
 
             replayCurrentInterval = true //allow user to replay this interval if needed to
             
@@ -269,6 +268,39 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBAction func perfect8Pressed(_ sender: Any) {
         checkAnswer(guess: "P8", answer: randomIntervalSelection, method: method, buttonPressed: perfect8Button)
     }
+    
+    @IBAction func triadRootPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad Root", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func triad1stPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 1st", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func triad2ndPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 2nd", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func dim7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "dim7", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func aug7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "aug7", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func dom7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "dom7", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func minor7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "m7", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
+    @IBAction func major7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
+    }
+    
 
     //Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
