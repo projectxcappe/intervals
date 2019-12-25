@@ -16,7 +16,7 @@ struct IntervalData: Decodable {
     var Ascending: [Intervals]
     var Decending: [Intervals]
     var Song: Song
-    var Triads: Triads
+    var Chord: Chord
 }
 
 struct Intervals : Decodable {
@@ -79,7 +79,7 @@ struct SongDecending : Decodable {
     var P8: String
 }
 
-struct Triads : Decodable {
+struct Chord : Decodable {
     var Triad_Root: [[String]]
     var Triad_1st: [[String]]
     var Triad_2nd: [[String]]

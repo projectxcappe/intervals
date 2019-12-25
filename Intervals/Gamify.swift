@@ -36,13 +36,17 @@ extension ViewController {
             CURR_ANSWER = 0.0
             
             let currentIntervals = IntervalsSelected.shared.allIntervals!
-            selectedIntervals.append(currentIntervals[selectedIntervals.count])
-            
-            settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods, updatedChords: selectedChords)
-            updateSettings()
+            if currentIntervals.count != currentIntervals.capacity {
+                selectedIntervals.append(currentIntervals[selectedIntervals.count])
+                settingsDelegate?.updateSettings(updatedIntervals: selectedIntervals, updatedMethods: selectedMethods, updatedChords: selectedChords)
+                updateSettings()
+            }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.progressView.setProgress(self.CURR_ANSWER, animated: true)
+                if self.CURR_ANSWER == 1.0 {
+                     self.correctLabel.text = "FINISHED!"
+                }
             }
             
             

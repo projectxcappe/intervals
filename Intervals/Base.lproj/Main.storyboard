@@ -305,7 +305,7 @@
                                     <constraint firstAttribute="width" constant="200" id="uys-GS-DoT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Play Interval"/>
+                                <state key="normal" title="Play"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="1"/>
@@ -1174,7 +1174,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="3hG-an-3T1"/>
-                                    <constraint firstItem="N9F-dY-BRl" firstAttribute="leading" secondItem="alQ-tZ-H6o" secondAttribute="leading" constant="8" id="3rm-C8-dS4"/>
+                                    <constraint firstItem="N9F-dY-BRl" firstAttribute="leading" secondItem="alQ-tZ-H6o" secondAttribute="leading" constant="5" id="3rm-C8-dS4"/>
                                     <constraint firstItem="Guq-o6-v1Y" firstAttribute="top" secondItem="alQ-tZ-H6o" secondAttribute="top" constant="8" id="49n-81-lhV"/>
                                     <constraint firstItem="RMH-J8-UbM" firstAttribute="leading" secondItem="VmP-MD-SrV" secondAttribute="trailing" constant="8" id="6dM-Pt-j3f"/>
                                     <constraint firstItem="NQZ-Uu-DRT" firstAttribute="leading" secondItem="B84-pn-QWP" secondAttribute="trailing" constant="8" id="7BX-7R-EIH"/>
@@ -1191,7 +1191,7 @@
                                     <constraint firstAttribute="bottom" secondItem="VmP-MD-SrV" secondAttribute="bottom" constant="8" id="e6k-cS-eSQ"/>
                                     <constraint firstItem="jP8-Cv-2nh" firstAttribute="top" secondItem="alQ-tZ-H6o" secondAttribute="top" constant="8" id="eQM-Wa-utw"/>
                                     <constraint firstAttribute="bottom" secondItem="KwX-oH-7DM" secondAttribute="bottom" constant="8" id="hAm-7H-3K8"/>
-                                    <constraint firstAttribute="trailing" secondItem="jP8-Cv-2nh" secondAttribute="trailing" constant="8" id="hnK-ie-vF0"/>
+                                    <constraint firstAttribute="trailing" secondItem="jP8-Cv-2nh" secondAttribute="trailing" constant="5" id="hnK-ie-vF0"/>
                                     <constraint firstItem="Guq-o6-v1Y" firstAttribute="centerX" secondItem="alQ-tZ-H6o" secondAttribute="centerX" id="u1W-Gv-PWR"/>
                                     <constraint firstAttribute="bottom" secondItem="NQZ-Uu-DRT" secondAttribute="bottom" constant="8" id="ync-8x-tqq"/>
                                 </constraints>

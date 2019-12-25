@@ -17,6 +17,11 @@ enum Answer {
     case Setup
 }
 
+enum PlayType {
+    case Interval
+    case Chord
+}
+
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
@@ -66,15 +71,14 @@ class ViewController: UIViewController, SettingsDelegate {
     
     @IBOutlet var chordsButtonCollection: [Toggle]!
     
-    
-    
     var audioPlayer: AVAudioPlayer?
     var audioPlayer2: AVAudioPlayer?
     
     var intervalData:IntervalData!
     var interval:Intervals!
     var intervalSongs:Song!
-
+    var intervalChords:Chord!
+    
     var root:String!
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
@@ -90,6 +94,10 @@ class ViewController: UIViewController, SettingsDelegate {
     var intervalNoteFromRoot:String!
     var method:String!
     
+    var chordNotesToBePlayed:[String]!
+    
+    var chord:String!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -107,6 +115,7 @@ class ViewController: UIViewController, SettingsDelegate {
         
         intervalData = loadIntervalFile(filename:"Intervals")
         intervalSongs = intervalData.Song
+        intervalChords = intervalData.Chord
         
         updateProgress(status: .Setup)
 
@@ -145,6 +154,28 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
 
+    func playChord() {
+        //If current chord needs to be played, play it, otherwise select a new interval
+        if !replayCurrentInterval {
+            
+            //Select chord depending on settings, grab a random one from settings
+            let chords = IntervalsSelected.shared.chords
+            chord = chords?.randomElement()
+
+            //Stick all the chords notes in an dict
+            let currentStructure:[String:[[String]]] = ["Triad Root":intervalChords.Triad_Root, "Triad First":intervalChords.Triad_1st, "Triad Second":intervalChords.Triad_2nd]
+
+            //Grab intervals from settings and get the real note value
+            chordNotesToBePlayed = (currentStructure[chord]?.randomElement())!
+
+            replayCurrentInterval = true //allow user to replay this interval if needed to
+            
+        }
+        
+        GSAudio.sharedInstance.playSounds(soundFileNames: chordNotesToBePlayed)
+
+    }
+    
     func playInterval() {
         
         //If current interval needs to be played, play it, otherwise select a new interval
@@ -187,7 +218,8 @@ class ViewController: UIViewController, SettingsDelegate {
 
     @IBAction func beginPressed(_ sender: Any) {
         beginButton.setTitle("Replay Interval", for: .normal)
-        playInterval()
+//            playInterval()
+            playChord()
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
