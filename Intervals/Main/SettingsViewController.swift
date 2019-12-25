@@ -303,9 +303,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func minor7thPressed(_ sender: Any) {
         minor7thButton.toggleTapped()
-        
-        major7thButton.toggleTapped()
-        
+
         if selectedChords.contains("m7") {
             selectedChords.remove(object: "m7")
         } else {
@@ -316,8 +314,6 @@ class SettingsViewController: UIViewController {
     @IBAction func dom7thPressed(_ sender: Any) {
         dom7thButton.toggleTapped()
         
-        major7thButton.toggleTapped()
-        
         if selectedChords.contains("dom7") {
             selectedChords.remove(object: "dom7")
         } else {
@@ -327,9 +323,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func aug7thPressed(_ sender: Any) {
         aug7thButton.toggleTapped()
-        
-        major7thButton.toggleTapped()
-        
+
         if selectedChords.contains("aug7") {
             selectedChords.remove(object: "aug7")
         } else {
@@ -339,9 +333,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func dim7thPressed(_ sender: Any) {
         dim7thButton.toggleTapped()
-        
-        major7thButton.toggleTapped()
-        
+
         if selectedChords.contains("dim7") {
             selectedChords.remove(object: "dim7")
         } else {
