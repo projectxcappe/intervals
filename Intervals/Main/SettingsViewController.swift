@@ -27,9 +27,13 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var major7Button: Toggle!
     @IBOutlet weak var perfect8Button: Toggle!
     
-    @IBOutlet weak var triadRootButton: Toggle!
-    @IBOutlet weak var triad1stButton: Toggle!
-    @IBOutlet weak var triad2ndButton: Toggle!
+    @IBOutlet weak var triadRootMajorButton: Toggle!
+    @IBOutlet weak var triadRootMinorButton: Toggle!
+    @IBOutlet weak var triad1stMajorButton: Toggle!
+    @IBOutlet weak var triad1stMinorButton: Toggle!
+    @IBOutlet weak var triad2ndMajorButton: Toggle!
+    @IBOutlet weak var triad2ndMinorButton: Toggle!
+    
     @IBOutlet weak var major7thButton: Toggle!
     @IBOutlet weak var minor7thButton: Toggle!
     @IBOutlet weak var dom7thButton: Toggle!
@@ -261,33 +265,63 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    @IBAction func triadRootPressed(_ sender: Any) {
-        triadRootButton.toggleTapped()
+    @IBAction func triadRootMajorPressed(_ sender: Any) {
+        triadRootMajorButton.toggleTapped()
         
-        if selectedChords.contains("Triad Root") {
-            selectedChords.remove(object: "Triad Root")
+        if selectedChords.contains("Triad Root Major") {
+            selectedChords.remove(object: "Triad Root Major")
         } else {
-            selectedChords.append("Triad Root")
+            selectedChords.append("Triad Root Major")
         }
     }
     
-    @IBAction func triadFirstPressed(_ sender: Any) {
-        triad1stButton.toggleTapped()
+    @IBAction func triadRootMinorPressed(_ sender: Any) {
+        triadRootMinorButton.toggleTapped()
         
-        if selectedChords.contains("Triad 1st") {
-            selectedChords.remove(object: "Triad 1st")
+        if selectedChords.contains("Triad Root Minor") {
+            selectedChords.remove(object: "Triad Root Minor")
         } else {
-            selectedChords.append("Triad 1st")
+            selectedChords.append("Triad Root Minor")
         }
     }
     
-    @IBAction func triadSecondPressed(_ sender: Any) {
-        triad2ndButton.toggleTapped()
+    @IBAction func triad1stMajorPressed(_ sender: Any) {
+        triad1stMajorButton.toggleTapped()
         
-        if selectedChords.contains("Triad 2nd") {
-            selectedChords.remove(object: "Triad 2nd")
+        if selectedChords.contains("Triad 1st Major") {
+            selectedChords.remove(object: "Triad 1st Major")
         } else {
-            selectedChords.append("Triad 2nd")
+            selectedChords.append("Triad 1st Major")
+        }
+    }
+    
+    @IBAction func triad1stMinorPressed(_ sender: Any) {
+        triad1stMinorButton.toggleTapped()
+        
+        if selectedChords.contains("Triad 1st Minor") {
+            selectedChords.remove(object: "Triad 1st Minor")
+        } else {
+            selectedChords.append("Triad 1st Minor")
+        }
+    }
+    
+    @IBAction func triad2nsMajorPressed(_ sender: Any) {
+        triad2ndMajorButton.toggleTapped()
+        
+        if selectedChords.contains("Triad 2nd Major") {
+            selectedChords.remove(object: "Triad 2nd Major")
+        } else {
+            selectedChords.append("Triad 2nd Major")
+        }
+    }
+    
+    @IBAction func triad2ndMinorPressed(_ sender: Any) {
+        triad2ndMinorButton.toggleTapped()
+        
+        if selectedChords.contains("Triad 2nd Minor") {
+            selectedChords.remove(object: "Triad 2nd Minor")
+        } else {
+            selectedChords.append("Triad 2nd Minor")
         }
     }
     

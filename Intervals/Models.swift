@@ -80,6 +80,11 @@ struct SongDecending : Decodable {
 }
 
 struct Chord : Decodable {
+    var Major: Triads
+    var Minor: Triads
+}
+
+struct Triads : Decodable {
     var Triad_Root: [[String]]
     var Triad_1st: [[String]]
     var Triad_2nd: [[String]]

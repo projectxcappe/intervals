@@ -22,6 +22,11 @@ enum PlayType {
     case Chord
 }
 
+enum ChordQuality {
+    case Major
+    case Minor
+}
+
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
@@ -59,9 +64,12 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var major7Button: Toggle!
     @IBOutlet weak var perfect8Button: Toggle!
     
-    @IBOutlet weak var triadRootButton: Toggle!
-    @IBOutlet weak var triad1stButton: Toggle!
-    @IBOutlet weak var triad2ndButton: Toggle!
+    @IBOutlet weak var triadRootMajorButton: Toggle!
+    @IBOutlet weak var triadRootMinorButton: Toggle!
+    @IBOutlet weak var triad1stMajorButton: Toggle!
+    @IBOutlet weak var triad1stMinorButton: Toggle!
+    @IBOutlet weak var triad2ndMajorButton: Toggle!
+    @IBOutlet weak var triad2ndMinorButton: Toggle!
     
     @IBOutlet weak var dim7thButton: Toggle!
     @IBOutlet weak var aug7thButton: Toggle!
@@ -96,6 +104,7 @@ class ViewController: UIViewController, SettingsDelegate {
     
     var chordNotesToBePlayed:[String]!
     var chordType:String!
+    var chordQuality:ChordQuality!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,6 +147,7 @@ class ViewController: UIViewController, SettingsDelegate {
         }
         
         for toggle in chordsButtonCollection {
+            print(toggle.titleLabel?.text)
             if selectedChords.contains(toggle.titleLabel!.text!) {
                 toggle.isEnabled = true
             } else {
@@ -160,11 +170,15 @@ class ViewController: UIViewController, SettingsDelegate {
             //Select chord depending on settings, grab a random one from settings
             let chords = IntervalsSelected.shared.chords
             chordType = chords?.randomElement()
-
+       
+            let qualityStructure:[String:[Triads]] = ["Major":[intervalChords!.Major], "Minor":[intervalChords!.Minor]]
+            
             //Stick all the chords notes in an dict
-            let currentStructure:[String:[[String]]] = ["Triad Root":intervalChords.Triad_Root, "Triad First":intervalChords.Triad_1st, "Triad Second":intervalChords.Triad_2nd]
+            let currentStructure:[String:[[String]]] = ["Triad Root Major":intervalChords.Major.Triad_Root, "Triad Root Minor":intervalChords.Minor.Triad_Root, "Triad 1st Major":intervalChords.Major.Triad_1st, "Triad 1st Minor":intervalChords.Minor.Triad_1st, "Triad 2nd Major":intervalChords.Major.Triad_2nd, "Triad 2nd Minor":intervalChords.Minor.Triad_2nd]
 
-            //Grab intervals from settings and get the real note value
+            
+
+            //Grab intervals from chord type and get the note values
             chordNotesToBePlayed = (currentStructure[chordType]?.randomElement())!
 
             replayCurrentInterval = true //allow user to replay this interval if needed to
@@ -269,36 +283,49 @@ class ViewController: UIViewController, SettingsDelegate {
         checkAnswer(guess: "P8", answer: randomIntervalSelection, method: method, buttonPressed: perfect8Button)
     }
     
-    @IBAction func triadRootPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad Root", answer: chordType, buttonPressed: triadRootButton)
+    @IBAction func triadRootMajorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad Root Major", answer: chordType, quality: chordQuality, buttonPressed: triadRootMajorButton)
     }
     
-    @IBAction func triad1stPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 1st", answer: chordType, buttonPressed: triadRootButton)
+    @IBAction func triadRootMinorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad Root Minor", answer: chordType, quality: chordQuality, buttonPressed: triadRootMinorButton)
     }
     
-    @IBAction func triad2ndPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 2nd", answer: chordType, buttonPressed: triadRootButton)
+    @IBAction func triad1stMajorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 1st Major", answer: chordType, quality: chordQuality, buttonPressed: triad1stMajorButton)
     }
+    
+    @IBAction func triad1stMinorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 1st Minor", answer: chordType, quality: chordQuality, buttonPressed: triad1stMinorButton)
+    }
+    
+    @IBAction func triad2ndMajorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 2nd Major", answer: chordType, quality: chordQuality, buttonPressed: triad2ndMajorButton)
+    }
+    
+    @IBAction func triad2ndMinorPressed(_ sender: Any) {
+        checkChordAnswer(guess: "Triad 2nd Minor", answer: chordType, quality: chordQuality, buttonPressed: triad2ndMinorButton)
+    }
+    
     
     @IBAction func dim7thPressed(_ sender: Any) {
-        checkChordAnswer(guess: "dim7", answer: chordType, buttonPressed: triadRootButton)
+//        checkChordAnswer(guess: "dim7", answer: chordType, buttonPressed: triadRootButton)
     }
     
     @IBAction func aug7thPressed(_ sender: Any) {
-        checkChordAnswer(guess: "aug7", answer: chordType, buttonPressed: triadRootButton)
+//        checkChordAnswer(guess: "aug7", answer: chordType, buttonPressed: triadRootButton)
     }
     
     @IBAction func dom7thPressed(_ sender: Any) {
-        checkChordAnswer(guess: "dom7", answer: chordType, buttonPressed: triadRootButton)
+//        checkChordAnswer(guess: "dom7", answer: chordType, buttonPressed: triadRootButton)
     }
     
     @IBAction func minor7thPressed(_ sender: Any) {
-        checkChordAnswer(guess: "m7", answer: chordType, buttonPressed: triadRootButton)
+//        checkChordAnswer(guess: "m7", answer: chordType, buttonPressed: triadRootButton)
     }
     
     @IBAction func major7thPressed(_ sender: Any) {
-        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
+//        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
     }
     
 
