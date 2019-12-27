@@ -56,7 +56,10 @@ extension ViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             GSAudio.sharedInstance.playSound(soundFileName: secondNote)
         }
-        displayIntervalColor(interval: interval)
+        
+        if colorSwitch.isOn {
+            displayIntervalColor(interval: interval)
+        }
     }
     
     func playHarmonicIntervalSound(root:String, secondNote:String, interval:String) {
@@ -64,7 +67,10 @@ extension ViewController {
         
         GSAudio.sharedInstance.playSound(soundFileName: root)
         GSAudio.sharedInstance.playSound(soundFileName: secondNote)
-        displayIntervalColor(interval: interval)
+        
+        if colorSwitch.isOn {
+            displayIntervalColor(interval: interval)
+        }
         
     }
     
@@ -75,9 +81,13 @@ extension ViewController {
         print("Song "+song)
     }
     
-    func playChordSounds(chord:[String]) {
-        print(chord)
-        GSAudio.sharedInstance.playSounds(soundFileNames: chordNotesToBePlayed)
+    func playChordSounds(chordNotes:[String], chordQaulity:String) {
+        print(chordNotes, chordQaulity)
+        GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
+        
+        if colorSwitch.isOn {
+            displayChordColor(chordQuality: chordQaulity)
+        }
     }
     
     func displayIntervalColor(interval:String) {
@@ -97,11 +107,11 @@ extension ViewController {
 
     }
     
-    func displayChordColor(chord:String) {
+    func displayChordColor(chordQuality:String) {
         
-        let currentStructure:[String:UIColor] = ["m2":UIColor.minor2, "M2":UIColor.major2, "m3":UIColor.minor3, "M3":UIColor.major3, "P4":UIColor.perfect4, "TT":UIColor.tritone, "P5":UIColor.perfect5, "m6":UIColor.minor6, "M6":UIColor.major6, "m7":UIColor.minor7, "M7":UIColor.major7, "P8":UIColor.perfect8]
+        let currentStructure:[String:UIColor] = ["Triad Root Major":UIColor.triadRootMajor, "Triad Root Minor":UIColor.triadRootMinor, "Triad 1st Major":UIColor.triad1stMajor, "Triad 1st Minor":UIColor.triad1stMinor, "Triad 2nd Major":UIColor.triad2ndMajor, "Triad 2nd Minor":UIColor.triad2ndMinor]
         
-        colorView.backgroundColor = currentStructure[chord]
+        colorView.backgroundColor = currentStructure[chordQuality]
         colorView.alpha = 0.0
         
         UIView.animate(withDuration: 1.0, animations: {

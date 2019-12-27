@@ -27,6 +27,8 @@ enum ChordQuality {
     case Minor
 }
 
+private var useColor = true
+
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
@@ -44,6 +46,7 @@ class ViewController: UIViewController, SettingsDelegate {
     
     
     @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var colorSwitch: UISwitch!
     
     @IBOutlet weak var selectedMethodsLabel: UILabel!
     @IBOutlet var toggleButtonCollection:[Toggle]!
@@ -184,7 +187,7 @@ class ViewController: UIViewController, SettingsDelegate {
             
         }
         
-        playChordSounds(chord: chordNotesToBePlayed)
+        playChordSounds(chordNotes: chordNotesToBePlayed, chordQaulity:chordType)
 
     }
     
@@ -326,6 +329,16 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBAction func major7thPressed(_ sender: Any) {
 //        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
     }
+    
+    @IBAction func colorSwitchPressed(_ sender: Any) {
+        if colorSwitch.isOn {
+            useColor = true
+        }
+        else {
+            useColor = false
+        }
+    }
+    
     
 
     //Segue

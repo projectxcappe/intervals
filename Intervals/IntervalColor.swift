@@ -25,7 +25,7 @@ extension UIColor {
     
         //Triads
         static let triadRootMajor = UIColor(red: 50/255.0, green: 94/255.0, blue: 168/255.0, alpha: 1.0)
-        static let traidRootMinor = UIColor(red: 19/255.0, green: 23/255.0, blue: 214/255.0, alpha: 1.0)
+        static let triadRootMinor = UIColor(red: 19/255.0, green: 23/255.0, blue: 214/255.0, alpha: 1.0)
         static let triad1stMajor = UIColor(red: 176/255.0, green: 30/255.0, blue: 30/255.0, alpha: 1.0)
         static let triad1stMinor = UIColor(red: 222/255.0, green: 13/255.0, blue: 13/255.0, alpha: 1.0)
         static let triad2ndMajor = UIColor(red: 22/255.0, green: 112/255.0, blue: 27/255.0, alpha: 1.0)

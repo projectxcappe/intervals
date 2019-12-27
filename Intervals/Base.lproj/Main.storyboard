@@ -561,6 +561,12 @@
                                     <action selector="major7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THK-WL-Uno"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-16-qoR">
+                                <rect key="frame" x="315" y="801" width="51" height="31"/>
+                                <connections>
+                                    <action selector="colorSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="XBd-hh-whI"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -571,6 +577,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CnS-B5-Nmx" secondAttribute="bottom" constant="179" id="3c5-ma-Cpz"/>
                             <constraint firstItem="KOk-oP-CR6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4i6-dy-t59"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="53a-zR-pi9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l7c-16-qoR" secondAttribute="trailing" constant="50" id="5am-J3-Euk"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="640-c8-omh"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="top" secondItem="LR2-yZ-8Ts" secondAttribute="bottom" constant="8" symbolic="YES" id="73m-dr-EaG"/>
                             <constraint firstItem="mX5-72-EEc" firstAttribute="top" secondItem="3jh-8S-TW5" secondAttribute="bottom" constant="8" id="7mX-tN-Sbh"/>
@@ -658,6 +665,7 @@
                             <constraint firstItem="gm3-dw-poa" firstAttribute="top" secondItem="ewl-Px-Hai" secondAttribute="bottom" constant="8" symbolic="YES" id="wCA-t2-S34"/>
                             <constraint firstItem="MBm-AH-xdG" firstAttribute="centerY" secondItem="u2G-Qj-iuR" secondAttribute="centerY" id="x5S-9h-3YW"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="xPU-u0-z4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l7c-16-qoR" secondAttribute="bottom" constant="30" id="yxa-2D-FkL"/>
                             <constraint firstItem="Qdu-4M-8Oc" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="zMw-1Q-82b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -665,6 +673,7 @@
                     <connections>
                         <outlet property="aug7thButton" destination="mX5-72-EEc" id="7Xv-DF-BRJ"/>
                         <outlet property="beginButton" destination="eKV-Qg-6Ew" id="1al-0l-4pZ"/>
+                        <outlet property="colorSwitch" destination="l7c-16-qoR" id="C6H-La-FFq"/>
                         <outlet property="colorView" destination="KOk-oP-CR6" id="Ixw-Cd-fdY"/>
                         <outlet property="correctLabel" destination="5Yq-GS-Sc1" id="akG-Xx-UER"/>
                         <outlet property="dim7thButton" destination="k7F-Vi-Wl9" id="UwU-gZ-4TY"/>
