@@ -283,27 +283,27 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
     @IBAction func triadRootMajorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad Root Major", answer: chordType, quality: chordQuality, buttonPressed: triadRootMajorButton)
+        checkChordAnswer(guess: "Triad Root Major", answer: chordType, buttonPressed: triadRootMajorButton)
     }
     
     @IBAction func triadRootMinorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad Root Minor", answer: chordType, quality: chordQuality, buttonPressed: triadRootMinorButton)
+        checkChordAnswer(guess: "Triad Root Minor", answer: chordType, buttonPressed: triadRootMinorButton)
     }
     
     @IBAction func triad1stMajorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 1st Major", answer: chordType, quality: chordQuality, buttonPressed: triad1stMajorButton)
+        checkChordAnswer(guess: "Triad 1st Major", answer: chordType, buttonPressed: triad1stMajorButton)
     }
     
     @IBAction func triad1stMinorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 1st Minor", answer: chordType, quality: chordQuality, buttonPressed: triad1stMinorButton)
+        checkChordAnswer(guess: "Triad 1st Minor", answer: chordType, buttonPressed: triad1stMinorButton)
     }
     
     @IBAction func triad2ndMajorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 2nd Major", answer: chordType, quality: chordQuality, buttonPressed: triad2ndMajorButton)
+        checkChordAnswer(guess: "Triad 2nd Major", answer: chordType, buttonPressed: triad2ndMajorButton)
     }
     
     @IBAction func triad2ndMinorPressed(_ sender: Any) {
-        checkChordAnswer(guess: "Triad 2nd Minor", answer: chordType, quality: chordQuality, buttonPressed: triad2ndMinorButton)
+        checkChordAnswer(guess: "Triad 2nd Minor", answer: chordType, buttonPressed: triad2ndMinorButton)
     }
     
     
