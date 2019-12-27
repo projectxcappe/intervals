@@ -27,8 +27,6 @@ enum ChordQuality {
     case Minor
 }
 
-private var useColor = true
-
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
@@ -111,6 +109,9 @@ class ViewController: UIViewController, SettingsDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        colorSwitch.backgroundColor = UIColor.clear
+        colorSwitch.onTintColor = UIColor.darkGray
         
         //Set Up
         selectedIntervals = IntervalsSelected.shared.intervals!
@@ -330,17 +331,6 @@ class ViewController: UIViewController, SettingsDelegate {
 //        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
     }
     
-    @IBAction func colorSwitchPressed(_ sender: Any) {
-        if colorSwitch.isOn {
-            useColor = true
-        }
-        else {
-            useColor = false
-        }
-    }
-    
-    
-
     //Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

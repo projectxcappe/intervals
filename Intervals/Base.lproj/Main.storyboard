@@ -563,9 +563,6 @@
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-16-qoR">
                                 <rect key="frame" x="315" y="801" width="51" height="31"/>
-                                <connections>
-                                    <action selector="colorSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="XBd-hh-whI"/>
-                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
