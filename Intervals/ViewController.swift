@@ -147,7 +147,6 @@ class ViewController: UIViewController, SettingsDelegate {
         }
         
         for toggle in chordsButtonCollection {
-            print(toggle.titleLabel?.text)
             if selectedChords.contains(toggle.titleLabel!.text!) {
                 toggle.isEnabled = true
             } else {
