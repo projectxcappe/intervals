@@ -75,6 +75,11 @@ extension ViewController {
         print("Song "+song)
     }
     
+    func playChordSounds(chord:[String]) {
+        print(chord)
+        GSAudio.sharedInstance.playSounds(soundFileNames: chordNotesToBePlayed)
+    }
+    
     func displayIntervalColor(interval:String) {
         
         let currentStructure:[String:UIColor] = ["m2":UIColor.minor2, "M2":UIColor.major2, "m3":UIColor.minor3, "M3":UIColor.major3, "P4":UIColor.perfect4, "TT":UIColor.tritone, "P5":UIColor.perfect5, "m6":UIColor.minor6, "M6":UIColor.major6, "m7":UIColor.minor7, "M7":UIColor.major7, "P8":UIColor.perfect8]
@@ -90,6 +95,23 @@ extension ViewController {
             })
         }
 
+    }
+    
+    func displayChordColor(chord:String) {
+        
+        let currentStructure:[String:UIColor] = ["m2":UIColor.minor2, "M2":UIColor.major2, "m3":UIColor.minor3, "M3":UIColor.major3, "P4":UIColor.perfect4, "TT":UIColor.tritone, "P5":UIColor.perfect5, "m6":UIColor.minor6, "M6":UIColor.major6, "m7":UIColor.minor7, "M7":UIColor.major7, "P8":UIColor.perfect8]
+        
+        colorView.backgroundColor = currentStructure[chord]
+        colorView.alpha = 0.0
+        
+        UIView.animate(withDuration: 1.0, animations: {
+            self.colorView.alpha = 1.0
+        }) { (true) in
+            UIView.animate(withDuration: 1.0, animations: {
+                self.colorView.alpha = 0.0
+            })
+        }
+        
     }
 }
 

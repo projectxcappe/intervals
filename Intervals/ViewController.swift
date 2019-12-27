@@ -179,12 +179,12 @@ class ViewController: UIViewController, SettingsDelegate {
 
             //Grab intervals from chord type and get the note values
             chordNotesToBePlayed = (currentStructure[chordType]?.randomElement())!
-
+            print(chordNotesToBePlayed)
             replayCurrentInterval = true //allow user to replay this interval if needed to
             
         }
         
-        GSAudio.sharedInstance.playSounds(soundFileNames: chordNotesToBePlayed)
+        playChordSounds(chord: chordNotesToBePlayed)
 
     }
     
