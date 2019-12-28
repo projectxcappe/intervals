@@ -14,6 +14,7 @@
 		505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB023A5E47A00D55377 /* Assets.xcassets */; };
 		505ABEB423A5E47A00D55377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */; };
 		5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099776223A9EAC400CE0B9A /* Toggle.swift */; };
+		50BB290323B72CD500CA7547 /* G4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50BB290223B72CD500CA7547 /* G4.aifc */; };
 		50CE941623AA843D00A7AB3C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE941523AA843D00A7AB3C /* SettingsViewController.swift */; };
 		50CE943023AD377900A7AB3C /* tt_dec_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE941823AD377800A7AB3C /* tt_dec_song.aifc */; };
 		50CE943123AD377900A7AB3C /* major2_dec_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE941923AD377800A7AB3C /* major2_dec_song.aifc */; };
@@ -74,7 +75,6 @@
 		50E25C5223A5F0DE00ACEF26 /* G3.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2523A5F0DD00ACEF26 /* G3.aifc */; };
 		50E25C5323A5F0DE00ACEF26 /* Ab4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */; };
 		50E25C5423A5F0DE00ACEF26 /* Bb4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2723A5F0DD00ACEF26 /* Bb4.aifc */; };
-		50E25C5523A5F0DE00ACEF26 /* G4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2823A5F0DD00ACEF26 /* G4.aifc */; };
 		50E25C5623A5F0DE00ACEF26 /* Gb5.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2923A5F0DD00ACEF26 /* Gb5.aifc */; };
 		50E25C5723A5F0DE00ACEF26 /* C4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2A23A5F0DD00ACEF26 /* C4.aifc */; };
 		50E25C5823A5F0DE00ACEF26 /* Ab2.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */; };
@@ -116,6 +116,7 @@
 		505ABEB323A5E47A00D55377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		505ABEB523A5E47A00D55377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5099776223A9EAC400CE0B9A /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		50BB290223B72CD500CA7547 /* G4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G4.aifc; sourceTree = "<group>"; };
 		50CE941523AA843D00A7AB3C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		50CE941823AD377800A7AB3C /* tt_dec_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt_dec_song.aifc; sourceTree = "<group>"; };
 		50CE941923AD377800A7AB3C /* major2_dec_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = major2_dec_song.aifc; sourceTree = "<group>"; };
@@ -176,7 +177,6 @@
 		50E25C2523A5F0DD00ACEF26 /* G3.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G3.aifc; sourceTree = "<group>"; };
 		50E25C2623A5F0DD00ACEF26 /* Ab4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab4.aifc; sourceTree = "<group>"; };
 		50E25C2723A5F0DD00ACEF26 /* Bb4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bb4.aifc; sourceTree = "<group>"; };
-		50E25C2823A5F0DD00ACEF26 /* G4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G4.aifc; sourceTree = "<group>"; };
 		50E25C2923A5F0DD00ACEF26 /* Gb5.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gb5.aifc; sourceTree = "<group>"; };
 		50E25C2A23A5F0DD00ACEF26 /* C4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C4.aifc; sourceTree = "<group>"; };
 		50E25C2B23A5F0DD00ACEF26 /* Ab2.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ab2.aifc; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 				50E25C0E23A5F0DB00ACEF26 /* F5.aifc */,
 				50E25C0D23A5F0DB00ACEF26 /* G2.aifc */,
 				50E25C2523A5F0DD00ACEF26 /* G3.aifc */,
-				50E25C2823A5F0DD00ACEF26 /* G4.aifc */,
+				50BB290223B72CD500CA7547 /* G4.aifc */,
 				50E25C2E23A5F0DE00ACEF26 /* G5.aifc */,
 				50E25C1623A5F0DC00ACEF26 /* Gb2.aifc */,
 				50E25C1323A5F0DC00ACEF26 /* Gb3.aifc */,
@@ -444,7 +444,6 @@
 				50E25C3D23A5F0DE00ACEF26 /* A3.aifc in Resources */,
 				50E25C3923A5F0DE00ACEF26 /* Eb4.aifc in Resources */,
 				50E25C3B23A5F0DE00ACEF26 /* F5.aifc in Resources */,
-				50E25C5523A5F0DE00ACEF26 /* G4.aifc in Resources */,
 				50E25C5E23A5F0DE00ACEF26 /* Eb5.aifc in Resources */,
 				50CE944723AD377900A7AB3C /* major6_asc_song.aifc in Resources */,
 				50CE943723AD377900A7AB3C /* minor3_dec_song.aifc in Resources */,
@@ -490,6 +489,7 @@
 				50CE944623AD377900A7AB3C /* minor2_dec_song.aifc in Resources */,
 				50E25C4A23A5F0DE00ACEF26 /* B5.aifc in Resources */,
 				50CE943E23AD377900A7AB3C /* minor7_asc_song.aifc in Resources */,
+				50BB290323B72CD500CA7547 /* G4.aifc in Resources */,
 				50F46A7A23A801E4003F8972 /* Eb6.aifc in Resources */,
 				50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */,
 				505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */,
