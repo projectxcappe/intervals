@@ -83,7 +83,18 @@ extension ViewController {
     
     func playChordSounds(chordNotes:[String], chordQaulity:String) {
         print(chordNotes, chordQaulity)
+        //Play Together
         GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
+        
+        //Play Separately
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes, withDelay: 0.75)
+        }
+        
+        //Play Together
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
+        }
         
         if colorSwitch.isOn {
             displayChordColor(chordQuality: chordQaulity)
