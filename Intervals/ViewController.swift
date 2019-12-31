@@ -71,6 +71,7 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var triad1stMinorButton: Toggle!
     @IBOutlet weak var triad2ndMajorButton: Toggle!
     @IBOutlet weak var triad2ndMinorButton: Toggle!
+    @IBOutlet weak var triadSwitch: UISwitch!
     
     @IBOutlet weak var dim7thButton: Toggle!
     @IBOutlet weak var aug7thButton: Toggle!
@@ -113,6 +114,8 @@ class ViewController: UIViewController, SettingsDelegate {
         
         colorSwitch.backgroundColor = UIColor.clear
         colorSwitch.onTintColor = UIColor.darkGray
+        triadSwitch.backgroundColor = UIColor.clear
+        triadSwitch.onTintColor = UIColor.darkGray
         
         //Set Up
         selectedIntervals = IntervalsSelected.shared.intervals!

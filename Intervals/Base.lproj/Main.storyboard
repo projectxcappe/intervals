@@ -433,6 +433,15 @@
                                     <action selector="triad2ndMajorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgi-lN-4Dz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arpeggiation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-4s-W7d">
+                                <rect key="frame" x="186" y="437" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OaG-c0-aXh">
+                                <rect key="frame" x="20" y="432" width="51" height="31"/>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hx-Aj-0Vb" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
                                 <rect key="frame" x="158" y="373" width="123" height="30"/>
                                 <state key="normal" title="Triad 2nd Minor"/>
@@ -564,6 +573,12 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-16-qoR">
                                 <rect key="frame" x="315" y="801" width="51" height="31"/>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJN-8s-wo9">
+                                <rect key="frame" x="333" y="797" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -575,6 +590,7 @@
                             <constraint firstItem="KOk-oP-CR6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4i6-dy-t59"/>
                             <constraint firstItem="gm3-dw-poa" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="53a-zR-pi9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l7c-16-qoR" secondAttribute="trailing" constant="50" id="5am-J3-Euk"/>
+                            <constraint firstItem="OaG-c0-aXh" firstAttribute="leading" secondItem="ZSK-lP-Atl" secondAttribute="leading" id="5q4-eH-xHl"/>
                             <constraint firstItem="zSa-XI-hk9" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="640-c8-omh"/>
                             <constraint firstItem="yKe-gV-cvu" firstAttribute="top" secondItem="LR2-yZ-8Ts" secondAttribute="bottom" constant="8" symbolic="YES" id="73m-dr-EaG"/>
                             <constraint firstItem="mX5-72-EEc" firstAttribute="top" secondItem="3jh-8S-TW5" secondAttribute="bottom" constant="8" id="7mX-tN-Sbh"/>
@@ -604,6 +620,7 @@
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="JzK-cG-ywJ"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="KLF-6R-LOQ"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="leading" secondItem="9Hx-Aj-0Vb" secondAttribute="trailing" constant="8" id="LsY-l7-dbT"/>
+                            <constraint firstItem="Bdf-4s-W7d" firstAttribute="centerY" secondItem="OaG-c0-aXh" secondAttribute="centerY" id="Mz3-q2-UnO"/>
                             <constraint firstItem="9Hx-Aj-0Vb" firstAttribute="centerY" secondItem="ZSK-lP-Atl" secondAttribute="centerY" id="N0q-iD-H2B"/>
                             <constraint firstItem="ZSK-lP-Atl" firstAttribute="top" secondItem="pgz-b9-54o" secondAttribute="bottom" constant="8" id="NbP-UN-noN"/>
                             <constraint firstItem="CnS-B5-Nmx" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="OwT-Ng-5Au"/>
@@ -622,9 +639,11 @@
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="VId-Yw-7SI"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="VL0-wt-IiX"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="leading" secondItem="sRe-1W-01Z" secondAttribute="trailing" constant="8" id="Vmu-WC-gq8"/>
+                            <constraint firstItem="Bdf-4s-W7d" firstAttribute="leading" secondItem="OaG-c0-aXh" secondAttribute="trailing" constant="8" id="Wph-xn-Bte"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" constant="50" id="Ww4-Xn-VMw"/>
                             <constraint firstItem="hLD-Hi-lsz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X2n-r6-8iG"/>
                             <constraint firstItem="eKV-Qg-6Ew" firstAttribute="top" secondItem="zN9-Op-Wqd" secondAttribute="bottom" constant="8" id="Yiw-8J-Pk5"/>
+                            <constraint firstItem="xJN-8s-wo9" firstAttribute="trailing" secondItem="l7c-16-qoR" secondAttribute="trailing" id="aNJ-we-CIj"/>
                             <constraint firstItem="ewl-Px-Hai" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="ae2-fI-2ku"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F9w-4K-Kgj" secondAttribute="trailing" constant="20" id="bAM-tO-dsN"/>
                             <constraint firstItem="LR2-yZ-8Ts" firstAttribute="trailing" secondItem="QLo-Gt-g3C" secondAttribute="trailing" id="bsP-Vu-WSp"/>
@@ -632,9 +651,11 @@
                             <constraint firstItem="5Yq-GS-Sc1" firstAttribute="leading" secondItem="eKV-Qg-6Ew" secondAttribute="leading" id="cXM-gC-NBV"/>
                             <constraint firstItem="3jh-8S-TW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dUM-KZ-QC0"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="dgT-jI-etT"/>
+                            <constraint firstItem="OaG-c0-aXh" firstAttribute="top" secondItem="ZSK-lP-Atl" secondAttribute="bottom" constant="29" id="duw-mE-iXp"/>
                             <constraint firstItem="sn1-Os-pzN" firstAttribute="top" secondItem="68J-xy-xxH" secondAttribute="bottom" constant="8" symbolic="YES" id="edn-9C-imD"/>
                             <constraint firstItem="68J-xy-xxH" firstAttribute="centerX" secondItem="QLo-Gt-g3C" secondAttribute="centerX" id="ff1-0c-SNX"/>
                             <constraint firstAttribute="bottom" secondItem="KOk-oP-CR6" secondAttribute="bottom" id="gDP-AP-9kw"/>
+                            <constraint firstItem="l7c-16-qoR" firstAttribute="top" secondItem="xJN-8s-wo9" secondAttribute="bottom" constant="8" id="gH6-vY-Osg"/>
                             <constraint firstItem="1U7-LL-XRh" firstAttribute="leading" secondItem="QLo-Gt-g3C" secondAttribute="leading" id="gqR-qz-GKh"/>
                             <constraint firstItem="ZNK-8i-MFV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="he1-02-xb3"/>
                             <constraint firstItem="QLo-Gt-g3C" firstAttribute="top" secondItem="Oym-rc-xXW" secondAttribute="bottom" constant="10" id="hv2-i0-ozn"/>
@@ -696,6 +717,7 @@
                         <outlet property="triad2ndMinorButton" destination="9Hx-Aj-0Vb" id="xej-VK-HEc"/>
                         <outlet property="triadRootMajorButton" destination="u2G-Qj-iuR" id="xWj-vH-jp3"/>
                         <outlet property="triadRootMinorButton" destination="MBm-AH-xdG" id="GI2-Rl-YT5"/>
+                        <outlet property="triadSwitch" destination="OaG-c0-aXh" id="UaW-cn-wsg"/>
                         <outlet property="tritoneButton" destination="68J-xy-xxH" id="QOm-jz-Ibq"/>
                         <outletCollection property="toggleButtonCollection" destination="QLo-Gt-g3C" collectionClass="NSMutableArray" id="Y5J-Th-Jvm"/>
                         <outletCollection property="toggleButtonCollection" destination="cKz-8E-7Eh" collectionClass="NSMutableArray" id="3iU-os-8Pe"/>

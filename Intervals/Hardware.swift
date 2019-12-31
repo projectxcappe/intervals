@@ -86,12 +86,20 @@ extension ViewController {
         //Play Together
         GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
         
-        //Play Separately
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            let interval:[String] = [chordNotes[0], chordNotes[2]]
-            GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
+        if triadSwitch.isOn {
+            //Play Separately
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                var interval:[String]
+                if chordQaulity == "Triad Root Major" || chordQaulity == "Triad Root Minor" {
+                 interval = [chordNotes[0], chordNotes[1], chordNotes[2]]
+                } else if chordQaulity == "Triad 2nd Major" || chordQaulity == "Triad 2nd Minor" {
+                    interval = [chordNotes[0], chordNotes[2], chordNotes[1]]
+                } else {
+                    interval = [chordNotes[2], chordNotes[1], chordNotes[0]]
+                }
+                GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
+            }
         }
-        
 //        //Play Together
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 3.75) {
 //            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
