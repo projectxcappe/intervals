@@ -92,6 +92,7 @@ class ViewController: UIViewController, SettingsDelegate {
     var selectedIntervals:[String]!
     var selectedMethods:[String]!
     var selectedChords:[String]!
+    var allSelections:[String:String]!
     var settingsDelegate:SettingsDelegate?
     
     var randomIntervalSelection:String!
@@ -163,6 +164,15 @@ class ViewController: UIViewController, SettingsDelegate {
             methodsString = methodsString+" "+i
         }
         selectedMethodsLabel.text = methodsString
+        
+        //Stick all selections in a dictionary
+        allSelections = [:] //clear it first
+        for chord in selectedChords {
+            allSelections.updateValue("chord", forKey: chord)
+        }
+        for interval in selectedIntervals {
+            allSelections.updateValue("interval", forKey: interval)
+        }
     }
     
 
@@ -187,6 +197,7 @@ class ViewController: UIViewController, SettingsDelegate {
             replayCurrentInterval = true //allow user to replay this interval if needed to
             
         }
+        
         
         playChordSounds(chordNotes: chordNotesToBePlayed, chordQaulity:chordType)
 
@@ -234,8 +245,19 @@ class ViewController: UIViewController, SettingsDelegate {
 
     @IBAction func beginPressed(_ sender: Any) {
         beginButton.setTitle("Replay Interval", for: .normal)
-//            playInterval()
+        
+        play()
+        
+    }
+    
+    func play() {
+        //Randomize selection and play appropriate method
+        let selection = allSelections.randomElement()
+        if selection?.value == "chord" {
             playChord()
+        } else {
+            playInterval()
+        }
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {

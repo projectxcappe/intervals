@@ -88,13 +88,17 @@ extension ViewController {
         
         //Play Separately
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes, withDelay: 0.75)
+            let interval:[String] = [chordNotes[0], chordNotes[2]]
+            GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
         }
         
-        //Play Together
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
-        }
+//        //Play Together
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.75) {
+//            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
+//            if self.colorSwitch.isOn {
+//                self.displayChordColor(chordQuality: chordQaulity)
+//            }
+//        }
         
         if colorSwitch.isOn {
             displayChordColor(chordQuality: chordQaulity)
@@ -125,10 +129,10 @@ extension ViewController {
         colorView.backgroundColor = currentStructure[chordQuality]
         colorView.alpha = 0.0
         
-        UIView.animate(withDuration: 1.0, animations: {
+        UIView.animate(withDuration: 0.25, animations: {
             self.colorView.alpha = 1.0
         }) { (true) in
-            UIView.animate(withDuration: 1.0, animations: {
+            UIView.animate(withDuration: 2.0, animations: {
                 self.colorView.alpha = 0.0
             })
         }
