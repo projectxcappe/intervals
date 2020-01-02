@@ -69,7 +69,6 @@ extension ViewController {
             //play new interval, re-enable play button
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.beginButton.isEnabled = true
-//                self.playInterval()
                 self.play()
                 self.updateSettings()
             }

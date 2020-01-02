@@ -83,6 +83,13 @@ extension ViewController {
     
     func playChordSounds(chordNotes:[String], chordQaulity:String) {
         print(chordNotes, chordQaulity)
+        
+//        if GSAudio.sharedInstance.players.count == 0 {
+//            print(GSAudio.sharedInstance.players)
+//        } else {
+//            print(GSAudio.sharedInstance.players)
+//        }
+        
         //Play Together
         GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
         
@@ -95,7 +102,7 @@ extension ViewController {
                 } else if chordQaulity == "Triad 2nd Major" || chordQaulity == "Triad 2nd Minor" {
                     interval = [chordNotes[0], chordNotes[2], chordNotes[1]]
                 } else {
-                    interval = [chordNotes[2], chordNotes[1], chordNotes[0]]
+                    interval = [chordNotes[2], chordNotes[1], chordNotes[0], chordNotes[1], chordNotes[2]]
                 }
                 GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
             }

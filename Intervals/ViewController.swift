@@ -94,6 +94,7 @@ class ViewController: UIViewController, SettingsDelegate {
     var selectedMethods:[String]!
     var selectedChords:[String]!
     var allSelections:[String:String]!
+    var selection:[String:String]!
     var settingsDelegate:SettingsDelegate?
     
     var randomIntervalSelection:String!
@@ -108,6 +109,8 @@ class ViewController: UIViewController, SettingsDelegate {
     var chordNotesToBePlayed:[String]!
     var chordType:String!
     var chordQuality:ChordQuality!
+    
+    var isFirstRun:Bool!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,6 +121,7 @@ class ViewController: UIViewController, SettingsDelegate {
         triadSwitch.onTintColor = UIColor.darkGray
         
         //Set Up
+        selection = [:]
         selectedIntervals = IntervalsSelected.shared.intervals!
         selectedMethods = IntervalsSelected.shared.methods!
         selectedChords = IntervalsSelected.shared.chords!
@@ -133,7 +137,9 @@ class ViewController: UIViewController, SettingsDelegate {
         intervalSongs = intervalData.Song
         intervalChords = intervalData.Chord
         
-        updateProgress(status: .Setup)
+        isFirstRun = true
+        
+//        updateProgress(status: .Setup)
 
     }
     
@@ -249,18 +255,38 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBAction func beginPressed(_ sender: Any) {
         beginButton.setTitle("Replay Interval", for: .normal)
         
-        play()
-        
+        //If first run get random selection and play it
+        //else replay current selection
+        if isFirstRun {
+            getSelection()
+            isFirstRun = false
+        } else {
+            play()
+        }
     }
     
     func play() {
-        //Randomize selection and play appropriate method
-        let selection = allSelections.randomElement()
-        if selection?.value == "chord" {
-            playChord()
-        } else {
-            playInterval()
+        for s in selection {
+            if s.value == "chord" {
+                playChord()
+            } else {
+                playInterval()
+            }
         }
+    }
+    
+    func getSelection() {
+        //reset selection dictionary
+        selection = [:]
+        
+        //Randomize selection and play appropriate method
+        let randSelection = allSelections.randomElement()
+        let value = randSelection?.value
+        let key = randSelection?.key
+        
+        selection.updateValue(value!, forKey: key!)
+        play()
+        print(selection!)
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {
