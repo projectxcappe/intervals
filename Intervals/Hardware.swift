@@ -57,8 +57,10 @@ extension ViewController {
             GSAudio.sharedInstance.playSound(soundFileName: secondNote)
         }
         
-        if colorSwitch.isOn {
-            displayIntervalColor(interval: interval)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            if self.colorSwitch.isOn {
+                self.displayIntervalColor(interval: interval)
+            }
         }
     }
     
