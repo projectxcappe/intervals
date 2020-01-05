@@ -368,10 +368,10 @@ class SettingsViewController: UIViewController {
     @IBAction func dim7thPressed(_ sender: Any) {
         dim7thButton.toggleTapped()
 
-        if selectedChords.contains("dim7") {
-            selectedChords.remove(object: "dim7")
+        if selectedChords.contains("halfdim7") {
+            selectedChords.remove(object: "halfdim7")
         } else {
-            selectedChords.append("dim7")
+            selectedChords.append("halfdim7")
         }
     }
     

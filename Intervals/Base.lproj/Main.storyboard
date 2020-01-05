@@ -466,7 +466,7 @@
                                     <constraint firstAttribute="width" constant="130" id="NZO-Jc-DXe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="dim7"/>
+                                <state key="normal" title="halfdim7"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -858,8 +858,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="KFU-Eo-oqF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="dim7"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="halfdim7"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.91359043120000005" green="0.76992481950000002" blue="0.051334328950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1363,6 +1363,7 @@
                             <constraint firstItem="ZVc-MH-8Xx" firstAttribute="top" secondItem="w8z-x7-X0r" secondAttribute="bottom" constant="5" id="W9Z-zz-qub"/>
                             <constraint firstItem="YHG-xo-hqi" firstAttribute="leading" secondItem="tVH-wZ-9M7" secondAttribute="trailing" constant="8" id="aDY-mW-sWw"/>
                             <constraint firstItem="BxN-qY-hzI" firstAttribute="top" secondItem="yOC-x1-7I6" secondAttribute="bottom" constant="17" id="awS-1t-qqH"/>
+                            <constraint firstItem="c2t-2j-qjZ" firstAttribute="bottom" secondItem="Yl7-FK-Acv" secondAttribute="bottom" id="cEv-QL-5h9"/>
                             <constraint firstItem="WRK-Rz-Oqc" firstAttribute="top" secondItem="Yl7-FK-Acv" secondAttribute="bottom" constant="43" id="cIi-Rc-7R5"/>
                             <constraint firstItem="tVH-wZ-9M7" firstAttribute="leading" secondItem="TF2-mo-anN" secondAttribute="trailing" constant="11" id="eV1-Ca-WoR"/>
                             <constraint firstItem="s94-AE-QCW" firstAttribute="top" secondItem="BxN-qY-hzI" secondAttribute="bottom" constant="24" id="fKb-Yn-Hgp"/>
@@ -1395,6 +1396,7 @@
                             <constraint firstItem="WRK-Rz-Oqc" firstAttribute="top" secondItem="c2t-2j-qjZ" secondAttribute="bottom" constant="43" id="vTB-ov-tyA"/>
                             <constraint firstItem="FoY-wK-Vyd" firstAttribute="top" secondItem="5UR-KB-J2c" secondAttribute="bottom" constant="17" id="wBG-5c-Tpd"/>
                             <constraint firstItem="yOC-x1-7I6" firstAttribute="top" secondItem="WRK-Rz-Oqc" secondAttribute="bottom" constant="17" id="xaw-t7-vPh"/>
+                            <constraint firstItem="c2t-2j-qjZ" firstAttribute="top" secondItem="Yl7-FK-Acv" secondAttribute="top" id="yFw-OK-qxt"/>
                             <constraint firstItem="BNl-5C-xtc" firstAttribute="leading" secondItem="vpw-W3-IS3" secondAttribute="leading" constant="44" id="zKf-qd-0YX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vpw-W3-IS3"/>

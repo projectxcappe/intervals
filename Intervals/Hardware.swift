@@ -14,11 +14,11 @@ import AVFoundation
 //Allows the settings to be saved from Settings to Main View
 //Defaults listed below
 public class IntervalsSelected {
-    public var intervals: [String]? = ["m2", "M2"]
+    public var intervals: [String]? = []
     public var methods: [String]? = ["Ascending"]
-    public var chords: [String]? = ["Triad Root Major"]
+    public var chords: [String]? = ["M7", "m7", "dom7", "aug7", "halfdim7"]
     public var allIntervals: [String]? = ["m2", "M2", "m3", "M3", "P4", "TT", "P5", "m6", "M6", "m7", "M7", "P8"]
-    public var allChords: [String]? = ["Triad Root", "Triad 1st", "Triad 2nd", "M7", "m7", "dom7", "aug7", "dim7"]
+    public var allChords: [String]? = ["Triad Root", "Triad 1st", "Triad 2nd", "M7", "m7", "dom7", "aug7", "halfdim7"]
     public static let shared = IntervalsSelected()
 }
 
@@ -96,22 +96,20 @@ extension ViewController {
                 var interval:[String]
                 if chordQaulity == "Triad Root Major" || chordQaulity == "Triad Root Minor" {
                  interval = [chordNotes[0], chordNotes[1], chordNotes[2]]
+                    GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
                 } else if chordQaulity == "Triad 2nd Major" || chordQaulity == "Triad 2nd Minor" {
                     interval = [chordNotes[0], chordNotes[2], chordNotes[1]]
-                } else {
+                    GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
+                } else if chordQaulity == "Triad 3rd Major" || chordQaulity == "Triad 3rd Minor" {
                     interval = [chordNotes[2], chordNotes[1], chordNotes[0], chordNotes[1], chordNotes[2]]
+                    GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
+                } else { //seventh
+                   //don't play separately
                 }
-                GSAudio.sharedInstance.playSounds(soundFileNames: interval, withDelay: 0.75)
+                
             }
         }
-//        //Play Together
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3.75) {
-//            GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
-//            if self.colorSwitch.isOn {
-//                self.displayChordColor(chordQuality: chordQaulity)
-//            }
-//        }
-        
+
         if colorSwitch.isOn {
             displayChordColor(chordQuality: chordQaulity)
         }

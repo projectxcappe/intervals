@@ -196,12 +196,21 @@ class ViewController: UIViewController, SettingsDelegate {
             let chords = IntervalsSelected.shared.chords
             chordType = chords?.randomElement()
        
-            let qualityStructure:[String:[Triads]] = ["Major":[intervalChords!.Major], "Minor":[intervalChords!.Minor]]
+//            let qualityStructure:[String:[Triads]] = ["Major":[intervalChords!.Major], "Minor":[intervalChords!.Minor]]
             
             //Stick all the chords notes in an dict
-            let currentStructure:[String:[[String]]] = ["Triad Root Major":intervalChords.Major.Triad_Root, "Triad Root Minor":intervalChords.Minor.Triad_Root, "Triad 1st Major":intervalChords.Major.Triad_1st, "Triad 1st Minor":intervalChords.Minor.Triad_1st, "Triad 2nd Major":intervalChords.Major.Triad_2nd, "Triad 2nd Minor":intervalChords.Minor.Triad_2nd]
-
-            
+            let currentStructure:[String:[[String]]] = [
+                "Triad Root Major":intervalChords.Major.Triad_Root,
+                "Triad Root Minor":intervalChords.Minor.Triad_Root,
+                "Triad 1st Major":intervalChords.Major.Triad_1st,
+                "Triad 1st Minor":intervalChords.Minor.Triad_1st,
+                "Triad 2nd Major":intervalChords.Major.Triad_2nd,
+                "Triad 2nd Minor":intervalChords.Minor.Triad_2nd,
+                "M7":intervalChords.Seventh.Major,
+                "m7":intervalChords.Seventh.Minor,
+                "dom7":intervalChords.Seventh.Dominant,
+                "aug7":intervalChords.Seventh.Augmented,
+                "halfdim7":intervalChords.Seventh.Half_Diminished]
 
             //Grab intervals from chord type and get the note values
             chordNotesToBePlayed = (currentStructure[chordType]?.randomElement())!
@@ -209,8 +218,7 @@ class ViewController: UIViewController, SettingsDelegate {
             replayCurrentInterval = true //allow user to replay this interval if needed to
             
         }
-        
-        
+
         playChordSounds(chordNotes: chordNotesToBePlayed, chordQaulity:chordType)
 
     }
