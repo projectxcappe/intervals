@@ -78,18 +78,13 @@ extension ViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             GSAudio.sharedInstance.playSound(soundFileName: song)
         }
+
         print("Song "+song)
     }
     
     func playChordSounds(chordNotes:[String], chordQaulity:String) {
         print(chordNotes, chordQaulity)
-        
-//        if GSAudio.sharedInstance.players.count == 0 {
-//            print(GSAudio.sharedInstance.players)
-//        } else {
-//            print(GSAudio.sharedInstance.players)
-//        }
-        
+ 
         //Play Together
         GSAudio.sharedInstance.playSounds(soundFileNames: chordNotes)
         
@@ -117,6 +112,25 @@ extension ViewController {
         
         if colorSwitch.isOn {
             displayChordColor(chordQuality: chordQaulity)
+        }
+    }
+    
+    func toggleButtons(time:Double) {
+
+        //disable buttons for a moment to let audio play
+        self.beginButton.isEnabled = false
+        
+        for button in self.toggleButtonCollection {
+            button.isEnabled = false
+        }
+        
+        for button in self.chordsButtonCollection {
+            button.isEnabled = false
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + time) {
+            self.updateSettings() //reset the buttons
+            self.beginButton.isEnabled = true
         }
     }
     

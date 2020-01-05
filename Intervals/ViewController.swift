@@ -27,6 +27,9 @@ enum ChordQuality {
     case Minor
 }
 
+let CHORDTIME = 4.0
+let INTTIME = 2.0
+
 class ViewController: UIViewController, SettingsDelegate {
     
     func updateSettings(updatedIntervals: [String], updatedMethods: [String], updatedChords: [String]) {
@@ -266,11 +269,14 @@ class ViewController: UIViewController, SettingsDelegate {
     }
     
     func play() {
+        
         for s in selection {
             if s.value == "chord" {
                 playChord()
+                toggleButtons(time:CHORDTIME)
             } else {
                 playInterval()
+                toggleButtons(time:INTTIME)
             }
         }
     }

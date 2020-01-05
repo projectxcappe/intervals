@@ -70,9 +70,15 @@ extension ViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.beginButton.isEnabled = true
                 self.play()
+                self.toggleButtons(time: INTTIME)
                 self.updateSettings()
             }
         } else {
+            //Disable all buttons temporarily until song is played through
+            for button in self.toggleButtonCollection {
+                button.isEnabled = false
+            }
+            
             //Disable guess, demote progress
             buttonPressed.isEnabled = false
             self.updateProgress(status: .Incorrect)
@@ -101,6 +107,7 @@ extension ViewController {
                 songToBePlayed = currentStructure[answer]
             }
             
+            self.toggleButtons(time: CHORDTIME)
             playIntervalSong(song: songToBePlayed)
         }
         
@@ -129,6 +136,7 @@ extension ViewController {
                 self.beginButton.isEnabled = true
 //                self.playChord()
                 self.play()
+                self.toggleButtons(time: CHORDTIME)
                 self.updateSettings()
             }
         } else {
