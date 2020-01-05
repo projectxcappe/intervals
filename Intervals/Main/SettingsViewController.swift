@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var major7thButton: Toggle!
     @IBOutlet weak var minor7thButton: Toggle!
     @IBOutlet weak var dom7thButton: Toggle!
-    @IBOutlet weak var aug7thButton: Toggle!
+    @IBOutlet weak var fulldim7thButton: Toggle!
     @IBOutlet weak var dim7thButton: Toggle!
     
     @IBOutlet weak var ascButton: Toggle!
@@ -355,13 +355,13 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    @IBAction func aug7thPressed(_ sender: Any) {
-        aug7thButton.toggleTapped()
+    @IBAction func fullDim7thPressed(_ sender: Any) {
+        fulldim7thButton.toggleTapped()
 
-        if selectedChords.contains("aug7") {
-            selectedChords.remove(object: "aug7")
+        if selectedChords.contains("fulldim7") {
+            selectedChords.remove(object: "fulldim7")
         } else {
-            selectedChords.append("aug7")
+            selectedChords.append("fulldim7")
         }
     }
     

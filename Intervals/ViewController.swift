@@ -77,7 +77,7 @@ class ViewController: UIViewController, SettingsDelegate {
     @IBOutlet weak var triadSwitch: UISwitch!
     
     @IBOutlet weak var dim7thButton: Toggle!
-    @IBOutlet weak var aug7thButton: Toggle!
+    @IBOutlet weak var fulldim7thButton: Toggle!
     @IBOutlet weak var dom7thButton: Toggle!
     @IBOutlet weak var minor7thButton: Toggle!
     @IBOutlet weak var major7thButton: Toggle!
@@ -209,7 +209,7 @@ class ViewController: UIViewController, SettingsDelegate {
                 "M7":intervalChords.Seventh.Major,
                 "m7":intervalChords.Seventh.Minor,
                 "dom7":intervalChords.Seventh.Dominant,
-                "aug7":intervalChords.Seventh.Augmented,
+                "fulldim7":intervalChords.Seventh.Full_Diminished,
                 "halfdim7":intervalChords.Seventh.Half_Diminished]
 
             //Grab intervals from chord type and get the note values
@@ -377,23 +377,23 @@ class ViewController: UIViewController, SettingsDelegate {
     
     
     @IBAction func dim7thPressed(_ sender: Any) {
-//        checkChordAnswer(guess: "dim7", answer: chordType, buttonPressed: triadRootButton)
+        checkChordAnswer(guess: "halfdim7", answer: chordType, buttonPressed: dim7thButton)
     }
     
-    @IBAction func aug7thPressed(_ sender: Any) {
-//        checkChordAnswer(guess: "aug7", answer: chordType, buttonPressed: triadRootButton)
+    @IBAction func fulldim7thPressed(_ sender: Any) {
+        checkChordAnswer(guess: "fulldim7", answer: chordType, buttonPressed: fulldim7thButton)
     }
     
     @IBAction func dom7thPressed(_ sender: Any) {
-//        checkChordAnswer(guess: "dom7", answer: chordType, buttonPressed: triadRootButton)
+        checkChordAnswer(guess: "dom7", answer: chordType, buttonPressed: dom7thButton)
     }
     
     @IBAction func minor7thPressed(_ sender: Any) {
-//        checkChordAnswer(guess: "m7", answer: chordType, buttonPressed: triadRootButton)
+        checkChordAnswer(guess: "m7", answer: chordType, buttonPressed: minor7thButton)
     }
     
     @IBAction func major7thPressed(_ sender: Any) {
-//        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: triadRootButton)
+        checkChordAnswer(guess: "M7", answer: chordType, buttonPressed: major7thButton)
     }
     
     //Segue

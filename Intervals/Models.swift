@@ -95,6 +95,6 @@ struct Sevenths : Decodable {
     var Major : [[String]]
     var Minor : [[String]]
     var Dominant : [[String]]
-    var Augmented : [[String]]
+    var Full_Diminished : [[String]]
     var Half_Diminished : [[String]]
 }

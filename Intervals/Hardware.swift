@@ -16,9 +16,9 @@ import AVFoundation
 public class IntervalsSelected {
     public var intervals: [String]? = []
     public var methods: [String]? = ["Ascending"]
-    public var chords: [String]? = ["M7", "m7", "dom7", "aug7", "halfdim7"]
+    public var chords: [String]? = ["M7", "m7", "dom7", "fulldim7", "halfdim7"]
     public var allIntervals: [String]? = ["m2", "M2", "m3", "M3", "P4", "TT", "P5", "m6", "M6", "m7", "M7", "P8"]
-    public var allChords: [String]? = ["Triad Root", "Triad 1st", "Triad 2nd", "M7", "m7", "dom7", "aug7", "halfdim7"]
+    public var allChords: [String]? = ["Triad Root", "Triad 1st", "Triad 2nd", "M7", "m7", "dom7", "fulldim7", "halfdim7"]
     public static let shared = IntervalsSelected()
 }
 

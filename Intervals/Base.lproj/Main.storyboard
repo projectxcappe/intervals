@@ -434,7 +434,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arpeggiation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdf-4s-W7d">
-                                <rect key="frame" x="186" y="437" width="42" height="21"/>
+                                <rect key="frame" x="77" y="441" width="67" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -488,7 +488,7 @@
                                     <constraint firstAttribute="width" constant="130" id="A2u-94-bkm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="aug7"/>
+                                <state key="normal" title="fulldim7"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -501,7 +501,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="aug7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qf5-Cb-xzK"/>
+                                    <action selector="fulldim7thPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90W-Yg-po9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jh-8S-TW5" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
@@ -574,7 +574,7 @@
                                 <rect key="frame" x="315" y="801" width="51" height="31"/>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJN-8s-wo9">
-                                <rect key="frame" x="333" y="797" width="42" height="21"/>
+                                <rect key="frame" x="304.5" y="779.5" width="59.5" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -689,13 +689,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="aug7thButton" destination="mX5-72-EEc" id="7Xv-DF-BRJ"/>
                         <outlet property="beginButton" destination="eKV-Qg-6Ew" id="1al-0l-4pZ"/>
                         <outlet property="colorSwitch" destination="l7c-16-qoR" id="C6H-La-FFq"/>
                         <outlet property="colorView" destination="KOk-oP-CR6" id="Ixw-Cd-fdY"/>
                         <outlet property="correctLabel" destination="5Yq-GS-Sc1" id="akG-Xx-UER"/>
                         <outlet property="dim7thButton" destination="k7F-Vi-Wl9" id="UwU-gZ-4TY"/>
                         <outlet property="dom7thButton" destination="3jh-8S-TW5" id="Gn1-ky-zcx"/>
+                        <outlet property="fulldim7thButton" destination="mX5-72-EEc" id="un0-WI-xIF"/>
                         <outlet property="major2Button" destination="cKz-8E-7Eh" id="w9C-Jx-fy4"/>
                         <outlet property="major3Button" destination="gm3-dw-poa" id="nLv-Ve-DMe"/>
                         <outlet property="major6Button" destination="1U7-LL-XRh" id="nc8-TO-FTE"/>
@@ -732,7 +732,6 @@
                         <outletCollection property="toggleButtonCollection" destination="yKe-gV-cvu" collectionClass="NSMutableArray" id="y2I-ry-abt"/>
                         <outletCollection property="toggleButtonCollection" destination="CnS-B5-Nmx" collectionClass="NSMutableArray" id="H8e-LD-cbI"/>
                         <outletCollection property="chordsButtonCollection" destination="k7F-Vi-Wl9" collectionClass="NSMutableArray" id="dcl-Fb-d69"/>
-                        <outletCollection property="chordsButtonCollection" destination="mX5-72-EEc" collectionClass="NSMutableArray" id="U4X-Ba-PhS"/>
                         <outletCollection property="chordsButtonCollection" destination="3jh-8S-TW5" collectionClass="NSMutableArray" id="u6K-mT-5cN"/>
                         <outletCollection property="chordsButtonCollection" destination="ZNK-8i-MFV" collectionClass="NSMutableArray" id="OmN-pj-XFL"/>
                         <outletCollection property="chordsButtonCollection" destination="hLD-Hi-lsz" collectionClass="NSMutableArray" id="GIi-Gb-fNy"/>
@@ -742,6 +741,7 @@
                         <outletCollection property="chordsButtonCollection" destination="sRe-1W-01Z" collectionClass="NSMutableArray" id="e8n-BY-YaM"/>
                         <outletCollection property="chordsButtonCollection" destination="ZSK-lP-Atl" collectionClass="NSMutableArray" id="lHy-RL-B26"/>
                         <outletCollection property="chordsButtonCollection" destination="9Hx-Aj-0Vb" collectionClass="NSMutableArray" id="DQQ-t9-iwa"/>
+                        <outletCollection property="chordsButtonCollection" destination="mX5-72-EEc" collectionClass="NSMutableArray" id="hQO-46-2ba"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -836,8 +836,8 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="Pub-9R-Sh4"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="aug7"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="fulldim7"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.91359043120000005" green="0.76992481950000002" blue="0.051334328950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -850,7 +850,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="aug7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="2sn-xv-CRJ"/>
+                                    <action selector="fullDim7thPressed:" destination="1s8-Cl-q0z" eventType="touchUpInside" id="ojg-vZ-XyY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2t-2j-qjZ" customClass="Toggle" customModule="Intervals" customModuleProvider="target">
@@ -1366,6 +1366,7 @@
                             <constraint firstItem="c2t-2j-qjZ" firstAttribute="bottom" secondItem="Yl7-FK-Acv" secondAttribute="bottom" id="cEv-QL-5h9"/>
                             <constraint firstItem="WRK-Rz-Oqc" firstAttribute="top" secondItem="Yl7-FK-Acv" secondAttribute="bottom" constant="43" id="cIi-Rc-7R5"/>
                             <constraint firstItem="tVH-wZ-9M7" firstAttribute="leading" secondItem="TF2-mo-anN" secondAttribute="trailing" constant="11" id="eV1-Ca-WoR"/>
+                            <constraint firstItem="Yl7-FK-Acv" firstAttribute="top" secondItem="2mG-3E-GpK" secondAttribute="top" id="edK-Zi-KQf"/>
                             <constraint firstItem="s94-AE-QCW" firstAttribute="top" secondItem="BxN-qY-hzI" secondAttribute="bottom" constant="24" id="fKb-Yn-Hgp"/>
                             <constraint firstItem="8xj-tL-IFr" firstAttribute="top" secondItem="TF2-mo-anN" secondAttribute="bottom" constant="17" id="gPK-yW-3bT"/>
                             <constraint firstItem="EfL-MS-be1" firstAttribute="centerX" secondItem="P9P-AG-XL0" secondAttribute="centerX" id="gQc-8W-NOK"/>
@@ -1398,15 +1399,16 @@
                             <constraint firstItem="yOC-x1-7I6" firstAttribute="top" secondItem="WRK-Rz-Oqc" secondAttribute="bottom" constant="17" id="xaw-t7-vPh"/>
                             <constraint firstItem="c2t-2j-qjZ" firstAttribute="top" secondItem="Yl7-FK-Acv" secondAttribute="top" id="yFw-OK-qxt"/>
                             <constraint firstItem="BNl-5C-xtc" firstAttribute="leading" secondItem="vpw-W3-IS3" secondAttribute="leading" constant="44" id="zKf-qd-0YX"/>
+                            <constraint firstItem="Yl7-FK-Acv" firstAttribute="bottom" secondItem="2mG-3E-GpK" secondAttribute="bottom" id="zn7-zT-z3b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vpw-W3-IS3"/>
                     </view>
                     <connections>
                         <outlet property="ascButton" destination="Ol8-Rt-ors" id="QE2-Fw-ufX"/>
-                        <outlet property="aug7thButton" destination="Yl7-FK-Acv" id="7be-f5-8sf"/>
                         <outlet property="decButton" destination="s94-AE-QCW" id="H5A-d9-qyj"/>
                         <outlet property="dim7thButton" destination="c2t-2j-qjZ" id="V0j-kJ-f3v"/>
                         <outlet property="dom7thButton" destination="2mG-3E-GpK" id="Z2V-C7-wvo"/>
+                        <outlet property="fulldim7thButton" destination="Yl7-FK-Acv" id="JQN-Ov-3Oq"/>
                         <outlet property="harmButton" destination="ZYR-eB-DY5" id="C8l-PZ-Fga"/>
                         <outlet property="major2Button" destination="tVH-wZ-9M7" id="f1l-8L-gJr"/>
                         <outlet property="major3Button" destination="WRK-Rz-Oqc" id="c92-Of-k8I"/>
@@ -1437,7 +1439,6 @@
                         <outletCollection property="chordButtonCollection" destination="DLa-Vi-KNw" collectionClass="NSMutableArray" id="vBI-2g-m0x"/>
                         <outletCollection property="chordButtonCollection" destination="IUx-8M-YkO" collectionClass="NSMutableArray" id="Ci2-jp-jT5"/>
                         <outletCollection property="chordButtonCollection" destination="2mG-3E-GpK" collectionClass="NSMutableArray" id="cSJ-0E-DU1"/>
-                        <outletCollection property="chordButtonCollection" destination="Yl7-FK-Acv" collectionClass="NSMutableArray" id="zrZ-ph-1f7"/>
                         <outletCollection property="chordButtonCollection" destination="c2t-2j-qjZ" collectionClass="NSMutableArray" id="H2A-UX-vOC"/>
                         <outletCollection property="toggleButtonCollection" destination="TF2-mo-anN" collectionClass="NSMutableArray" id="W5J-cp-1dL"/>
                         <outletCollection property="toggleButtonCollection" destination="tVH-wZ-9M7" collectionClass="NSMutableArray" id="brx-9D-FHd"/>
@@ -1451,6 +1452,7 @@
                         <outletCollection property="toggleButtonCollection" destination="j3S-H7-4RP" collectionClass="NSMutableArray" id="gsc-Ks-8XM"/>
                         <outletCollection property="toggleButtonCollection" destination="FoY-wK-Vyd" collectionClass="NSMutableArray" id="FLB-s8-ulr"/>
                         <outletCollection property="toggleButtonCollection" destination="BxN-qY-hzI" collectionClass="NSMutableArray" id="Clm-Cn-t6g"/>
+                        <outletCollection property="chordButtonCollection" destination="Yl7-FK-Acv" collectionClass="NSMutableArray" id="Y4p-jG-Qj5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfe-8V-i9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
