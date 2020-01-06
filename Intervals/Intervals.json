@@ -156,6 +156,13 @@
                     "m7": "minor7_dec_song",
                     "M7": "major7_dec_song",
                     "P8": "perfect8_dec_song"
+                },
+                "SongSeventh": {
+                    "m7": "minor7_song",
+                    "M7": "major7_song",
+                    "dom7": "dom7_song",
+                    "fulldim7": "fulldim7_song",
+                    "halfdim7": "halfdim7_song"
                 }
             },
             "Chord": {

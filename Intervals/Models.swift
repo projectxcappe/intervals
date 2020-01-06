@@ -47,6 +47,7 @@ enum IntervalList: String, CaseIterable {
 struct Song : Decodable {
     var SongAscending: SongAscending
     var SongDecending: SongDecending
+    var SongSeventh: SongSeventh
 }
 
 struct SongAscending : Decodable {
@@ -77,6 +78,14 @@ struct SongDecending : Decodable {
     var m7: String
     var M7: String
     var P8: String
+}
+
+struct SongSeventh : Decodable {
+    var m7: String
+    var M7: String
+    var dom7: String
+    var fulldim7: String
+    var halfdim7: String
 }
 
 struct Chord : Decodable {
