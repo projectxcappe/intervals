@@ -153,7 +153,7 @@ extension ViewController {
     
     func displayChordColor(chordQuality:String) {
         
-        let currentStructure:[String:UIColor] = ["Triad Root Major":UIColor.triadRootMajor, "Triad Root Minor":UIColor.triadRootMinor, "Triad 1st Major":UIColor.triad1stMajor, "Triad 1st Minor":UIColor.triad1stMinor, "Triad 2nd Major":UIColor.triad2ndMajor, "Triad 2nd Minor":UIColor.triad2ndMinor]
+        let currentStructure:[String:UIColor] = ["Triad Root Major":UIColor.triadRootMajor, "Triad Root Minor":UIColor.triadRootMinor, "Triad 1st Major":UIColor.triad1stMajor, "Triad 1st Minor":UIColor.triad1stMinor, "Triad 2nd Major":UIColor.triad2ndMajor, "Triad 2nd Minor":UIColor.triad2ndMinor, "M7":UIColor.seventhMajor, "m7":UIColor.seventhMinor, "dom7":UIColor.seventhDom, "halfdim7":UIColor.seventhHalfDim, "fulldim7":UIColor.seventhFullDim]
         
         colorView.backgroundColor = currentStructure[chordQuality]
         colorView.alpha = 0.0

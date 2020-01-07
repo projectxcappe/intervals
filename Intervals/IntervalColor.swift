@@ -30,5 +30,11 @@ extension UIColor {
         static let triad1stMinor = UIColor(red: 50/255.0, green: 94/255.0, blue: 168/255.0, alpha: 1.0)
         static let triad2ndMajor = UIColor(red: 22/255.0, green: 112/255.0, blue: 27/255.0, alpha: 1.0)
         static let triad2ndMinor = UIColor(red: 227/255.0, green: 127/255.0, blue: 20/255.0, alpha: 1.0)
+    
+        //Sevenths
+        static let seventhMajor = UIColor(red: 222/255.0, green: 13/255.0, blue: 13/255.0, alpha: 1.0)
+        static let seventhMinor = UIColor(red: 0/255.0, green: 79/255.0, blue: 148/255.0, alpha: 1.0)
+        static let seventhDom = UIColor(red: 224/255.0, green: 189/255.0, blue: 13/255.0, alpha: 1.0)
+        static let seventhHalfDim = UIColor(red: 22/255.0, green: 112/255.0, blue: 27/255.0, alpha: 1.0)
+        static let seventhFullDim = UIColor(red: 255/255.0, green: 119/255.0, blue: 0/255.0, alpha: 1.0)
 }
-

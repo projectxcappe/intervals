@@ -151,6 +151,14 @@ class ViewController: UIViewController, SettingsDelegate {
         
         //Temp disable play button, honestly just for effect, shows we did something
         beginButton.isEnabled = false
+        
+        //Don't show ascending/decending label if no triads selected
+        if selectedIntervals.count == 0 {
+            selectedMethodsLabel.alpha = 0
+        } else {
+            selectedMethodsLabel.alpha = 100
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             self.beginButton.isEnabled = true
         }

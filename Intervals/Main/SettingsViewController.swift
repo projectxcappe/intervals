@@ -62,7 +62,13 @@ class SettingsViewController: UIViewController {
         selectedMethods  = IntervalsSelected.shared.methods
         selectedChords = IntervalsSelected.shared.chords
         
+        getInitialData()
+        
+    }
+    
+    func getInitialData() {
         //Grab Intervals
+        print(selectedIntervals)
         for i in selectedIntervals {
             for j in toggleButtonCollection {
                 if i == j.titleLabel?.text {
@@ -72,6 +78,7 @@ class SettingsViewController: UIViewController {
         }
         
         //Grab Methods
+        print(selectedMethods)
         for i in selectedMethods {
             for j in toggleButtonCollection {
                 if i == j.titleLabel?.text {
@@ -81,6 +88,7 @@ class SettingsViewController: UIViewController {
         }
         
         //Grab Chords
+        print(selectedChords)
         for i in selectedChords {
             for j in chordButtonCollection {
                 if i == j.titleLabel?.text {
@@ -88,8 +96,6 @@ class SettingsViewController: UIViewController {
                 }
             }
         }
-        
-
     }
     
     @IBAction func close(_ sender: Any) {
@@ -121,7 +127,7 @@ class SettingsViewController: UIViewController {
     
     @IBAction func minor3Pressed(_ sender: Any) {
         minor3Button.toggleTapped()
-        
+
         if selectedIntervals.contains("m3") {
             selectedIntervals.remove(object: "m3")
         } else {
