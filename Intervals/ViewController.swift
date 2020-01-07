@@ -214,7 +214,7 @@ class ViewController: UIViewController, SettingsDelegate {
 
             //Grab intervals from chord type and get the note values
             chordNotesToBePlayed = (currentStructure[chordType]?.randomElement())!
-            print(chordNotesToBePlayed)
+            print("chordNotesToBePlayed ", chordNotesToBePlayed)
             replayCurrentInterval = true //allow user to replay this interval if needed to
             
         }
@@ -300,7 +300,7 @@ class ViewController: UIViewController, SettingsDelegate {
         
         selection.updateValue(value!, forKey: key!)
         play()
-        print(selection!)
+        print("getSelection ", selection!)
     }
     
     @IBAction func minor2Pressed(_ sender: Any) {

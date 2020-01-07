@@ -150,6 +150,21 @@ extension ViewController {
             }
 
             replayCurrentInterval = true
+            
+            //Get interval song
+            var songToBePlayed:String!
+            
+            let seventhSongs = intervalSongs.SongSeventh
+            //Stick all the songs in a dict
+            let currentStructure:[String:String] = ["m7":seventhSongs.m7, "M7":seventhSongs.M7]
+            
+            //Only have two songs so far
+            if answer == "m7" || answer == "M7" {
+                songToBePlayed = currentStructure[answer]
+            
+                self.toggleButtons(time: CHORDTIME)
+                playIntervalSong(song: songToBePlayed)
+            }
         }
     }
 }

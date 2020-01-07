@@ -15,6 +15,8 @@
 		505ABEB423A5E47A00D55377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505ABEB223A5E47A00D55377 /* LaunchScreen.storyboard */; };
 		5099776323A9EAC400CE0B9A /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099776223A9EAC400CE0B9A /* Toggle.swift */; };
 		50BB290323B72CD500CA7547 /* G4.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50BB290223B72CD500CA7547 /* G4.aifc */; };
+		50BB290723C2F05300CA7547 /* minor7_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50BB290423C2F05200CA7547 /* minor7_song.aifc */; };
+		50BB290823C2F05300CA7547 /* major7_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50BB290523C2F05300CA7547 /* major7_song.aifc */; };
 		50CE941623AA843D00A7AB3C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CE941523AA843D00A7AB3C /* SettingsViewController.swift */; };
 		50CE943023AD377900A7AB3C /* tt_dec_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE941823AD377800A7AB3C /* tt_dec_song.aifc */; };
 		50CE943123AD377900A7AB3C /* major2_dec_song.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 50CE941923AD377800A7AB3C /* major2_dec_song.aifc */; };
@@ -117,6 +119,8 @@
 		505ABEB523A5E47A00D55377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5099776223A9EAC400CE0B9A /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
 		50BB290223B72CD500CA7547 /* G4.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = G4.aifc; sourceTree = "<group>"; };
+		50BB290423C2F05200CA7547 /* minor7_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = minor7_song.aifc; sourceTree = "<group>"; };
+		50BB290523C2F05300CA7547 /* major7_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = major7_song.aifc; sourceTree = "<group>"; };
 		50CE941523AA843D00A7AB3C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		50CE941823AD377800A7AB3C /* tt_dec_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt_dec_song.aifc; sourceTree = "<group>"; };
 		50CE941923AD377800A7AB3C /* major2_dec_song.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = major2_dec_song.aifc; sourceTree = "<group>"; };
@@ -344,6 +348,8 @@
 		50F46A8223A8A649003F8972 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
+				50BB290523C2F05300CA7547 /* major7_song.aifc */,
+				50BB290423C2F05200CA7547 /* minor7_song.aifc */,
 				50CE941C23AD377800A7AB3C /* major2_asc_song.aifc */,
 				50CE941923AD377800A7AB3C /* major2_dec_song.aifc */,
 				50CE942B23AD377800A7AB3C /* major3_asc_song.aifc */,
@@ -468,6 +474,7 @@
 				50F46A7623A801E4003F8972 /* E6.aifc in Resources */,
 				50F46A7423A801E4003F8972 /* Db6.aifc in Resources */,
 				50E25C3C23A5F0DE00ACEF26 /* Ab3.aifc in Resources */,
+				50BB290723C2F05300CA7547 /* minor7_song.aifc in Resources */,
 				50CE943223AD377900A7AB3C /* minor2_asc_song.aifc in Resources */,
 				50CE944423AD377900A7AB3C /* major7_asc_song.aifc in Resources */,
 				50E25C5123A5F0DE00ACEF26 /* Db5.aifc in Resources */,
@@ -491,6 +498,7 @@
 				50CE943E23AD377900A7AB3C /* minor7_asc_song.aifc in Resources */,
 				50BB290323B72CD500CA7547 /* G4.aifc in Resources */,
 				50F46A7A23A801E4003F8972 /* Eb6.aifc in Resources */,
+				50BB290823C2F05300CA7547 /* major7_song.aifc in Resources */,
 				50E25C3423A5F0DE00ACEF26 /* Gb4.aifc in Resources */,
 				505ABEB123A5E47A00D55377 /* Assets.xcassets in Resources */,
 				50CE943823AD377900A7AB3C /* major6_dec_song.aifc in Resources */,
